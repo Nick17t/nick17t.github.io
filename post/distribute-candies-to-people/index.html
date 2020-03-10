@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>How to Prepare for an IT Interview - Nick</title>
+  <title>Distribute Candies to People - Nick</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="米奇妙妙张" /><meta name="description" content="计算机本质就是复读机，就是把那些知识来回不断地重复。" />
+<meta name="author" content="米奇妙妙张" /><meta name="description" content="对小朋友们进行遍历，每次都发小朋友们应得数量的糖，直到剩下的糖不足以分发应得数量，就直接给最后那位倒霉孩子。" />
 
 
 
@@ -33,7 +33,7 @@
 <meta name="generator" content="Hugo 0.65.3" />
 
 
-<link rel="canonical" href="https://nick17t.github.io/post/how-to-prepare-for-an-it-interview/" />
+<link rel="canonical" href="https://nick17t.github.io/post/distribute-candies-to-people/" />
 
 
 
@@ -57,23 +57,23 @@
 
 
 
-<meta property="og:title" content="How to Prepare for an IT Interview" />
-<meta property="og:description" content="计算机本质就是复读机，就是把那些知识来回不断地重复。" />
+<meta property="og:title" content="Distribute Candies to People" />
+<meta property="og:description" content="对小朋友们进行遍历，每次都发小朋友们应得数量的糖，直到剩下的糖不足以分发应得数量，就直接给最后那位倒霉孩子。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nick17t.github.io/post/how-to-prepare-for-an-it-interview/" />
-<meta property="article:published_time" content="2020-05-19T23:28:28+08:00" />
-<meta property="article:modified_time" content="2020-05-19T23:28:28+08:00" />
-<meta itemprop="name" content="How to Prepare for an IT Interview">
-<meta itemprop="description" content="计算机本质就是复读机，就是把那些知识来回不断地重复。">
-<meta itemprop="datePublished" content="2020-05-19T23:28:28&#43;08:00" />
-<meta itemprop="dateModified" content="2020-05-19T23:28:28&#43;08:00" />
-<meta itemprop="wordCount" content="1023">
+<meta property="og:url" content="https://nick17t.github.io/post/distribute-candies-to-people/" />
+<meta property="article:published_time" content="2020-03-05T23:42:19+08:00" />
+<meta property="article:modified_time" content="2020-03-05T23:42:19+08:00" />
+<meta itemprop="name" content="Distribute Candies to People">
+<meta itemprop="description" content="对小朋友们进行遍历，每次都发小朋友们应得数量的糖，直到剩下的糖不足以分发应得数量，就直接给最后那位倒霉孩子。">
+<meta itemprop="datePublished" content="2020-03-05T23:42:19&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-05T23:42:19&#43;08:00" />
+<meta itemprop="wordCount" content="367">
 
 
 
-<meta itemprop="keywords" content="interview," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to Prepare for an IT Interview"/>
-<meta name="twitter:description" content="计算机本质就是复读机，就是把那些知识来回不断地重复。"/>
+<meta itemprop="keywords" content="Leetcode," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Distribute Candies to People"/>
+<meta name="twitter:description" content="对小朋友们进行遍历，每次都发小朋友们应得数量的糖，直到剩下的糖不足以分发应得数量，就直接给最后那位倒霉孩子。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -335,14 +335,14 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">How to Prepare for an IT Interview</h1>
+      <h1 class="post-title">Distribute Candies to People</h1>
       
       <div class="post-meta">
-        <time datetime="2020-05-19" class="post-time">
-          2020-05-19
+        <time datetime="2020-03-05" class="post-time">
+          2020-03-05
         </time>
         <div class="post-category">
-            <a href="https://nick17t.github.io/categories/interview/"> interview </a>
+            <a href="https://nick17t.github.io/categories/leetcode/"> Leetcode </a>
             
           </div>
         
@@ -362,11 +362,12 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#分糖果">分糖果</a>
       <ul>
-        <li><a href="#面经之道">面经之道</a></li>
-        <li><a href="#用什么思维来学习">用什么思维来学习</a></li>
-        <li><a href="#学习的核心">学习的核心</a></li>
+        <li><a href="#题目卡片">题目卡片</a></li>
+        <li><a href="#思路">思路</a></li>
+        <li><a href="#代码">代码</a></li>
+        <li><a href="#扩展">扩展</a></li>
       </ul>
     </li>
   </ul>
@@ -376,67 +377,63 @@
 
     
     <div class="post-content">
-      <h3 id="面经之道">面经之道</h3>
-<p>面经之术已经在牛客网上非常流行了，但这篇想讨论的是面经之术。</p>
+      <h2 id="分糖果">分糖果</h2>
+<h3 id="题目卡片">题目卡片</h3>
+<ul>
+<li>
+<p>时间： 2020-03-05</p>
+</li>
+<li>
+<p>题目链接：</p>
+</li>
+<li>
+<p>Tag：math</p>
+</li>
+</ul>
+<h3 id="思路">思路</h3>
 <blockquote>
-<p>校招技术岗的基础知识：</p>
-<p>​	数据库、 算法、操作系统、组成原理、网络</p>
+<p>题目挺简单的，按着题目描述来可暴力求解。</p>
+<p>&quot;对小朋友们进行遍历，每次都发小朋友们应得数量的糖，直到剩下的糖不足以分发应得数量，就直接给最后那位倒霉孩子。&rdquo;</p>
 </blockquote>
-<h3 id="用什么思维来学习">用什么思维来学习</h3>
-<h4 id="1-记忆并理解">1. 记忆并理解</h4>
-<pre><code> 1. 是什么，由哪几部分组成，基于什么需求组成
-
- 2. 跟什么有关，为什么有关
-
-    Q: HTTP是什么？
-
-    &gt; 实际问的是如何用密码学的知识实现一套通讯加密的协议
-    
-    &gt; HTTPS，是一个应用层的加密协议，它用到了密码学相关知识
-    
-    &gt; 首先为了双方加密通话有对称加密，引入对称加密就要进行密钥交换，所以有非对称加密，也就是公私钥体制，引入公私钥体制，就要涉及到确认这个公钥是对方的，所以就有了数字签名和证书体制，有了这套体制，我们想要知道这套消息的完整性，于是就有了哈希检查。
-</code></pre>
-<p>​</p>
-<h4 id="2-体系化">2. 体系化</h4>
-<pre><code>1. 聊到时可以产生联想
-
-2. 联想数据结构，联想到各种规则。
-
-    Q: 请你聊聊数据库的索引
-
-    &gt;索引是查找结构，一切可以做查找操作的数据结构都可以实现(哈希表, 跳表, 搜索树)。
-    
-    &gt;比如Mysql的，innodb的b+树倒排，利用了硬盘的特征，内存的特征。
-    
-    - 加索引有哪些原则( 最大区分度, 最左前准, 联合索引顺序)
-    
-    - 加索引有什么代价，维护的代价
-    
-    - 加索引要注意什么
-    
-    - 索引什么时候会失效
-</code></pre>
-<p>​</p>
-<h4 id="3-框架化">3. 框架化</h4>
-<pre><code>1. 认识到更本质的东西其实是一回事
-
-1. 计算机本质就是复读机，就是把那些知识来回不断地重复。
-
-    1. 操作系统内存管理机制，python，jvm都是类似的实现，只是参数不同。其本质就是通过控制业务需求，来分配最合适的内存块 以提供速度。
-
-    2. 比如操作系统和浏览器其实一回事；数据库和操作系统的文件系统也类似，数据库本身就是对文件系统的一次复读，日志设计，存储设计都一样，只是适用了不同的业务要求。
-</code></pre>
-<p>​</p>
-<h3 id="学习的核心">学习的核心</h3>
-<h4 id="重复">重复</h4>
-<p>​	如果不是天才， 很少有人在第一次学习某个知识的时候，就掌握他。 不断的重复，让陌生的概念变得熟悉，不断的收敛让知识形成框架，框架可以让你快速的收悉新的知识。 然而，重复是枯燥的，是反人性的。而能让人得到乐趣而坚持下来重复，靠的就是<strong>正反馈</strong>。</p>
-<h4 id="正反馈">正反馈</h4>
-<p>带着正反馈去学习即<strong>能让我们做到以前做不到的事情，和解决自己一直困惑的问题。</strong></p>
-<ol>
-<li>先能学一些快速出来成果的东西, 让人可以用保持兴趣(<strong>正反馈</strong>), 并且在学习过程中留下一些问题.</li>
-<li>带着问题, 去学习难以下咽的基础, 因为之前在做好上手的东西过程中用哪个了这些基础知识的应用, 对基础产生了熟悉的感觉(<strong>重复</strong>), 并且在学习过程解决了之前遗留的问题(<strong>正反馈</strong>).</li>
-<li>学完基础后, 可以把之前做的成果往高级做(<strong>正反馈</strong>), 并且产生新的疑问, 再回头看之前遗漏的基础(<strong>重复</strong>)</li>
-</ol>
+<h3 id="代码">代码</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> <span style="color:#a6e22e">distributeCandies</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> candies<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> num_people<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> <span style="color:#f92672">[]</span>ans <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>num_people<span style="color:#f92672">];</span>
+<span style="color:#75715e">/* 1.
+</span><span style="color:#75715e">		while(candies!=0){
+</span><span style="color:#75715e">          int n = i+1;
+</span><span style="color:#75715e">            if(n&lt;=candies){
+</span><span style="color:#75715e">                ans[i%num_people] += n;
+</span><span style="color:#75715e">                candies -= n; 
+</span><span style="color:#75715e">            }
+</span><span style="color:#75715e">            else{
+</span><span style="color:#75715e">                ans[i%num_people] += candies;
+</span><span style="color:#75715e">                break; 
+</span><span style="color:#75715e">            }
+</span><span style="color:#75715e">            i++;
+</span><span style="color:#75715e">*/</span>
+        <span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>candies<span style="color:#f92672">!=</span>0<span style="color:#f92672">){</span>
+            <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> i<span style="color:#f92672">+</span>1<span style="color:#f92672">;</span>	 
+        	ans<span style="color:#f92672">[</span>i <span style="color:#f92672">%</span> num_people<span style="color:#f92672">]</span> <span style="color:#f92672">+=</span> Math<span style="color:#f92672">.</span><span style="color:#a6e22e">min</span><span style="color:#f92672">(</span>candies<span style="color:#f92672">,</span> n<span style="color:#f92672">);</span>
+            candies <span style="color:#f92672">-=</span> Math<span style="color:#f92672">.</span><span style="color:#a6e22e">min</span><span style="color:#f92672">(</span>candies<span style="color:#f92672">,</span>n<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#75715e">/* 
+</span><span style="color:#75715e">        *  取candies（现有糖果数量）和n（按规则应获得的需要糖果数量）中的最小值，
+</span><span style="color:#75715e">        *  给第 i%num_people (轮到的第几位小朋友)，
+</span><span style="color:#75715e">        *  +=  累加每一轮所发的新糖果，
+</span><span style="color:#75715e">        *  min的作用是当糖果不够用时，全送给那个小朋友，
+</span><span style="color:#75715e">        *  与此同时，candies数量减去已送出的数量。
+</span><span style="color:#75715e">        */</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> ans<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h3 id="扩展">扩展</h3>
+<blockquote>
+<p>这个的标签是Math，所以肯定是有相关的数学公式能帮忙省事儿。</p>
+<p>leetCode中@<a href="https://leetcode-cn.com/u/quantumdriver/">QuantumDriver</a>给出详细解释，不在此赘述。</p>
+</blockquote>
     </div>
 
     
@@ -449,7 +446,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-      2020-05-19
+      2020-03-05
       
     </span>
   </p>
@@ -466,27 +463,27 @@
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://nick17t.github.io/tags/interview/">interview</a>
+          <a href="https://nick17t.github.io/tags/leetcode/">Leetcode</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-        
-          <a class="next" href="/post/distribute-candies-to-people/">
-            <span class="next-text nav-default">Distribute Candies to People</span>
-            <span class="prev-text nav-mobile">Next</span>
+          <a class="prev" href="/post/how-to-prepare-for-an-it-interview/">
             
             <i class="iconfont">
-              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
-  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
 </svg>
 
             </i>
+            <span class="prev-text nav-default">How to Prepare for an IT Interview</span>
+            <span class="prev-text nav-mobile">Prev</span>
           </a>
+        
       </nav>
     </footer>
   </article>
