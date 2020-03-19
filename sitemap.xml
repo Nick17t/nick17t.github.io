@@ -10,14 +10,42 @@
   
   <url>
     <loc>https://nick17t.github.io/categories/</loc>
-    <lastmod>2020-05-23T23:49:50+08:00</lastmod>
+    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/interview/</loc>
+    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/categories/interview/</loc>
+    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://nick17t.github.io/post/</loc>
-    <lastmod>2020-05-23T23:49:50+08:00</lastmod>
+    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/</loc>
+    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/my-interview-preparation/</loc>
+    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -38,13 +66,6 @@
   
   <url>
     <loc>https://nick17t.github.io/post/resource-summary/</loc>
-    <lastmod>2020-05-23T23:49:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/tags/</loc>
     <lastmod>2020-05-23T23:49:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -73,20 +94,6 @@
   
   <url>
     <loc>https://nick17t.github.io/post/how-to-prepare-for-an-it-interview/</loc>
-    <lastmod>2020-05-19T23:28:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/tags/interview/</loc>
-    <lastmod>2020-05-19T23:28:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/categories/interview/</loc>
     <lastmod>2020-05-19T23:28:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

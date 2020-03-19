@@ -45,13 +45,74 @@
     </item>
     
     <item>
-      <title>Resource Summary</title>
+      <title>我的秋招季</title>
+      <link>https://nick17t.github.io/post/my-interview-preparation/</link>
+      <pubDate>Thu, 28 May 2020 14:32:33 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/my-interview-preparation/</guid>
+      
+        <description>&lt;h2 id=&#34;我的反思&#34;&gt;我的反思&lt;/h2&gt;
+&lt;p&gt;​	从三月到现在五月底，莽莽撞撞的探索与学习，很快就到了校招时期。七月马上要开始的提前批，八九月的校招高峰期。最重要的是在正确的时间做正确的事情，因此希望我能在秋招时就找到一份喜欢的工作。&lt;/p&gt;
+&lt;h2 id=&#34;合理定位&#34;&gt;合理定位&lt;/h2&gt;
+&lt;p&gt;​	从大一的C语言课设大作业，到大二时对python的试水，在机器学习方向的比赛获奖，并发表了论文、申请了专利，大三时跟随学校的培养计划，学习了Java Web的开发。&lt;/p&gt;
+&lt;p&gt;​	在经历各种跌跌撞撞的探索后，停下来思考，觉得相比起从0到1的后端开发，把0.9，1.1 拨正成为合格的1，这样的测试工作会更加贴合我的好奇、想尝试并突破，追求更优雅产品的个性。&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h2 id=&#34;夯实基础&#34;&gt;夯实基础&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;明确知识体系&lt;/p&gt;
+&lt;p&gt;测试开发的知识体系并不像Java Web那样明晰全面，如果是后台开发，就要对数据库有相应的把握；如果偏底层架构，就要掌握好操作系统和计算机网络。&lt;/p&gt;
+&lt;p&gt;可惜的是，测试开发工程师的求职技能树并没有这么清晰。以下是我所思考的应该有的准备。毕竟明确了自己要学什么，才能有的放矢，合理高效的管理好自己的时间和精力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;注重学习性价比&lt;/p&gt;
+&lt;p&gt;其实也不光是求职，任何时候都应该把精力花在最值得的地方，要意识到时间是自己最珍贵的事物。在这黄金的时间掌握更多有价值的知识就重中之重了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;整理简历&#34;&gt;整理简历&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;简历是非常重要的东西，三分做，七分写。不然不能被人看见，连个面试机会都没有。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;项目经历&lt;/p&gt;
+&lt;p&gt;我的项目经历比较少，两个是Python的机器学习相关，一个是基于微信小程序的SSM后端开发。正预备做一个自动化测试框架。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;面试&lt;/p&gt;
+&lt;p&gt;我计划的是，首先选择不会去的公司试试水，再去投递心仪的公司。多尝试但不盲目，不完全海投，认为自己能有时间精力参加笔试的才会去投。此外，面试评价是很重要的，要珍惜每次面试机会。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;校招系统&lt;/p&gt;
+&lt;p&gt;每次写作我计划都要整理好成Markdown文档，备下次使用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;面试&lt;/p&gt;
+&lt;p&gt;面试官的态度/其他人的Offer其实都与自己无关，也是我无法改变的，我会好好的调整心态。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;灵活调整&#34;&gt;灵活调整&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;失利时一定要及时填补上自己的短处，并积极总结经验。遇到挫折和失败时，也要及时反思和鼓励自己。&lt;/li&gt;
+&lt;li&gt;在笔试之后，把遇到的问题分类总结。&lt;/li&gt;
+&lt;li&gt;面试官通过简历认识自己，那么自己也要通过面试官重新设计简历。通过面试官询问侧重点，挖掘出自己简历上最亮点的部分，同时避免一些雷点。比如列举的技术栈，面试官总是对你某个不熟悉的地方提问时，就要考虑删掉它。&lt;/li&gt;
+&lt;li&gt;面试比笔试更加重要，要牢牢抓住它。&lt;/li&gt;
+&lt;li&gt;调整好心态，求职中总会遇到各种各样的难题，每个人都会遇到困难，每个人处理问题的态度和方式都各不相同，保持良好的心态，遇到困境也不慌张，不自暴自弃，不破罐子破摔。从容的面对，给自己更多的信心，遇到顺境也不骄不躁，稳中求胜，适当放低姿态。轻松的状态更容易发挥好的水平。&lt;/li&gt;
+&lt;li&gt;真人内推（直接到部门，绕过一些门槛）把简历给这个人，并且这个人一定会认真看你的简历，能帮你直接推到内推。牛客关键词：部门直推。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;​	秋招是战役，我们采用的战略决定了成败与否。从各个时期，规划好自己的计划，不急不躁，稳中求胜。 根据心仪公司的JD制作好简历，补足知识。保持良好的心态，通过面试和笔试提高自己的能力，从而获得理想的Offer。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Technical Articles Summary</title>
       <link>https://nick17t.github.io/post/resource-summary/</link>
       <pubDate>Sat, 23 May 2020 23:49:50 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/resource-summary/</guid>
       
-        <description>&lt;h2 id=&#34;resource-summary&#34;&gt;Resource Summary&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;summary-of-good-technical-articles&#34;&gt;Summary of good technical articles&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -240,7 +301,7 @@
     </item>
     
     <item>
-      <title>How to Prepare for an IT Interview</title>
+      <title>面经之术</title>
       <link>https://nick17t.github.io/post/how-to-prepare-for-an-it-interview/</link>
       <pubDate>Tue, 19 May 2020 23:28:28 +0800</pubDate>
       
@@ -1121,7 +1182,6 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;li&gt;&lt;a href=&#34;https://coolshell.cn/&#34;&gt;CoolShell&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;陈皓老师的个人博客应该算是国内最有影响力的了。&lt;/p&gt;
-&lt;p&gt;​&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.liaoxuefeng.com/&#34;&gt;廖雪峰&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -1130,17 +1190,14 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;li&gt;&lt;a href=&#34;http://www.hollischuang.com/&#34;&gt;HollisChuang&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;阿里研发专家，主要分享Java技术文章。&lt;/p&gt;
-&lt;p&gt;​&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.720ui.com/&#34;&gt;梁桂钊&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;阿里研发专家，后端技术文章非常丰富。&lt;/p&gt;
-&lt;p&gt;​&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;http://cmsblogs.com/&#34;&gt;chenssy&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Java技术文章，并且有很多基础方面的文章。&lt;/p&gt;
-&lt;p&gt;​&lt;/p&gt;
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.javadoop.com/&#34;&gt;Java Doop&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -1221,7 +1278,7 @@ SQL 的注入，检索 SQL SELECT 语句等
     </item>
     
     <item>
-      <title>Distribute Candies to People</title>
+      <title>Distribute candies to people</title>
       <link>https://nick17t.github.io/post/distribute-candies-to-people/</link>
       <pubDate>Thu, 05 Mar 2020 23:42:19 +0800</pubDate>
       
@@ -2018,7 +2075,7 @@ SQL 的注入，检索 SQL SELECT 语句等
     </item>
     
     <item>
-      <title>Efficient-Learning</title>
+      <title>高效学习</title>
       <link>https://nick17t.github.io/post/efficient-learning/</link>
       <pubDate>Wed, 15 Jan 2020 10:23:14 +0800</pubDate>
       
