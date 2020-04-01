@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QA on Nick17t</title>
+    <link>https://nick17t.github.io/tags/qa/</link>
+    <description>Recent content in QA on Nick17t</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 10 May 2020 20:42:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://nick17t.github.io/tags/qa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Summary of Test Interview Questions（QA）</title>
+      <link>https://nick17t.github.io/post/summary-of-interview-questionsqa/</link>
+      <pubDate>Sun, 10 May 2020 20:42:19 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/summary-of-interview-questionsqa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What Are the QA Interview Questions</title>
+      <link>https://nick17t.github.io/post/requirements-for-positionsqa/</link>
+      <pubDate>Thu, 02 Apr 2020 08:46:29 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/requirements-for-positionsqa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What Are the QA Interview Questions</title>
+      <link>https://nick17t.github.io/post/what-are-the-qa-interview-questions/</link>
+      <pubDate>Sun, 02 Feb 2020 23:46:29 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/what-are-the-qa-interview-questions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

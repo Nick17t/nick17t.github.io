@@ -957,6 +957,37 @@ SQL 的注入，检索 SQL SELECT 语句等
     </item>
     
     <item>
+      <title>What Are the QA Interview Questions</title>
+      <link>https://nick17t.github.io/post/requirements-for-positionsqa/</link>
+      <pubDate>Thu, 02 Apr 2020 08:46:29 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/requirements-for-positionsqa/</guid>
+      
+        <description>&lt;h2 id=&#34;测试开发岗的普遍要求&#34;&gt;测试开发岗的普遍要求&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;陆陆续续看了挺多家公司的测开岗要求，我总结出如下几点最为重要的要求。接下来就是专项突破了，既然选择了远方，便只顾风雨兼程。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;岗位要求&#34;&gt;岗位要求&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;熟悉 JAVA&lt;/li&gt;
+&lt;li&gt;了解Python、shell等脚本语言&lt;/li&gt;
+&lt;li&gt;熟悉软件研发流程&lt;/li&gt;
+&lt;li&gt;掌握软件测试的理论与方法&lt;/li&gt;
+&lt;li&gt;熟悉Sql语言，熟悉Mysql等常用数据库&lt;/li&gt;
+&lt;li&gt;有设计和开发测试工具或者自动化测试框架的优先&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;岗位描述&#34;&gt;岗位描述&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;根据需求进行测试设计和测试用例的编写&lt;/li&gt;
+&lt;li&gt;执行测试用例并进行缺陷跟踪&lt;/li&gt;
+&lt;li&gt;根据测试结果完成测试报告&lt;/li&gt;
+&lt;li&gt;编写自动化测试用例和性能测试用例脚本，并执行测试&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;顺带放一张秋招时间表，警醒自己注意时间和精力的分配。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/Nick17t/Image-Hosting/raw/master/img/%E6%97%B6%E9%97%B4.png&#34; alt=&#34;时间&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Tips of Serach and Shortcuts</title>
       <link>https://nick17t.github.io/post/tips-of-serach-and-shortcuts/</link>
       <pubDate>Thu, 19 Mar 2020 23:45:32 +0800</pubDate>
@@ -1506,7 +1537,7 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;li&gt;tail命令  		—— 		     查看文件尾部内容&lt;/li&gt;
 &lt;li&gt;rmdir命令      —— 		     删除空目录&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;附录&lt;/p&gt;
+&lt;h3 id=&#34;附录&#34;&gt;附录&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
