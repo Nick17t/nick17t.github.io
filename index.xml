@@ -957,15 +957,14 @@ SQL 的注入，检索 SQL SELECT 语句等
     </item>
     
     <item>
-      <title>What Are the QA Interview Questions</title>
+      <title>测试开发岗的普遍要求</title>
       <link>https://nick17t.github.io/post/requirements-for-positionsqa/</link>
       <pubDate>Thu, 02 Apr 2020 08:46:29 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/requirements-for-positionsqa/</guid>
       
         <description>&lt;h2 id=&#34;测试开发岗的普遍要求&#34;&gt;测试开发岗的普遍要求&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;陆陆续续看了挺多家公司的测开岗要求，我总结出如下几点最为重要的要求。接下来就是专项突破了，既然选择了远方，便只顾风雨兼程。
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;陆陆续续看了挺多家公司的测开岗要求，我总结出如下几点最为重要的要求。接下来就是专项突破了，既然选择了远方，便只顾风雨兼程。&lt;/p&gt;
 &lt;h5 id=&#34;岗位要求&#34;&gt;岗位要求&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;熟悉 JAVA&lt;/li&gt;
