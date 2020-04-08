@@ -6,7 +6,7 @@
     <description>Recent content on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 21:38:52 +0800</lastBuildDate>
     
         <atom:link href="https://nick17t.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,13 +14,32 @@
     <item>
       <title>About</title>
       <link>https://nick17t.github.io/about/</link>
-      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      <pubDate>Sat, 21 Mar 2020 21:38:52 +0800</pubDate>
       
       <guid>https://nick17t.github.io/about/</guid>
       
-        <description>&lt;p&gt;&lt;strong&gt;Great minds discuss ideas;
-Average minds discuss events;
-Small minds discuss people&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Great minds discuss ideas;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Average minds discuss events;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Small minds discuss people&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;刚刚开始写博客没有多长的时间，目前对博客的定义主要是一本笔记，或者说是一个私人的技术日记本，把它作为我自己持续学习与成长的记录，但毕竟是公开的东西，会写得稍微认真一点。但并不会花费过多的精力。&lt;/p&gt;
+&lt;p&gt;如果有机会，当然也希望这个博客能做到&lt;strong&gt;让陌生人通过博客了解到我是什么人、我在想什么、我做了什么&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;因为我本身是一个很有表达欲的人，乐意分享我的想法。所以以后应该也会逐渐添加一些&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;对某个技术的看法&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;读了某本书的书评&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对于生活、职业的哲学思考&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;职业之外的一些生活感悟和记录&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>
