@@ -135,6 +135,27 @@
   </url>
   
   <url>
+    <loc>https://nick17t.github.io/categories/leetcode/</loc>
+    <lastmod>2020-03-07T20:23:12+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/maximum-value-of-the-queue/</loc>
+    <lastmod>2020-03-07T20:23:12+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/sliding-window/</loc>
+    <lastmod>2020-03-07T20:23:12+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://nick17t.github.io/post/distribute-candies-to-people/</loc>
     <lastmod>2020-03-05T23:42:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -143,13 +164,6 @@
   
   <url>
     <loc>https://nick17t.github.io/tags/leetcode/</loc>
-    <lastmod>2020-03-05T23:42:19+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/categories/leetcode/</loc>
     <lastmod>2020-03-05T23:42:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

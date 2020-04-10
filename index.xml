@@ -584,6 +584,74 @@ Small minds discuss people&lt;/strong&gt;&lt;/p&gt;
     </item>
     
     <item>
+      <title>Maximum Value of the Queue</title>
+      <link>https://nick17t.github.io/post/maximum-value-of-the-queue/</link>
+      <pubDate>Sat, 07 Mar 2020 20:23:12 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/maximum-value-of-the-queue/</guid>
+      
+        <description>&lt;h4 id=&#34;面试题59---ii-队列的最大值httpsleetcode-cncomproblemsdui-lie-de-zui-da-zhi-lcof&#34;&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/&#34;&gt;面试题59 - II. 队列的最大值&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&#34;题目卡片&#34;&gt;题目卡片&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;时间： 2020-03-07&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tag：   Sliding Window&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;题目描述：&lt;/p&gt;
+&lt;p&gt;​		请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的时间复杂度都是O(1)。若队列为空，pop_front 和 max_value 需要返回 -1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;用ArrayList来模拟队列，一个存储队列数据，一个存储最大值&lt;/li&gt;
+&lt;li&gt;入队：如果当前值大于队尾元素，就移除原来较小的元素；否则就将当前值添加到队尾，保证当最大值滑出窗口后，队列依然有最大值&lt;/li&gt;
+&lt;li&gt;出队：弹出队列头，但是还需要判断弹出的是不是最大值，是的话，就给最大值给移除&lt;/li&gt;
+&lt;li&gt;队列的最大值就是 最大值队列的队头&lt;/li&gt;
+&lt;li&gt;因为队头和尾都会删除元素，所以我们需要一个双端开口的队列deque来存放队列数据。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MaxQueue&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    Queue&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; que&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    Deque&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; deq&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MaxQueue&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        que &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; LinkedList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;();&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//队列：插入和删除
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        deq &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; LinkedList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;();&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//双端队列：获取最大值
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;max_value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;gt;&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;peek&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;():-&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//双端队列的队首为que的最大值
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;push_back&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        que&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//value入队
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;gt;&lt;/span&gt;0 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;peekLast&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;lt;&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+            deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;pollLast&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//将deq队尾小于value的元素删掉
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;offerLast&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//将value放在deq队尾
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pop_front&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; tmp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; que&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;gt;&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;que&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;poll&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;():-&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//获得队首元素
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;gt;&lt;/span&gt;0 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; tmp&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;peek&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()){&lt;/span&gt;
+            deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;poll&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//如果出队的元素是当前最大值，将deq的队首出队
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; tmp&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Distribute Candies to People</title>
       <link>https://nick17t.github.io/post/distribute-candies-to-people/</link>
       <pubDate>Thu, 05 Mar 2020 23:42:19 +0800</pubDate>
