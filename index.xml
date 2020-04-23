@@ -140,6 +140,74 @@
     
     <item>
       <title></title>
+      <link>https://nick17t.github.io/post/distribute-candies-to-people/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nick17t.github.io/post/distribute-candies-to-people/</guid>
+      
+        <description>&lt;h2 id=&#34;分糖果&#34;&gt;分糖果&lt;/h2&gt;
+&lt;h3 id=&#34;题目卡片&#34;&gt;题目卡片&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;时间： 2020-03-05&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;题目链接：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tag：math&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;题目挺简单的，按着题目描述来可暴力求解。&lt;/p&gt;
+&lt;p&gt;&amp;quot;对小朋友们进行遍历，每次都发小朋友们应得数量的糖，直到剩下的糖不足以分发应得数量，就直接给最后那位倒霉孩子。&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Solution&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;distributeCandies&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; candies&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; num_people&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt;ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;num_people&lt;span style=&#34;color:#f92672&#34;&gt;];&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;/* 1.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;		while(candies!=0){
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;          int n = i+1;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            if(n&amp;lt;=candies){
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;                ans[i%num_people] += n;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;                candies -= n; 
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            }
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            else{
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;                ans[i%num_people] += candies;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;                break; 
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            }
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            i++;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*/&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;candies&lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;	 
+        	ans&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;i &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; num_people&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; Math&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;candies&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+            candies &lt;span style=&#34;color:#f92672&#34;&gt;-=&lt;/span&gt; Math&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;candies&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;n&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#75715e&#34;&gt;/* 
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  取candies（现有糖果数量）和n（按规则应获得的需要糖果数量）中的最小值，
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  给第 i%num_people (轮到的第几位小朋友)，
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  +=  累加每一轮所发的新糖果，
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  min的作用是当糖果不够用时，全送给那个小朋友，
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  与此同时，candies数量减去已送出的数量。
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        */&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;扩展&#34;&gt;扩展&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个的标签是Math，所以肯定是有相关的数学公式能帮忙省事儿。&lt;/p&gt;
+&lt;p&gt;leetCode中@&lt;a href=&#34;https://leetcode-cn.com/u/quantumdriver/&#34;&gt;QuantumDriver&lt;/a&gt;给出详细解释，不在此赘述。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://nick17t.github.io/post/implement-stack-using-queues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
