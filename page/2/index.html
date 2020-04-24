@@ -146,35 +146,6 @@
             </a>
           
         
-      </li><li class="mobile-menu-item">
-        
-          
-          <div class="mobile-menu-parent">
-            <span class="mobile-submenu-open"></span>
-            <a href="https://nick17t.github.io/">
-              docs
-            </a>
-          </div>
-          <ul class="mobile-submenu-list">
-            
-              <li>
-                <a href="https://nick17t.github.io/post/shortcodes-preview/">Shortcodes Preview</a>
-              </li>
-            
-              <li>
-                <a href="https://nick17t.github.io/post/image-preview/">Image Preview</a>
-              </li>
-            
-              <li>
-                <a href="https://nick17t.github.io/post/syntax-highlighting/">Syntax Highlighting</a>
-              </li>
-            
-              <li>
-                <a href="https://nick17t.github.io/post/math-preview/">Math Preview</a>
-              </li>
-            
-          </ul>
-        
       </li>
     
 
@@ -338,34 +309,6 @@
 
       </li>
     
-        <li class="menu-item">
-        
-          
-          <a class="menu-item-link menu-parent" href="https://nick17t.github.io/">docs</a>
-          <ul class="submenu">
-            
-              <li>
-                <a href="https://nick17t.github.io/post/shortcodes-preview/">Shortcodes Preview</a>
-              </li>
-            
-              <li>
-                <a href="https://nick17t.github.io/post/image-preview/">Image Preview</a>
-              </li>
-            
-              <li>
-                <a href="https://nick17t.github.io/post/syntax-highlighting/">Syntax Highlighting</a>
-              </li>
-            
-              <li>
-                <a href="https://nick17t.github.io/post/math-preview/">Math Preview</a>
-              </li>
-            
-          </ul>
-
-        
-
-      </li>
-    
 
     
     
@@ -392,125 +335,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/hugoisforlovers/">Getting Started with Hugo</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2014-04-02" class="post-time">
-        2014-04-02
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/development/"> Development </a>
-          <a href="https://nick17t.github.io/categories/golang/"> golang </a>
-          <a href="https://nick17t.github.io/categories/index/"> index </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:
-    </div>
-    <div class="read-more">
-      <a href="/post/hugoisforlovers/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2014-03-10" class="post-time">
-        2014-03-10
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/development/"> Development </a>
-          <a href="https://nick17t.github.io/categories/golang/"> golang </a>
-          <a href="https://nick17t.github.io/categories/index/"> index </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &lt;root&gt;/ ▾ images/ logo.png  should become
-▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
-    </div>
-    <div class="read-more">
-      <a href="/post/migrate-from-jekyll/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/syntax-highlighting/">Syntax Highlighting</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2011-08-30" class="post-time">
-        2011-08-30
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/syntax-highlighting/"> Syntax Highlighting </a>
-          <a href="https://nick17t.github.io/categories/index/"> index </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>More detail: <a href="https://gohugo.io/content-management/syntax-highlighting/">Syntax Highlighting | Hugo</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">helloWorld</span> () {
-  <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Hello, World!&#34;</span>)
-}
-</code></pre></div>
-    </div>
-    <div class="read-more">
-      <a href="/post/syntax-highlighting/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E7%A7%8B%E6%8B%9B%E5%AD%A3/"></a>
+      <a class="post-link" href="/post/tips_of_serachshortcuts/"></a>
     </h1>
     
     <div class="post-meta">
@@ -527,10 +352,10 @@ Follow the following steps:
   <div class="post-content">
     
     <div class="post-summary">
-      秋招季 ​ 又是一年秋招季，在正确的时间做正确的事情。————在秋招就结束一切。 合理定位 ​ 从大一的C语言课设大作业，到大二时对python的试水
+      提升搜索能力 一、基本搜索 （与或非） 与 &ldquo;+&rdquo; 通常情况下，无需用 + 表示“与”，空格就足够了 或 &ldquo;OR&rdquo; 可以用OR关键字搜索，例 Binary Search OR Binary Sort 非 &ldquo;-&rdquo; 使用时，当你厌倦
     </div>
     <div class="read-more">
-      <a href="/post/%E7%A7%8B%E6%8B%9B%E5%AD%A3/" class="read-more-link">Read more</a>
+      <a href="/post/tips_of_serachshortcuts/" class="read-more-link">Read more</a>
     </div>
     
   </div>

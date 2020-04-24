@@ -62,6 +62,12 @@
   </url>
   
   <url>
+    <loc>https://nick17t.github.io/post/rotting-oranges/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://nick17t.github.io/post/tips_of_serachshortcuts/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

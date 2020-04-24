@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="米奇妙妙张" />
-  <meta name="description" content="面向对象编程笔记 基本概念 类 实例 方法 实现方式 继承 多态 Java本身机制 package classpath jar java标准库提供的核心类 字符串 包装类型 JavaBean 枚举 常用工具类 面向对象基础" />
+  <meta name="description" content="腐烂的橘子 题目卡片 时间： 2020-03-04 题目链接： Tag：BFS ​ 思路 将所有的烂橘子的坐标存放到一个队列里面，然后通过BFS将附近的新鲜橘子腐蚀。题目要求" />
 
 
 
@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.65.3" />
 
 
-<link rel="canonical" href="https://nick17t.github.io/post/object-oriented_programming/" />
+<link rel="canonical" href="https://nick17t.github.io/post/rotting-oranges/" />
 
 
 
@@ -59,20 +59,20 @@
 
 
 <meta property="og:title" content="" />
-<meta property="og:description" content="面向对象编程笔记 基本概念 类 实例 方法 实现方式 继承 多态 Java本身机制 package classpath jar java标准库提供的核心类 字符串 包装类型 JavaBean 枚举 常用工具类 面向对象基础" />
+<meta property="og:description" content="腐烂的橘子 题目卡片 时间： 2020-03-04 题目链接： Tag：BFS ​ 思路 将所有的烂橘子的坐标存放到一个队列里面，然后通过BFS将附近的新鲜橘子腐蚀。题目要求" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nick17t.github.io/post/object-oriented_programming/" />
+<meta property="og:url" content="https://nick17t.github.io/post/rotting-oranges/" />
 
 <meta itemprop="name" content="">
-<meta itemprop="description" content="面向对象编程笔记 基本概念 类 实例 方法 实现方式 继承 多态 Java本身机制 package classpath jar java标准库提供的核心类 字符串 包装类型 JavaBean 枚举 常用工具类 面向对象基础">
+<meta itemprop="description" content="腐烂的橘子 题目卡片 时间： 2020-03-04 题目链接： Tag：BFS ​ 思路 将所有的烂橘子的坐标存放到一个队列里面，然后通过BFS将附近的新鲜橘子腐蚀。题目要求">
 
-<meta itemprop="wordCount" content="1069">
+<meta itemprop="wordCount" content="747">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="面向对象编程笔记 基本概念 类 实例 方法 实现方式 继承 多态 Java本身机制 package classpath jar java标准库提供的核心类 字符串 包装类型 JavaBean 枚举 常用工具类 面向对象基础"/>
+<meta name="twitter:description" content="腐烂的橘子 题目卡片 时间： 2020-03-04 题目链接： Tag：BFS ​ 思路 将所有的烂橘子的坐标存放到一个队列里面，然后通过BFS将附近的新鲜橘子腐蚀。题目要求"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -358,14 +358,11 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#腐烂的橘子">腐烂的橘子</a>
       <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#面向对象基础">面向对象基础</a>
-      <ul>
-        <li></li>
+        <li><a href="#题目卡片">题目卡片</a></li>
+        <li><a href="#思路">思路</a></li>
+        <li><a href="#代码">代码</a></li>
       </ul>
     </li>
   </ul>
@@ -375,131 +372,86 @@
 
     
     <div class="post-content">
-      <h1 id="面向对象编程笔记">面向对象编程笔记</h1>
-<h5 id="基本概念">基本概念</h5>
+      <h2 id="腐烂的橘子">腐烂的橘子</h2>
+<h3 id="题目卡片">题目卡片</h3>
 <ul>
 <li>
-<p>类</p>
+<p>时间： 2020-03-04</p>
 </li>
 <li>
-<p>实例</p>
+<p>题目链接：</p>
 </li>
 <li>
-<p>方法</p>
+<p>Tag：BFS</p>
+<p>​</p>
 </li>
 </ul>
-<h5 id="实现方式">实现方式</h5>
-<ul>
-<li>
-<p>继承</p>
-</li>
-<li>
-<p>多态</p>
-</li>
-</ul>
-<h5 id="java本身机制">Java本身机制</h5>
-<ul>
-<li>package</li>
-<li>classpath</li>
-<li>jar</li>
-</ul>
-<h5 id="java标准库提供的核心类">java标准库提供的核心类</h5>
-<ul>
-<li>字符串</li>
-<li>包装类型</li>
-<li>JavaBean</li>
-<li>枚举</li>
-<li>常用工具类</li>
-</ul>
-<h2 id="面向对象基础">面向对象基础</h2>
-<ol>
-<li>
-<p>基础小结:</p>
-<p>在OOP中，<code>class</code>和<code>instance</code>是“模版”和“实例”的关系；</p>
-<p>定义<code>class</code>就是定义了一种数据类型，对应的<code>instance</code>是这种数据类型的实例；</p>
-<p><code>class</code>定义的<code>field</code>，在每个<code>instance</code>都会拥有各自的<code>field</code>，且互不干扰；</p>
-<p>通过<code>new</code>操作符创建新的<code>instance</code>，然后用变量指向它，即可通过变量来引用这个<code>instance</code>；</p>
-<p>访问实例字段的方法是<code>变量名.字段名</code>；</p>
-<p>指向<code>instance</code>的变量都是引用变量。</p>
-</li>
-<li>
-<p>方法小结</p>
-<ul>
-<li>方法可以让外部代码安全地访问实例字段；</li>
-<li>方法是一组执行语句，并且可以执行任意逻辑；</li>
-<li>方法内部遇到return时返回，void表示不返回任何值（注意和返回null不同）；</li>
-<li>外部代码通过public方法操作实例，内部代码可以调用private方法；</li>
-<li>理解方法的参数绑定。
-<ul>
-<li><strong>基本类型</strong>参数的传递，是调用方法值的复制。双方各自的后续修改，互不影响。</li>
-<li><strong>引用类型</strong>参数的传递，调用方的变量，和接收方的参数变量，指向的是同一个对象。双方任意一方对这个对象的修改，都会影响对方（因为指向同一个对象嘛）</li>
-<li><a href="https://blog.csdn.net/xyphf/article/details/78117027">详解Java传参</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>构造方法小结</p>
-</li>
-</ol>
-<ul>
-<li>实例在创建时通过<code>new</code>操作符会调用其对应的构造方法，构造方法用于初始化实例；</li>
-</ul>
-<ul>
-<li>
-<p>没有定义构造方法时，编译器会自动创建一个默认的无参数构造方法；</p>
-</li>
-<li>
-<p>可以定义多个构造方法，编译器根据参数自动判断；</p>
-</li>
-<li>
-<p>可以在一个构造方法内部调用另一个构造方法，便于代码复用。</p>
-</li>
-</ul>
-<ol start="4">
-<li>
-<p>方法重载小结</p>
-<ul>
-<li>
-<p>方法重载是指多个方法的方法名相同，但各自的参数不同；</p>
-</li>
-<li>
-<p>重载方法应该完成类似的功能，参考<code>String</code>的<code>indexOf()</code>；</p>
-</li>
-<li>
-<p>重载方法返回值类型应该相同。</p>
-</li>
-</ul>
-</li>
-<li>
-<p>继承小结</p>
-</li>
-<li>
-<p>多态小结</p>
-<ul>
-<li>加上<code>@Override</code>可以让编译器帮助检查是否进行了正确的覆写。希望进行覆写，但是不小心写错了方法签名，编译器会报错。</li>
-<li>子类可以覆写父类的方法（Override），覆写在子类中改变了父类方法的行为；</li>
-<li><code>final</code>修饰的方法可以阻止被覆写；</li>
-<li><code>final</code>修饰的class可以阻止被继承；</li>
-<li><code>final</code>修饰的field必须在创建对象时初始化，随后不可修改。小结</li>
-</ul>
-</li>
-<li>
-<p>抽象类小结</p>
-</li>
-</ol>
-<h5 id="this变量">this变量</h5>
-<p>在方法内部，可以使用一个隐含的变量<code>this</code>，它始终指向当前实例。因此，通过<code>this.field</code>就可以访问当前实例的字段。</p>
-<p>如果没有命名冲突，可以省略<code>this</code>。例如：</p>
-<pre><code>class Person {
-    private String name;
+<h3 id="思路">思路</h3>
+<blockquote>
+<p>将所有的烂橘子的坐标存放到一个队列里面，然后通过BFS将附近的新鲜橘子腐蚀。题目要求为：求得最小分钟数，一分钟就是四个方向可以放的放入队列的一次。</p>
+<p>每一轮，腐烂将会从每一个烂橘子蔓延到与其相邻上下左右的新鲜橘子上。一开始，腐烂的橘子拥有深度为 0，每一轮腐烂会从腐烂橘子传染到之相邻新鲜橘子上，并且设置这些新的腐烂橘子的深度为自己深度 +1，我们想知道完成这个过程之后的最大深度值是多少。</p>
+<p><strong>算法</strong></p>
+<p>我们可以用一个宽度优先遍历来建模这一过程。因为我们总是选择去使用深度值最小的（且之前未使用过的）腐烂橘子去腐化新鲜橘子，如此保证每一个橘子腐烂时的深度标号也是最小的。</p>
+<p>检查最终状态下，是否还有新鲜橘子。</p>
+<p>有了计算最短路径的层序 BFS 代码框架，写这道题就很简单了。这道题的主要思路是：</p>
+<p>一开始，我们找出所有腐烂的橘子，将它们放入队列，作为第 0 层的结点。然后进行 BFS 遍历，每个结点的相邻结点可能是上、下、左、右四个方向的结点，注意判断结点位于网格边界的特殊情况。由于可能存在无法被污染的橘子，我们需要记录新鲜橘子的数量。在 BFS 中，每遍历到一个橘子（污染了一个橘子），就将新鲜橘子的数量减一。如果 BFS 结束后这个数量仍未减为零，说明存在无法被污染的橘子。</p>
+</blockquote>
+<h3 id="代码">代码</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">orangesRotting</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> grid<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">int</span> M <span style="color:#f92672">=</span> grid<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">int</span> N <span style="color:#f92672">=</span> grid<span style="color:#f92672">[</span>0<span style="color:#f92672">].</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>
+    Queue<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]&gt;</span> queue <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">&lt;&gt;();</span>
 
-    public String getName() {
-        return name; // 相当于this.name
-    }
-}
-</code></pre><p>但是，如果有局部变量和字段重名，那么局部变量优先级更高，就必须加上<code>this</code>：</p>
+<span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> <span style="color:#75715e">// count 表示新鲜橘子的数量
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> r <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> r <span style="color:#f92672">&lt;</span> M<span style="color:#f92672">;</span> r<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> c <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> c <span style="color:#f92672">&lt;</span> N<span style="color:#f92672">;</span> c<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>grid<span style="color:#f92672">[</span>r<span style="color:#f92672">][</span>c<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            count<span style="color:#f92672">++;</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>grid<span style="color:#f92672">[</span>r<span style="color:#f92672">][</span>c<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            queue<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]{</span>r<span style="color:#f92672">,</span> c<span style="color:#f92672">});</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
 
+<span style="color:#66d9ef">int</span> round <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> <span style="color:#75715e">// round 表示腐烂的轮数，或者分钟数
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>count <span style="color:#f92672">&gt;</span> 0 <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>queue<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+    round<span style="color:#f92672">++;</span>
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> queue<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> n<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> orange <span style="color:#f92672">=</span> queue<span style="color:#f92672">.</span><span style="color:#a6e22e">poll</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> r <span style="color:#f92672">=</span> orange<span style="color:#f92672">[</span>0<span style="color:#f92672">];</span>
+        <span style="color:#66d9ef">int</span> c <span style="color:#f92672">=</span> orange<span style="color:#f92672">[</span>1<span style="color:#f92672">];</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>r<span style="color:#f92672">-</span>1 <span style="color:#f92672">&gt;=</span> 0 <span style="color:#f92672">&amp;&amp;</span> grid<span style="color:#f92672">[</span>r<span style="color:#f92672">-</span>1<span style="color:#f92672">][</span>c<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            grid<span style="color:#f92672">[</span>r<span style="color:#f92672">-</span>1<span style="color:#f92672">][</span>c<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+            count<span style="color:#f92672">--;</span>
+            queue<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]{</span>r<span style="color:#f92672">-</span>1<span style="color:#f92672">,</span> c<span style="color:#f92672">});</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>r<span style="color:#f92672">+</span>1 <span style="color:#f92672">&lt;</span> M <span style="color:#f92672">&amp;&amp;</span> grid<span style="color:#f92672">[</span>r<span style="color:#f92672">+</span>1<span style="color:#f92672">][</span>c<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            grid<span style="color:#f92672">[</span>r<span style="color:#f92672">+</span>1<span style="color:#f92672">][</span>c<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+            count<span style="color:#f92672">--;</span>
+            queue<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]{</span>r<span style="color:#f92672">+</span>1<span style="color:#f92672">,</span> c<span style="color:#f92672">});</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c<span style="color:#f92672">-</span>1 <span style="color:#f92672">&gt;=</span> 0 <span style="color:#f92672">&amp;&amp;</span> grid<span style="color:#f92672">[</span>r<span style="color:#f92672">][</span>c<span style="color:#f92672">-</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            grid<span style="color:#f92672">[</span>r<span style="color:#f92672">][</span>c<span style="color:#f92672">-</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+            count<span style="color:#f92672">--;</span>
+            queue<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]{</span>r<span style="color:#f92672">,</span> c<span style="color:#f92672">-</span>1<span style="color:#f92672">});</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c<span style="color:#f92672">+</span>1 <span style="color:#f92672">&lt;</span> N <span style="color:#f92672">&amp;&amp;</span> grid<span style="color:#f92672">[</span>r<span style="color:#f92672">][</span>c<span style="color:#f92672">+</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            grid<span style="color:#f92672">[</span>r<span style="color:#f92672">][</span>c<span style="color:#f92672">+</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+            count<span style="color:#f92672">--;</span>
+            queue<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]{</span>r<span style="color:#f92672">,</span> c<span style="color:#f92672">+</span>1<span style="color:#f92672">});</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>count <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> round<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+</code></pre></div>
     </div>
 
     
@@ -533,7 +485,7 @@
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/interview-prepration/">
+          <a class="prev" href="/post/object-oriented_programming/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -547,7 +499,7 @@
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/rotting-oranges/">
+          <a class="next" href="/post/tips_of_serachshortcuts/">
             <span class="next-text nav-default"></span>
             <span class="prev-text nav-mobile">Next</span>
             
