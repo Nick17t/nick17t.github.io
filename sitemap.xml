@@ -44,6 +44,12 @@
   </url>
   
   <url>
+    <loc>https://nick17t.github.io/post/implement-stack-using-queues/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://nick17t.github.io/post/interview-prepration/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

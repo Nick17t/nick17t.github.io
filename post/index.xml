@@ -40,6 +40,15 @@
     
     <item>
       <title></title>
+      <link>https://nick17t.github.io/post/implement-stack-using-queues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nick17t.github.io/post/implement-stack-using-queues/</guid>
+      <description>用队列实现栈 题目卡片 时间： 2019-06-03 题目链接： Tag：Stack ​ 思路 这题我用到的是Deque 。Deque就是double ended queue，双端队列，可</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://nick17t.github.io/post/interview-prepration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
