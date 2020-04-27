@@ -53,15 +53,8 @@
       
       <guid>https://nick17t.github.io/post/what-are-the-qa-interview-questions/</guid>
       
-<<<<<<< HEAD
         <description>&lt;h2 id=&#34;面试重点&#34;&gt;面试重点&lt;/h2&gt;
 &lt;p&gt;​	除了软件测试的相关知识外，数据结构与算法也很重要。其次linux的使用、数据库的熟悉程度也很重要。&lt;/p&gt;
-=======
-        <description>&lt;h2 id=&#34;脑图&#34;&gt;脑图&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Cnick%5CDesktop%5CQA%5C%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E8%80%83%E5%AF%9F%E8%84%91%E5%9B%BE.png&#34; alt=&#34;测试工程师考察脑图&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;面试重点&#34;&gt;面试重点&lt;/h2&gt;
-&lt;p&gt;​	显然我们从中可以看到，除了软件测试的相关知识外，数据结构与算法也很重要。其次linux的使用、数据库的熟悉程度也很重要。&lt;/p&gt;
->>>>>>> f10007acf338ed37696c5e84ef9f4f262e90447c
 &lt;p&gt;​	数据结构和算法是较难速成的科目，我们先从简单的linux命令写起，获得成就感，来增强自信心。&lt;/p&gt;
 &lt;h3 id=&#34;linux命令&#34;&gt;linux命令&lt;/h3&gt;
 &lt;p&gt;​	我是通过VMware WorkStation创建的Ubuntu虚拟机环境，当然也可以采用搭建云服务器，或者两块SSD做双系统的方法。linux命令主要包括以下几个分类。&lt;/p&gt;
@@ -70,7 +63,6 @@
 &lt;p&gt;​	以user/nick/download这个目录为例&lt;/p&gt;
 &lt;p&gt;​	绝对路径：由根目录/写起，例如：/user/nick/download
 ​	相对路径：顾名思义，例如：由 /user/nick/download到/user/nick/music底下时，写成：cd.music&lt;/p&gt;
-<<<<<<< HEAD
 &lt;ul&gt;
 &lt;li&gt;ls命令 		   —— 		    显示指定工作目录下的内容及属性信息&lt;/li&gt;
 &lt;li&gt;mkdir命令     —— 	        创建目录&lt;/li&gt;
@@ -86,23 +78,6 @@
 &lt;li&gt;tail命令  		—— 		     查看文件尾部内容&lt;/li&gt;
 &lt;li&gt;rmdir命令      —— 		     删除空目录&lt;/li&gt;
 &lt;/ul&gt;
-=======
-&lt;ul&gt;
-&lt;li&gt;ls命令 		   —— 		    显示指定工作目录下的内容及属性信息&lt;/li&gt;
-&lt;li&gt;mkdir命令     —— 	        创建目录&lt;/li&gt;
-&lt;li&gt;cp命令           —— 	        复制文件或目录&lt;/li&gt;
-&lt;li&gt;mv命令          ——	 	    移动或改名文件&lt;/li&gt;
-&lt;li&gt;pwd命令        —— 		    显示当前路径&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;2--文档编辑&#34;&gt;2.  文档编辑&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;cat命令 		—— 		     在终端设备上显示文件内容&lt;/li&gt;
-&lt;li&gt;echo命令 	 —— 		     输出字符串或提取Shell变量的值&lt;/li&gt;
-&lt;li&gt;rm命令 		 —— 		     移除文件或目录&lt;/li&gt;
-&lt;li&gt;tail命令  		—— 		     查看文件尾部内容&lt;/li&gt;
-&lt;li&gt;rmdir命令      —— 		     删除空目录&lt;/li&gt;
-&lt;/ul&gt;
->>>>>>> f10007acf338ed37696c5e84ef9f4f262e90447c
 </description>
       
     </item>
@@ -353,6 +328,136 @@
     }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;但是，如果有局部变量和字段重名，那么局部变量优先级更高，就必须加上&lt;code&gt;this&lt;/code&gt;：&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://nick17t.github.io/post/tips_of_serachshortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nick17t.github.io/post/tips_of_serachshortcuts/</guid>
+      
+        <description>&lt;h2 id=&#34;提升搜索能力&#34;&gt;提升搜索能力&lt;/h2&gt;
+&lt;p&gt;一、基本搜索  （与或非）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;与     &amp;ldquo;+&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;通常情况下，无需用 + 表示“与”，空格就足够了&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;或     &amp;ldquo;OR&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可以用OR关键字搜索，例 Binary Search OR Binary Sort&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;非      &amp;ldquo;-&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用时，当你厌倦看到csdn的文章时，可以使用  排序算法 -CSDN 这样的搜索关键字&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;模糊查询&lt;/p&gt;
+&lt;p&gt;中间字可以用 * 号替代，如乘风*浪，可以搜索出乘风破/作/兴浪&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;“ ”完全匹配查询&lt;/p&gt;
+&lt;p&gt;顾名思义，查找完全和关键词匹配的结果&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;二、词句搜索&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;关键词是词组时，可以空格搜索&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关键词是句子是，就要加上引号  &amp;ldquo;no sana no life&amp;rdquo;，即上面的完全匹配查询&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;三、进阶搜索&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;site 表示只查找限定网站的内容   例：年收入 site:zhihu.com&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inurl 表示搜索的关键词在url中出现的网页内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;filetype 表示查找特定的文件格式&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;常用网站&#34;&gt;常用网站&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;scihub&lt;/p&gt;
+&lt;p&gt;不用你在学校或者是其他科研机构的权限，就可以让普通人或者是学生接触到最新的文献&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;oalib&lt;/p&gt;
+&lt;p&gt;oalib文献检索神器。OALib提供的开源论文超过4,219,598篇，涵盖所有学科。所有文章均可免费下载&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;win10快捷键&#34;&gt;WIN10快捷键&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;快捷键&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;WIN+A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;打开操作中心&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;WIN+S&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;打开搜索&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;WIN+K&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;打开蓝牙快速连接&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;WIN+D&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;显示桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;WIN+M&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;最小化窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;WIN+V&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;打开剪切板&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;WIN+；&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;调出emoji&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;WIN+Shif+S&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;截图功能&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Win + Ctrl + D&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;创建虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Win + Ctrl + F4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;关闭当前虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Win + Ctrl + ←&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;向左切换虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Win + Ctrl + →&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;向右切换虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
       
     </item>

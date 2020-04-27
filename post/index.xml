@@ -26,11 +26,7 @@
       <pubDate>Sun, 17 May 2020 16:44:16 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/what-are-the-qa-interview-questions/</guid>
-<<<<<<< HEAD
       <description>面试重点 ​ 除了软件测试的相关知识外，数据结构与算法也很重要。其次linux的使用、数据库的熟悉程度也很重要。 ​ 数据结构和算法是较难速成的科目</description>
-=======
-      <description>脑图 面试重点 ​ 显然我们从中可以看到，除了软件测试的相关知识外，数据结构与算法也很重要。其次linux的使用、数据库的熟悉程度也很重要。 ​ 数据</description>
->>>>>>> f10007acf338ed37696c5e84ef9f4f262e90447c
     </item>
     
     <item>
@@ -40,7 +36,6 @@
       
       <guid>https://nick17t.github.io/post/newbie-need-to-know/</guid>
       <description></description>
-<<<<<<< HEAD
     </item>
     
     <item>
@@ -50,25 +45,24 @@
       
       <guid>https://nick17t.github.io/post/interview-prepration/</guid>
       <description>秋招季 ​ 又是一年秋招季，在正确的时间做正确的事情。————在秋招就结束一切。 合理定位 ​ 从大一的C语言课设大作业，到大二时对python的试水</description>
-=======
->>>>>>> f10007acf338ed37696c5e84ef9f4f262e90447c
     </item>
     
     <item>
       <title></title>
-<<<<<<< HEAD
       <link>https://nick17t.github.io/post/object-oriented_programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nick17t.github.io/post/object-oriented_programming/</guid>
       <description>面向对象编程笔记 基本概念 类 实例 方法 实现方式 继承 多态 Java本身机制 package classpath jar java标准库提供的核心类 字符串 包装类型 JavaBean 枚举 常用工具类 面向对象基础</description>
-=======
-      <link>https://nick17t.github.io/post/interview-prepration/</link>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://nick17t.github.io/post/tips_of_serachshortcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://nick17t.github.io/post/interview-prepration/</guid>
-      <description>秋招季 ​ 又是一年秋招季，在正确的时间做正确的事情。————在秋招就结束一切。 合理定位 ​ 从大一的C语言课设大作业，到大二时对python的试水</description>
->>>>>>> f10007acf338ed37696c5e84ef9f4f262e90447c
+      <guid>https://nick17t.github.io/post/tips_of_serachshortcuts/</guid>
+      <description>提升搜索能力 一、基本搜索 （与或非） 与 &amp;ldquo;+&amp;rdquo; 通常情况下，无需用 + 表示“与”，空格就足够了 或 &amp;ldquo;OR&amp;rdquo; 可以用OR关键字搜索，例 Binary Search OR Binary Sort 非 &amp;ldquo;-&amp;rdquo; 使用时，当你厌倦</description>
     </item>
     
   </channel>
