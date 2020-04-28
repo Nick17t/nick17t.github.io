@@ -53,8 +53,15 @@
       
       <guid>https://nick17t.github.io/post/what-are-the-qa-interview-questions/</guid>
       
+<<<<<<< HEAD
         <description>&lt;h2 id=&#34;面试重点&#34;&gt;面试重点&lt;/h2&gt;
 &lt;p&gt;​	除了软件测试的相关知识外，数据结构与算法也很重要。其次linux的使用、数据库的熟悉程度也很重要。&lt;/p&gt;
+=======
+        <description>&lt;h2 id=&#34;脑图&#34;&gt;脑图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Cnick%5CDesktop%5CQA%5C%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E8%80%83%E5%AF%9F%E8%84%91%E5%9B%BE.png&#34; alt=&#34;测试工程师考察脑图&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;面试重点&#34;&gt;面试重点&lt;/h2&gt;
+&lt;p&gt;​	显然我们从中可以看到，除了软件测试的相关知识外，数据结构与算法也很重要。其次linux的使用、数据库的熟悉程度也很重要。&lt;/p&gt;
+>>>>>>> f10007acf338ed37696c5e84ef9f4f262e90447c
 &lt;p&gt;​	数据结构和算法是较难速成的科目，我们先从简单的linux命令写起，获得成就感，来增强自信心。&lt;/p&gt;
 &lt;h3 id=&#34;linux命令&#34;&gt;linux命令&lt;/h3&gt;
 &lt;p&gt;​	我是通过VMware WorkStation创建的Ubuntu虚拟机环境，当然也可以采用搭建云服务器，或者两块SSD做双系统的方法。linux命令主要包括以下几个分类。&lt;/p&gt;
@@ -63,6 +70,7 @@
 &lt;p&gt;​	以user/nick/download这个目录为例&lt;/p&gt;
 &lt;p&gt;​	绝对路径：由根目录/写起，例如：/user/nick/download
 ​	相对路径：顾名思义，例如：由 /user/nick/download到/user/nick/music底下时，写成：cd.music&lt;/p&gt;
+<<<<<<< HEAD
 &lt;ul&gt;
 &lt;li&gt;ls命令 		   —— 		    显示指定工作目录下的内容及属性信息&lt;/li&gt;
 &lt;li&gt;mkdir命令     —— 	        创建目录&lt;/li&gt;
@@ -78,6 +86,23 @@
 &lt;li&gt;tail命令  		—— 		     查看文件尾部内容&lt;/li&gt;
 &lt;li&gt;rmdir命令      —— 		     删除空目录&lt;/li&gt;
 &lt;/ul&gt;
+=======
+&lt;ul&gt;
+&lt;li&gt;ls命令 		   —— 		    显示指定工作目录下的内容及属性信息&lt;/li&gt;
+&lt;li&gt;mkdir命令     —— 	        创建目录&lt;/li&gt;
+&lt;li&gt;cp命令           —— 	        复制文件或目录&lt;/li&gt;
+&lt;li&gt;mv命令          ——	 	    移动或改名文件&lt;/li&gt;
+&lt;li&gt;pwd命令        —— 		    显示当前路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2--文档编辑&#34;&gt;2.  文档编辑&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;cat命令 		—— 		     在终端设备上显示文件内容&lt;/li&gt;
+&lt;li&gt;echo命令 	 —— 		     输出字符串或提取Shell变量的值&lt;/li&gt;
+&lt;li&gt;rm命令 		 —— 		     移除文件或目录&lt;/li&gt;
+&lt;li&gt;tail命令  		—— 		     查看文件尾部内容&lt;/li&gt;
+&lt;li&gt;rmdir命令      —— 		     删除空目录&lt;/li&gt;
+&lt;/ul&gt;
+>>>>>>> f10007acf338ed37696c5e84ef9f4f262e90447c
 </description>
       
     </item>

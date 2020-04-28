@@ -50,12 +50,15 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>https://nick17t.github.io/post/object-oriented_programming/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
+=======
+>>>>>>> f10007acf338ed37696c5e84ef9f4f262e90447c
     <loc>https://nick17t.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
