@@ -12,18 +12,6 @@
     
     
     <item>
-      <title>Jane 主题预览</title>
-      <link>https://nick17t.github.io/post/jane-theme-preview.zh-cn/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/jane-theme-preview.zh-cn/</guid>
-      
-        <description>&lt;p&gt;主题预览,内容有待填充。&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
       <title>Jane Theme Preview</title>
       <link>https://nick17t.github.io/post/jane-theme-preview/</link>
       <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
@@ -326,31 +314,6 @@ And then define the link:
 &lt;p&gt;平庸的生活方式是麻醉药。他只会束缚你,让你没有作为,甚至没有出息地度过大学的四年。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Draft</title>
-      <link>https://nick17t.github.io/post/draft/</link>
-      <pubDate>Fri, 28 Feb 2020 19:54:06 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/draft/</guid>
-      
-        <description>&lt;p&gt;这是一个草稿，用于测试。&lt;/p&gt;
-&lt;p&gt;这是一个草稿，用于测试。2020-02-28-19-55添加新博客&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Myfirstblog</title>
-      <link>https://nick17t.github.io/post/myfirstblog/</link>
-      <pubDate>Fri, 28 Feb 2020 19:49:47 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/myfirstblog/</guid>
-      
-        <description>&lt;p&gt;&lt;strong&gt;helloworld&lt;/strong&gt;
-这是用hugo搭建的网页。&lt;/p&gt;
-</description>
       
     </item>
     
@@ -1972,18 +1935,6 @@ $ vi themes/zafta/layouts/_default/single.html
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p&gt;
 &lt;h3 id=&#34;dont-repeat-yourself&#34;&gt;Don&amp;rsquo;t Repeat Yourself&lt;/h3&gt;
 &lt;p&gt;DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&amp;rsquo;re figuring that out, accept that you&amp;rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&amp;rsquo;s okay to delay splitting up a template.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
-      <link>https://nick17t.github.io/post/this-is-a-very-long-title/</link>
-      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/this-is-a-very-long-title/</guid>
-      
-        <description>&lt;p&gt;This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title&lt;/p&gt;
-</description>
       
     </item>
     

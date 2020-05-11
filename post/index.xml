@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Jane 主题预览</title>
-      <link>https://nick17t.github.io/post/jane-theme-preview.zh-cn/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/jane-theme-preview.zh-cn/</guid>
-      <description>主题预览,内容有待填充。</description>
-    </item>
-    
-    <item>
       <title>Jane Theme Preview</title>
       <link>https://nick17t.github.io/post/jane-theme-preview/</link>
       <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
@@ -37,24 +28,6 @@
       
       <guid>https://nick17t.github.io/post/newbie/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Draft</title>
-      <link>https://nick17t.github.io/post/draft/</link>
-      <pubDate>Fri, 28 Feb 2020 19:54:06 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/draft/</guid>
-      <description>&lt;p&gt;这是一个草稿，用于测试。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Myfirstblog</title>
-      <link>https://nick17t.github.io/post/myfirstblog/</link>
-      <pubDate>Fri, 28 Feb 2020 19:49:47 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/myfirstblog/</guid>
-      <description>helloworld 这是用hugo搭建的网页。</description>
     </item>
     
     <item>
@@ -120,15 +93,6 @@
       <guid>https://nick17t.github.io/post/english-preview/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
-      <link>https://nick17t.github.io/post/this-is-a-very-long-title/</link>
-      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/this-is-a-very-long-title/</guid>
-      <description>This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title</description>
     </item>
     
     <item>
