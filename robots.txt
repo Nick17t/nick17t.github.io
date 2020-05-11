@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://localhost:1313/sitemap.xml
+Sitemap: https://nick17t.github.io/sitemap.xml
