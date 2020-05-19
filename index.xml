@@ -39,48 +39,73 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;用什么思维来学习&#34;&gt;用什么思维来学习&lt;/h3&gt;
 &lt;h4 id=&#34;1-记忆并理解&#34;&gt;1. 记忆并理解&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt; 1. 是什么，由哪几部分组成，基于什么需求组成
-
- 2. 跟什么有关，为什么有关
-
-    Q: HTTP是什么？
-
-    &amp;gt; 实际问的是如何用密码学的知识实现一套通讯加密的协议
-    
-    &amp;gt; HTTPS，是一个应用层的加密协议，它用到了密码学相关知识
-    
-    &amp;gt; 首先为了双方加密通话有对称加密，引入对称加密就要进行密钥交换，所以有非对称加密，也就是公私钥体制，引入公私钥体制，就要涉及到确认这个公钥是对方的，所以就有了数字签名和证书体制，有了这套体制，我们想要知道这套消息的完整性，于是就有了哈希检查。
-&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;是什么，由哪几部分组成，基于什么需求组成&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;跟什么有关，为什么有关&lt;/p&gt;
+&lt;p&gt;Q: HTTP是什么？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;实际问的是如何用密码学的知识实现一套通讯加密的协议&lt;/p&gt;
+&lt;p&gt;HTTPS，是一个应用层的加密协议，它用到了密码学相关知识&lt;/p&gt;
+&lt;p&gt;首先为了双方加密通话有对称加密，引入对称加密就要进行密钥交换，所以有非对称加密，也就是公私钥体制，引入公私钥体制，就要涉及到确认这个公钥是对方的，所以就有了数字签名和证书体制，有了这套体制，我们想要知道这套消息的完整性，于是就有了哈希检查。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;​&lt;/p&gt;
 &lt;h4 id=&#34;2-体系化&#34;&gt;2. 体系化&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;1. 聊到时可以产生联想
-
-2. 联想数据结构，联想到各种规则。
-
-    Q: 请你聊聊数据库的索引
-
-    &amp;gt;索引是查找结构，一切可以做查找操作的数据结构都可以实现(哈希表, 跳表, 搜索树)。
-    
-    &amp;gt;比如Mysql的，innodb的b+树倒排，利用了硬盘的特征，内存的特征。
-    
-    - 加索引有哪些原则( 最大区分度, 最左前准, 联合索引顺序)
-    
-    - 加索引有什么代价，维护的代价
-    
-    - 加索引要注意什么
-    
-    - 索引什么时候会失效
-&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;聊到时可以产生联想&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;联想数据结构，联想到各种规则。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Q: 请你聊聊数据库的索引&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;索引是查找结构，一切可以做查找操作的数据结构都可以实现(哈希表, 跳表, 搜索树)。&lt;/p&gt;
+&lt;p&gt;比如Mysql的，innodb的b+树倒排，利用了硬盘的特征，内存的特征。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;加索引有哪些原则( 最大区分度, 最左前准, 联合索引顺序)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加索引有什么代价，维护的代价&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加索引要注意什么&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;索引什么时候会失效&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;​&lt;/p&gt;
 &lt;h4 id=&#34;3-框架化&#34;&gt;3. 框架化&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;1. 认识到更本质的东西其实是一回事
-
-1. 计算机本质就是复读机，就是把那些知识来回不断地重复。
-
-    1. 操作系统内存管理机制，python，jvm都是类似的实现，只是参数不同。其本质就是通过控制业务需求，来分配最合适的内存块 以提供速度。
-
-    2. 比如操作系统和浏览器其实一回事；数据库和操作系统的文件系统也类似，数据库本身就是对文件系统的一次复读，日志设计，存储设计都一样，只是适用了不同的业务要求。
-&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;认识到更本质的东西其实是一回事&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;计算机本质就是复读机，就是把那些知识来回不断地重复。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;操作系统内存管理机制，python，jvm都是类似的实现，只是参数不同。其本质就是通过控制业务需求，来分配最合适的内存块 以提供速度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比如操作系统和浏览器其实一回事；数据库和操作系统的文件系统也类似，数据库本身就是对文件系统的一次复读，日志设计，存储设计都一样，只是适用了不同的业务要求。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;​&lt;/p&gt;
 &lt;h3 id=&#34;学习的核心&#34;&gt;学习的核心&lt;/h3&gt;
 &lt;h4 id=&#34;重复&#34;&gt;重复&lt;/h4&gt;
