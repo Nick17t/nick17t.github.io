@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tips and tricks on Nick</title>
+    <link>https://nick17t.github.io/categories/tips-and-tricks/</link>
+    <description>Recent content in tips and tricks on Nick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Mar 2020 23:45:32 +0800</lastBuildDate>
+    
+	<atom:link href="https://nick17t.github.io/categories/tips-and-tricks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tips of Serach and Shortcuts</title>
+      <link>https://nick17t.github.io/post/tips-of-serach-and-shortcuts/</link>
+      <pubDate>Thu, 19 Mar 2020 23:45:32 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/tips-of-serach-and-shortcuts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
