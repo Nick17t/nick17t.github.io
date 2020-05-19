@@ -32,6 +32,77 @@
     </item>
     
     <item>
+      <title>How to Prepare for an IT Interview</title>
+      <link>https://nick17t.github.io/post/how-to-prepare-for-an-it-interview/</link>
+      <pubDate>Tue, 19 May 2020 23:28:28 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/how-to-prepare-for-an-it-interview/</guid>
+      
+        <description>&lt;h3 id=&#34;面经之道&#34;&gt;面经之道&lt;/h3&gt;
+&lt;p&gt;面经之术已经在牛客网上非常流行了，但这篇想讨论的是面经之术。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;校招技术岗的基础知识：&lt;/p&gt;
+&lt;p&gt;​	数据库、 算法、操作系统、组成原理、网络&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;用什么思维来学习&#34;&gt;用什么思维来学习&lt;/h3&gt;
+&lt;h4 id=&#34;1-记忆并理解&#34;&gt;1. 记忆并理解&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt; 1. 是什么，由哪几部分组成，基于什么需求组成
+
+ 2. 跟什么有关，为什么有关
+
+    Q: HTTP是什么？
+
+    &amp;gt; 实际问的是如何用密码学的知识实现一套通讯加密的协议
+    
+    &amp;gt; HTTPS，是一个应用层的加密协议，它用到了密码学相关知识
+    
+    &amp;gt; 首先为了双方加密通话有对称加密，引入对称加密就要进行密钥交换，所以有非对称加密，也就是公私钥体制，引入公私钥体制，就要涉及到确认这个公钥是对方的，所以就有了数字签名和证书体制，有了这套体制，我们想要知道这套消息的完整性，于是就有了哈希检查。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h4 id=&#34;2-体系化&#34;&gt;2. 体系化&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;1. 聊到时可以产生联想
+
+2. 联想数据结构，联想到各种规则。
+
+    Q: 请你聊聊数据库的索引
+
+    &amp;gt;索引是查找结构，一切可以做查找操作的数据结构都可以实现(哈希表, 跳表, 搜索树)。
+    
+    &amp;gt;比如Mysql的，innodb的b+树倒排，利用了硬盘的特征，内存的特征。
+    
+    - 加索引有哪些原则( 最大区分度, 最左前准, 联合索引顺序)
+    
+    - 加索引有什么代价，维护的代价
+    
+    - 加索引要注意什么
+    
+    - 索引什么时候会失效
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h4 id=&#34;3-框架化&#34;&gt;3. 框架化&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;1. 认识到更本质的东西其实是一回事
+
+1. 计算机本质就是复读机，就是把那些知识来回不断地重复。
+
+    1. 操作系统内存管理机制，python，jvm都是类似的实现，只是参数不同。其本质就是通过控制业务需求，来分配最合适的内存块 以提供速度。
+
+    2. 比如操作系统和浏览器其实一回事；数据库和操作系统的文件系统也类似，数据库本身就是对文件系统的一次复读，日志设计，存储设计都一样，只是适用了不同的业务要求。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h3 id=&#34;学习的核心&#34;&gt;学习的核心&lt;/h3&gt;
+&lt;h4 id=&#34;重复&#34;&gt;重复&lt;/h4&gt;
+&lt;p&gt;​	如果不是天才， 很少有人在第一次学习某个知识的时候，就掌握他。 不断的重复，让陌生的概念变得熟悉，不断的收敛让知识形成框架，框架可以让你快速的收悉新的知识。 然而，重复是枯燥的，是反人性的。而能让人得到乐趣而坚持下来重复，靠的就是&lt;strong&gt;正反馈&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;正反馈&#34;&gt;正反馈&lt;/h4&gt;
+&lt;p&gt;带着正反馈去学习即&lt;strong&gt;能让我们做到以前做不到的事情，和解决自己一直困惑的问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;先能学一些快速出来成果的东西, 让人可以用保持兴趣(&lt;strong&gt;正反馈&lt;/strong&gt;), 并且在学习过程中留下一些问题.&lt;/li&gt;
+&lt;li&gt;带着问题, 去学习难以下咽的基础, 因为之前在做好上手的东西过程中用哪个了这些基础知识的应用, 对基础产生了熟悉的感觉(&lt;strong&gt;重复&lt;/strong&gt;), 并且在学习过程解决了之前遗留的问题(&lt;strong&gt;正反馈&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;学完基础后, 可以把之前做的成果往高级做(&lt;strong&gt;正反馈&lt;/strong&gt;), 并且产生新的疑问, 再回头看之前遗漏的基础(&lt;strong&gt;重复&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ol&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>The Importance of Algorithms</title>
       <link>https://nick17t.github.io/post/the-importance-of-algorithms/</link>
       <pubDate>Mon, 18 May 2020 00:15:16 +0800</pubDate>
@@ -79,6 +150,62 @@
 &lt;li&gt;rmdir命令      —— 		     删除空目录&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>Newbie</title>
+      <link>https://nick17t.github.io/post/newbie-need-to-know/</link>
+      <pubDate>Mon, 11 May 2020 13:57:53 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/newbie-need-to-know/</guid>
+      
+        <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;程序员薪资：一线大厂薪资最高15k起步，一线创业公司10k起步，三四线5k~8k。
+总结：毕业后有能力尽量要往一线城市打拼。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;互联网企业是否有前途：肯定是有前途的，中国制造，大数据，区块链，面向5g,AR,VR,都是比较有前途的行业，人工智能目前来说起步较高，博士开招，大学期间尽量避开：前端开发、php、java等单纯的开发，社会上的培训班在单纯的开发方面优势明显。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;大学生适合做程序员吗：一定要按自己的兴趣去选专业，实在迷茫可以先学着，或许学着学着就感兴趣了，实在不喜欢一定要及早换系换专业。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;大学期间应该做什么：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;首先注重基础课程的学习，高数英语都非常重要。&lt;/li&gt;
+&lt;li&gt;其次学精通一门语言，何为精通，掌握百分之90以上的API，GO语言目前发展势头不错，可以从现在开始琢磨，四年后会有不错的收获。&lt;/li&gt;
+&lt;li&gt;掌握数据结构、算法，这是和培训机构拉开差距的地方。&lt;/li&gt;
+&lt;li&gt;数据库，SQL或NoSQL，人工智能和大数据最后都要操作数据库，一定要把一个数据库学精通。&lt;/li&gt;
+&lt;li&gt;学好网络原理，5、7层结构，IP规划，UDP,TCP,HTTP,DHCP,DNS，ARP 等等很多理论，层次越高接触越多，软件高性能高并发。&lt;/li&gt;
+&lt;li&gt;认认真真仔仔细细做好一个项目，并持续维护，从最简单的博客做起，一点点随着知识的增长去维护博客&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;如何找到适合自己的领域：多去参加研讨会，认识多专业领域的人才。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;程序员的基本分工：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;算法工程师 机器学习，图像处理 适合爱研究耐得住寂寞的一群人&lt;/li&gt;
+&lt;li&gt;客户端开发工程师 IOS 安卓 前端 开发 培训班大量输出这些人才。&lt;/li&gt;
+&lt;li&gt;研发工程师，后端开发C,C++ JAVA，做中间件，服务器端，用户看不到的逻辑处理，往后发展架构师&lt;/li&gt;
+&lt;li&gt;数据研发工程师，与大数据相关，要有程序员背景，统计学背景 五，测试工程师，代码测试，检验软件是否通过测试，不建议往这方面发展，目前自动化测试不断发展，有淘汰风险&lt;/li&gt;
+&lt;li&gt;安全工程师，处理系统安全隐患，掌握多门语言，知识面广 七、UED工程师，适合女孩子，属于美工与代码结合&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;大学生程序员是否考研：有能力一定要考，考上了一定要努力学习！最后拼的还是动手能力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平庸的生活方式是麻醉药。他只会束缚你,让你没有作为,甚至没有出息地度过大学的四年。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
       
     </item>
     
