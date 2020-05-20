@@ -18,8 +18,9 @@
       
       <guid>https://nick17t.github.io/about/</guid>
       
-        <description>&lt;p&gt;The most important part of effort, or the essence of effort, is precisely the bet made for uncertainty.&lt;/p&gt;
-&lt;p&gt;“努力中最重要的一部分，或者说努力的精髓所在，恰恰就是为了不确定押下的赌注。”&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Great minds discuss ideas;
+Average minds discuss events;
+Small minds discuss people&lt;/strong&gt;&lt;/p&gt;
 </description>
       
     </item>
@@ -102,6 +103,162 @@
 &lt;li&gt;先能学一些快速出来成果的东西, 让人可以用保持兴趣(&lt;strong&gt;正反馈&lt;/strong&gt;), 并且在学习过程中留下一些问题.&lt;/li&gt;
 &lt;li&gt;带着问题, 去学习难以下咽的基础, 因为之前在做好上手的东西过程中用哪个了这些基础知识的应用, 对基础产生了熟悉的感觉(&lt;strong&gt;重复&lt;/strong&gt;), 并且在学习过程解决了之前遗留的问题(&lt;strong&gt;正反馈&lt;/strong&gt;).&lt;/li&gt;
 &lt;li&gt;学完基础后, 可以把之前做的成果往高级做(&lt;strong&gt;正反馈&lt;/strong&gt;), 并且产生新的疑问, 再回头看之前遗漏的基础(&lt;strong&gt;重复&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ol&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Mysql Exercisec</title>
+      <link>https://nick17t.github.io/post/mysql-exercise/</link>
+      <pubDate>Fri, 17 Apr 2020 20:43:57 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/mysql-exercise/</guid>
+      
+        <description>&lt;h2 id=&#34;mysql&#34;&gt;Mysql&lt;/h2&gt;
+&lt;h3 id=&#34;建表语句&#34;&gt;建表语句&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; course
+(
+    CId   varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)              &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;primary&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;key&lt;/span&gt;,
+    Cname varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) charset utf8 &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+    TId   varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)              &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+);
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; sc
+(
+    skey  int            &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;primary&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;key&lt;/span&gt;,
+    SId   varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)    &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+    CId   varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)    &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+    score decimal(&lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+);
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; student
+(
+    SId   varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;primary&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;key&lt;/span&gt;,
+    Sname varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+    Sage  datetime    &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+    Ssex  varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+);
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; teacher
+(
+    Tid   varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;primary&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;key&lt;/span&gt;,
+    Tname varchar(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+);
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;基础题目&#34;&gt;基础题目&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;求每门课程的学生人数。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; Course.cname&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;coursename&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#66d9ef&#34;&gt;count&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;count&amp;#39;&lt;/span&gt; 
+&lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; SC,Course
+&lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; SC.CId&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Course.CId
+&lt;span style=&#34;color:#66d9ef&#34;&gt;GROUP&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;BY&lt;/span&gt; SC.CId
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;查询课程编号为 01 且课程成绩在 80 分及以上的学生的学号和姓名&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; student.sname,student.sid,sc.score 
+&lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; student,sc
+&lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; student.sid &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sc.CId &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; CId&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;01&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt;  sc.score&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;统计每门课程的学生选修人数（超过 5 人的课程才统计）&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; course.Cname ,&lt;span style=&#34;color:#66d9ef&#34;&gt;count&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;count&amp;#39;&lt;/span&gt; 
+&lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; course,sc
+&lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; sc.CId&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;course.CId
+&lt;span style=&#34;color:#66d9ef&#34;&gt;group&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; sc.CId
+&lt;span style=&#34;color:#66d9ef&#34;&gt;having&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;count&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;HAVING&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;子句可以让我们筛选分组后的各组数据。&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;检索至少选修两门课程的学生学号&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; sid &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; sc
+&lt;span style=&#34;color:#66d9ef&#34;&gt;group&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; sid
+&lt;span style=&#34;color:#66d9ef&#34;&gt;having&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;count&lt;/span&gt;(cid)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;strong&gt;选修了全部课程的学生信息&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; student.SId, student.Sname, student.Ssex , student.sage &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; student ,sc
+&lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; sc.sid &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; student.sid
+&lt;span style=&#34;color:#66d9ef&#34;&gt;group&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; sid
+&lt;span style=&#34;color:#66d9ef&#34;&gt;having&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;count&lt;/span&gt;(cid)&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;count&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; Course)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;&lt;strong&gt;查询存在不及格的课程&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; sc.score , sc.Cid &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; sc
+&lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; score&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;&lt;strong&gt;查询任何一门课程成绩在 70 分以上的学生姓名、课程名称和分数&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; student.Sname,sc.score,course.Cname 
+&lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; sc,course,student
+&lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; student.sid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sc.SId
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; sc.CId&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;course.CId
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt;  score&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;70&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;&lt;strong&gt;查询所有学生的课程及分数情况（存在学生没成绩，没选课的情况）&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; student.Sname,course.Cname,sc.score
+&lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; student
+&lt;span style=&#34;color:#66d9ef&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;join&lt;/span&gt; sc
+&lt;span style=&#34;color:#66d9ef&#34;&gt;on&lt;/span&gt; sc.SId &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; student.sid
+&lt;span style=&#34;color:#66d9ef&#34;&gt;LEFT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;JOIN&lt;/span&gt; course
+&lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; sc.cId &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; course.cid
+&lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;存在没数据的就要考虑连接&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;&lt;strong&gt;查询课程名称为「数学」，且分数低于 60 的学生姓名和分数&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; student.Sname,sc.score 
+&lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; sc,course,student
+&lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; student.sid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sc.SId 
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; sc.CId&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;course.CId 
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt;  Cname&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;数学&amp;#39;&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; score&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;&lt;strong&gt;查询平均成绩大于等于 85 的所有学生的学号、姓名和平均成绩&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; student.sid,student.sname,&lt;span style=&#34;color:#66d9ef&#34;&gt;avg&lt;/span&gt;(score)&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;avg_score&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; student,sc
+&lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; sc.SId&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;student.SId
+&lt;span style=&#34;color:#66d9ef&#34;&gt;group&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; sc.SId
+&lt;span style=&#34;color:#66d9ef&#34;&gt;having&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;avg&lt;/span&gt;(score)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;85&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;查询每门课程的平均成绩，结果按平均成绩降序排列，平均成绩相同时，按课程编号升序排列&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;查询各科成绩最高分、最低分和平均分&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;查询男生、女生人数&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;检索&amp;rdquo; 01 &amp;ldquo;课程分数小于 60，按分数降序排列的学生信息&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;按平均成绩从高到低显示所有学生的所有课程的成绩以及平均成绩&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;进阶题目&#34;&gt;进阶题目&lt;/h3&gt;
+&lt;ol start=&#34;16&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;查询没学过&amp;quot;张三&amp;quot;老师讲授的任一门课程的学生姓名&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;成绩不重复，查询选修「张三」老师所授课程的学生中，成绩最高的学生信息及其成绩&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;成绩有重复的情况下，查询选修「张三」老师所授课程的学生中，成绩最高的学生信息及其成绩&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;查询不同课程成绩相同的学生的学生编号、课程编号、学生成绩&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;查询每门功成绩最好的前两名&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;</description>
       
     </item>
