@@ -10,7 +10,42 @@
   
   <url>
     <loc>https://nick17t.github.io/categories/</loc>
-    <lastmod>2020-05-19T23:28:28+08:00</lastmod>
+    <lastmod>2020-05-22T23:39:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/implement-stack-using-queues/</loc>
+    <lastmod>2020-05-22T23:39:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/</loc>
+    <lastmod>2020-05-22T23:39:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/stack/</loc>
+    <lastmod>2020-05-22T23:39:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/categories/stack/</loc>
+    <lastmod>2020-05-22T23:39:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/</loc>
+    <lastmod>2020-05-22T23:39:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -31,20 +66,6 @@
   
   <url>
     <loc>https://nick17t.github.io/categories/interview/</loc>
-    <lastmod>2020-05-19T23:28:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/post/</loc>
-    <lastmod>2020-05-19T23:28:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/tags/</loc>
     <lastmod>2020-05-19T23:28:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -109,6 +130,13 @@
   <url>
     <loc>https://nick17t.github.io/categories/leetcode/</loc>
     <lastmod>2020-03-05T23:42:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/what-are-the-qa-interview-questions/</loc>
+    <lastmod>2020-02-02T23:46:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
