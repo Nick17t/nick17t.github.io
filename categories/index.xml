@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Nick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 May 2020 23:39:39 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2020 23:49:50 +0800</lastBuildDate>
     
 	<atom:link href="https://nick17t.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>resource</title>
+      <link>https://nick17t.github.io/categories/resource/</link>
+      <pubDate>Sat, 23 May 2020 23:49:50 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/categories/resource/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>stack</title>
