@@ -135,6 +135,13 @@
   </url>
   
   <url>
+    <loc>https://nick17t.github.io/post/blog-recommendation/</loc>
+    <lastmod>2020-03-17T20:42:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://nick17t.github.io/categories/leetcode/</loc>
     <lastmod>2020-03-07T20:23:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
