@@ -133,6 +133,26 @@
 &lt;td&gt;RdouTyping&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;19. &lt;a href=&#34;https://juejin.im/post/5a73cbbff265da4e807783f5&#34;&gt;CAS源码剖析&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;20. &lt;a href=&#34;https://juejin.im/post/5b4eec7df265da0fa00a118f#heading-17&#34;&gt;Synchoronized&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juejin.im/post/5b6b982fe51d45195a7187cf#heading-0&#34;&gt;补充&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;21. &lt;a href=&#34;https://blog.csdn.net/zzti_erlie/article/details/86355477&#34;&gt;从计算机的角度理解volatile关键字&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -2053,6 +2073,72 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;h2 id=&#34;迭代思考法&#34;&gt;迭代思考法&lt;/h2&gt;
 &lt;p&gt;​	简单来说，就是当遇到困难的问题时，思考了一个小时两个小时依然没有解决时，可以停下来放在一边，等明天思考，后天思考，总有灵光一闪的一刻。这就是我认为的迭代思考问题的模式。&lt;/p&gt;
 &lt;p&gt;综上，希望这篇文章有所帮助。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Reading Tips</title>
+      <link>https://nick17t.github.io/post/reading-tips/</link>
+      <pubDate>Wed, 08 Jan 2020 13:51:14 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/reading-tips/</guid>
+      
+        <description>&lt;h2 id=&#34;1-训练大脑&#34;&gt;1. 训练大脑&lt;/h2&gt;
+&lt;p&gt;第一，我们的大脑在阅读的时候起着关键性的作用。建议就是在阅读的时候，时刻关注你大脑的很多偏好，&lt;strong&gt;尽量避免受到无用信息的干扰和刺激&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;第二，我们要&lt;strong&gt;在自己精力充沛的时候阅读&lt;/strong&gt;，而不是在精力不足、状态不佳的时候阅读。&lt;/p&gt;
+&lt;p&gt;第三，&lt;strong&gt;我们要让自己集中注意力，也就是要带着目的和问题去阅读&lt;/strong&gt;。只有这样大脑才会知道，在读书的时候应该注意什么，应该关注什么。可以参考我的另一篇博文&lt;a href=&#34;https://nick17t.github.io/post/efficient-learning/&#34;&gt;Efficient Learning&lt;/a&gt;，学习以验收标准的方式学习。&lt;/p&gt;
+&lt;p&gt;第四，&lt;strong&gt;读书的时候要专注，提升你的专注力&lt;/strong&gt;。如果觉得有难度，可以尝试用番茄钟来帮助自己。（安利app-番茄todo）&lt;/p&gt;
+&lt;p&gt;第五，要增强记忆力，只有一个很笨的办法——&lt;strong&gt;复习&lt;/strong&gt;。这个反复熟悉的过程不是让你死记硬背，而是通过分享、测试、反复练习来提升你的记忆力。可以手写笔记，也可以通过写博客输出，用输出倒逼输入也是靠谱的方式。&lt;/p&gt;
+&lt;p&gt;第六，&lt;strong&gt;读书要从入门级的书开始阅读&lt;/strong&gt;，要让自己进入心流状态，要让自己的能力能应对当前的压力。如果觉得列夫 · 托尔斯泰的《战争与和平》或者马塞尔 · 普鲁斯特的《追忆似水年华》太难，就可以先读读圣埃克苏佩里的《小王子》、赫尔曼 · 黑塞的《悉达多》，让这些入门的小说培养自己的阅读兴趣，之后再去挑战难度大的书。&lt;/p&gt;
+&lt;p&gt;最后，一个建议是要&lt;strong&gt;养成阅读的习惯&lt;/strong&gt;。每天读多久都可以，只要包里有一本书能随时拿出来看，阅读的习惯就可以慢慢养成，毫不费力。&lt;/p&gt;
+&lt;h2 id=&#34;2-碎片阅读&#34;&gt;2. 碎片阅读&lt;/h2&gt;
+&lt;p&gt;碎片阅读不是说什么都学，而是有目的性地学习更多。也就是说，你要带着目的和兴趣从一堆东西里找到想要的。&lt;/p&gt;
+&lt;p&gt;碎片学习的本质是&lt;strong&gt;概念学习&lt;/strong&gt;，学会收集和积累概念。&lt;/p&gt;
+&lt;p&gt;利用印象笔记等工具&lt;strong&gt;对碎片化知识进行零存整取&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;通过提炼、链接、融化去&lt;strong&gt;构建知识体系&lt;/strong&gt;，把别人的东西变成自己的。&lt;/p&gt;
+&lt;p&gt;实际上你发现无论你收集了多少碎片化的内容，无论你懂得多少盖房子的道理，你都要适时地去&lt;strong&gt;分享&lt;/strong&gt;，因为在分享的时候，也是验证我们是否真的搞清楚了概念，同时也可以在教会别人的同时验证并巩固自己的方法。&lt;/p&gt;
+&lt;p&gt;要明确你每天都有哪些碎片时间可以利用；要知道在这些短暂的时间里，你都要做成哪些事情，然后充分做好自己的安排和计划。&lt;/p&gt;
+&lt;h2 id=&#34;3-快速阅读&#34;&gt;3. 快速阅读&lt;/h2&gt;
+&lt;p&gt;快速阅读有五个步骤：提问、预习、扫读、切重点、复习。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;提问&lt;/strong&gt;，在阅读之前要问问自己，我为什么要读这本书？我有没有读过类似的书？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;预习&lt;/strong&gt;，从目录和序言中，让作者这个导游告诉我们这本书是怎么写的，我们应该怎么读。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;扫读&lt;/strong&gt;，快速翻阅，标记重点关键片段。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;切重点&lt;/strong&gt;，重点去找书中和自己的问题有关联的部分。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;复习&lt;/strong&gt;，通过一些工具去收集和复习知识。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-卡片笔记法&#34;&gt;4. 卡片笔记法&lt;/h2&gt;
+&lt;p&gt;读书笔记的本质，就是从三大能力——学会独立思考、拥有好奇心、拥有检索能力——延伸出来的，即在获得大量信息的过程中，提取其中的精华，并且理解这些内容，之后，这些内容能够被我们更方便地应用。读书笔记是一个非常有用的工具，它的本质就是我们这一章的关键，我们会教大家如何获取、如何理解、如何应用读书笔记，把它变成我们重要的输出工具和帮手。&lt;/p&gt;
+&lt;p&gt;先做标记，用力所能及的方式去做各种标记；之后我们要去收集，要打开自己的思路，看看碎片化的收集和整体化的收集到底都有哪些渠道；然后我们要进行整理，建立私人图书馆；下一步是做输出和转化；最后是尝试去做应用和各种实践。最后，从书上的卡片变成我们输出自己的卡片。&lt;/p&gt;
+&lt;h2 id=&#34;5-主题阅读&#34;&gt;5. 主题阅读&lt;/h2&gt;
+&lt;p&gt;主题阅读有三种方式：“碎弹”、“爆破弹”、“核弹”。“碎弹” 是碎片化主题阅读；“爆破弹” 就是书籍式主题阅读；“核弹” 是长时间研究的主题阅读。&lt;/p&gt;
+&lt;p&gt;第一种是 “碎弹”——碎片化主题阅读，主要是用两种工具——即刻和云笔记来完成碎片化主题阅读。&lt;/p&gt;
+&lt;p&gt;第二种是 “爆破弹”，更多的是对书进行主题阅读，从最开始书单创建之前建立一个简单的认知，到建立书单、快速阅读、扫读、建立框架，到最后基于框架去寻找答案，一整套完整的流程。&lt;/p&gt;
+&lt;p&gt;第三种是 “核弹”，是我们基于一个主题做长期的计划，进行长期的研究。也就是用你能接触到的所有方法慢慢地一点一点往前推进。可能时机不成熟，也可能需要很长的时间，但是只要你一直在关注它，你就一直在学习它。&lt;/p&gt;
+&lt;h2 id=&#34;6-深度阅读&#34;&gt;6. 深度阅读&lt;/h2&gt;
+&lt;p&gt;阅读的幸福不是读了很多书，也不是读书速度有多快，而是把原来不懂的东西搞懂，原本纠结和迷惑的问题豁然开朗。这就是阅读的幸福。要获得这种幸福，就必须去理解所读的内容。某个知识点被我们不断地应用，不断地掌握，不断地去做分享，这种反复的过程就会让我们对这个知识理解得越来越透彻，掌握得越来越牢固。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;深度阅读的步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 寻找联系&lt;/strong&gt;，寻找练习的意思是当看到某句话或者某个概念的时候，要下意识地尝试分析该内容是否能够通过其他的现象解释。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 探索 &amp;ldquo;冰山&amp;rdquo;&lt;/strong&gt;，一个概念往往后面可能会有理论、原理等。概念是可以看到的，不能轻易看到的往往是背后的体系知识，而这些知识通常庞大且系统化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 多场景应用&lt;/strong&gt;，知道概念后如何使用。这时需要进行多场景的应用，尝试在不同的场景下自如地运行该理论。&lt;/p&gt;
+&lt;p&gt;深度阅读不是把一本书从头读到尾，也不是要记住所有的东西，更不是所有的经典书都适合深度阅读——深度阅读的内核在于理解。&lt;/p&gt;
+&lt;h2 id=&#34;7-总结&#34;&gt;7. 总结&lt;/h2&gt;
+&lt;p&gt;这本书介绍了各种读书方法从碎片阅读、快速阅读、主题阅读、深度阅读和读书笔记方面进行了介绍，这些方法也是我平时在实践的。&lt;/p&gt;
+&lt;p&gt;比如拿到一本书我要先去快速的了解，然后带着问题去读，过程中去标记觉得书中重要的内容，读完后整理读书笔记，和输出一些内容。&lt;/p&gt;
+&lt;p&gt;还有比较重要的就是要使用好一个知识管理工具，可以是各种云笔记，在线文档，博客等都可以，要记录整理，并纳入自己的知识体系中。&lt;/p&gt;
+&lt;p&gt;一本书可能是作者的一生的思想结晶，因此读书可能是世界上最划算的事情，所以一起读书吧。&lt;/p&gt;
+&lt;p&gt;​																												by《洋葱阅读法》，作者彭小六。&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;</description>
       
     </item>
     

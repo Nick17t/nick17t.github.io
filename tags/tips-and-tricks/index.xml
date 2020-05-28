@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tips and tricks on Nick17t</title>
+    <title>tips-and-tricks on Nick17t</title>
     <link>https://nick17t.github.io/tags/tips-and-tricks/</link>
-    <description>Recent content in tips and tricks on Nick17t</description>
+    <description>Recent content in tips-and-tricks on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 19 Mar 2020 23:45:32 +0800</lastBuildDate>
@@ -17,6 +17,15 @@
       <pubDate>Thu, 19 Mar 2020 23:45:32 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/tips-of-serach-and-shortcuts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading Tips</title>
+      <link>https://nick17t.github.io/post/reading-tips/</link>
+      <pubDate>Wed, 08 Jan 2020 13:51:14 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/reading-tips/</guid>
       <description></description>
     </item>
     
