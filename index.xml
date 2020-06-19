@@ -6,7 +6,7 @@
     <description>Recent content on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 12 Jul 2020 08:05:10 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2020 09:08:42 +0800</lastBuildDate>
     
         <atom:link href="https://nick17t.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,15 +45,42 @@
     </item>
     
     <item>
+      <title>KickStart Round D</title>
+      <link>https://nick17t.github.io/post/kickstart-round-d/</link>
+      <pubDate>Mon, 13 Jul 2020 09:08:42 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/kickstart-round-d/</guid>
+      
+        <description>&lt;p&gt;​	因为最近在参加 Google 的暑期夏令营。【2020 Google Next Exceptional X Talent Program】。所以参加了2020 Kick Start 的 Round D 轮比赛。&lt;/p&gt;
+&lt;p&gt;​	大二的时候了解过 Kick Start 。但当时 2018 年的题目要难很多。&lt;/p&gt;
+&lt;p&gt;​	根据查阅的资料，发现 Kick Start &lt;strong&gt;第一题&lt;/strong&gt; 一般较为简单，偶尔会需要一点技巧。根据题意得到一个能看出来的结论，搭配上简单的编程知识就可以AC ； &lt;strong&gt;第二题&lt;/strong&gt; 要复杂一些，一些经典题目的变化题或者是一些需要对常见算法理解比较深的问题，对于这类题目往往需要做题的人深刻理解了常见算法，能将其熟练运用； &lt;strong&gt;第三题&lt;/strong&gt; 最难，往往是一个数据结构进行优化的问题(比如线段树)。对于这一类问题，难点其实并不在于数据结构，因为只要化归到数据结构问题往往这题就已经做的差不多了。第三题的难点通常在于，如果通过分析问题的性质，来得到一个合理的做法，并将需要维护的内容转化为对应的数据结构，这往往已经是一般程度上的算法竞赛问题了，需要做题者有着大量的经验。&lt;/p&gt;
+&lt;p&gt;​	2020 年 Kick Start 降低了一些难度，从三道题增加到了四道题。 Kick Start 的题目有一些特别之处，数据分为是小数据和大数据，再加上罚时，是 acm 和 oi 结合起来的赛制。想要拿高分一定要把小数据部分分全部拿到，取得罚时优势，再拿大数据部分的分。同时题目给出了每个数据集的数据范围，也算一个提示。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1000左右是N^2的算法复杂度，可以考虑一下二维dp；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;100000左右是O(nlogn)和O(n^1.5)的算法复杂度，可以考虑一下二分和分块；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10^6/10^7是O(N)的复杂度，可能是个贪心题。&lt;/p&gt;
+&lt;p&gt;更多可以看&lt;a href=&#34;https://www.acwing.com/blog/content/32&#34;&gt;由数据范围反推算法复杂度以及算法内容&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>我的 Python 学习记录</title>
       <link>https://nick17t.github.io/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 12 Jul 2020 08:05:10 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
       
-        <description>&lt;h2 id=&#34;一序言&#34;&gt;一、序言&lt;/h2&gt;
+        <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&#34;一序言&#34;&gt;一、序言&lt;/h2&gt;
 &lt;p&gt;​	说 Python 是一门这两年最流行的语言也不为过，360行，行行学 Python。可能因为 Python 简单易上手，功能强大，免费开源&amp;hellip;&lt;/p&gt;
-&lt;h2 id=&#34;二基础入门&#34;&gt;二、基础入门：&lt;/h2&gt;
+&lt;h2 id=&#34;二基础入门&#34;&gt;二、基础入门&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;注释、变量、输入输出、转换数据类型&lt;/p&gt;
@@ -410,6 +437,255 @@ i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;c
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;name_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Lily&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Rose&amp;#39;&lt;/span&gt;]
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; name_list:
     &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;元组&#34;&gt;元组&lt;/h4&gt;
+&lt;p&gt;​		元组可以存储多个数据，元组内的数据是不能修改的。&lt;/p&gt;
+&lt;p&gt;​		特点：定义元组使用&lt;code&gt;()&lt;/code&gt;，且&lt;code&gt;,&lt;/code&gt;隔开各个数据，数据可以是不同的数据类型。&lt;/p&gt;
+&lt;h5 id=&#34;常用操作方法-2&#34;&gt;常用操作方法&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;index()&lt;/td&gt;
+&lt;td&gt;查找某个数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;count()&lt;/td&gt;
+&lt;td&gt;统计某个数据在当前元组出现的次数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;len()&lt;/td&gt;
+&lt;td&gt;统计元组中数据的个数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;tuple1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(tuple1)
+&lt;span style=&#34;color:#75715e&#34;&gt;#(10,)&lt;/span&gt;
+
+tuple2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(tuple2)
+&lt;span style=&#34;color:#75715e&#34;&gt;#10&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;字典&#34;&gt;字典&lt;/h4&gt;
+&lt;p&gt;​		字典里面的数据是以&lt;strong&gt;键值对&lt;/strong&gt;形式出现，字典数据和数据顺序没有关系，即字典不支持下标，后期无论数据如何变化，只需要按照对应的键的名字查找数据即可。&lt;/p&gt;
+&lt;p&gt;字典特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;符号为&lt;code&gt;大括号&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;数据为&lt;strong&gt;键值对&lt;/strong&gt;形式出现&lt;/li&gt;
+&lt;li&gt;各个键值对之间用&lt;strong&gt;逗号&lt;/strong&gt;隔开&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;定义字典&#34;&gt;定义字典&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;dict1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Python&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;age&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;}
+
+dict2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {}
+
+dict3 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dict()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;常见操作方法&#34;&gt;常见操作方法&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;增/改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;字典序列&lt;/span&gt;[key] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;值&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查找
+&lt;ul&gt;
+&lt;li&gt;字典序列[key]&lt;/li&gt;
+&lt;li&gt;keys()&lt;/li&gt;
+&lt;li&gt;values()&lt;/li&gt;
+&lt;li&gt;items()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;字典的循环遍历&#34;&gt;字典的循环遍历&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;dict1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Nick&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;age&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; key &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; dict1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keys():
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(key)
+&lt;span style=&#34;color:#75715e&#34;&gt;# name&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# age&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; dict1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;items():
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(item)
+&lt;span style=&#34;color:#75715e&#34;&gt;# (&amp;#39;name&amp;#39;, &amp;#39;Nick&amp;#39;)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# (&amp;#39;age&amp;#39;, 20)&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; key, value &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; dict1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;items():
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{key} = {value}&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#75715e&#34;&gt;# name = Nick&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# age = 20&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;集合&#34;&gt;集合&lt;/h4&gt;
+&lt;p&gt;​		创建集合使用&lt;code&gt;{}&lt;/code&gt;或&lt;code&gt;set()&lt;/code&gt;， 但是如果要创建空集合只能使用&lt;code&gt;set()&lt;/code&gt;，因为&lt;code&gt;{}&lt;/code&gt;用来创建空字典。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;s2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(s2)
+
+s3 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;abcdefg&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(s3)
+
+s4 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set()
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(type(s4))  &lt;span style=&#34;color:#75715e&#34;&gt;# set&lt;/span&gt;
+
+s5 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(type(s5))  &lt;span style=&#34;color:#75715e&#34;&gt;# dict&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;集合可以去掉重复数据；&lt;/li&gt;
+&lt;li&gt;集合数据是无序的，故不支持下标&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;常用操作方法-3&#34;&gt;常用操作方法&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;add()&lt;/td&gt;
+&lt;td&gt;由于set去重,故重复元素不添加&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;remove()&lt;/td&gt;
+&lt;td&gt;删除集合中的指定数据，如果数据不存在则报错。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;discard()&lt;/td&gt;
+&lt;td&gt;删除集合中的指定数据，如果数据不存在也不会报错。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;in()&lt;/td&gt;
+&lt;td&gt;判断数据在集合序列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;not in()&lt;/td&gt;
+&lt;td&gt;判断数据不在集合序列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;总结&#34;&gt;总结&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;创建集合&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有数据集合&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;s1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;数据&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;数据&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;无数据集合&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;s1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常见操作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;增加数据
+&lt;ul&gt;
+&lt;li&gt;add()&lt;/li&gt;
+&lt;li&gt;update()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;删除数据
+&lt;ul&gt;
+&lt;li&gt;remove()&lt;/li&gt;
+&lt;li&gt;discard()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;公共操作&#34;&gt;公共操作&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;运算符  &amp;lsquo;*&amp;rsquo;  &amp;lsquo;+&amp;rsquo;
+&lt;ul&gt;
+&lt;li&gt;in / not in&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;公共方法
+&lt;ul&gt;
+&lt;li&gt;len()&lt;/li&gt;
+&lt;li&gt;del()&lt;/li&gt;
+&lt;li&gt;range()&lt;/li&gt;
+&lt;li&gt;enumerate()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;len()&lt;/td&gt;
+&lt;td&gt;计算容器中元素个数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;del 或 del()&lt;/td&gt;
+&lt;td&gt;删除&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;max()&lt;/td&gt;
+&lt;td&gt;返回容器中元素最大值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;min()&lt;/td&gt;
+&lt;td&gt;返回容器中元素最小值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;range(start, end, step)&lt;/td&gt;
+&lt;td&gt;生成从start到end的数字，步长为 step，供for循环使用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;enumerate()&lt;/td&gt;
+&lt;td&gt;函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;enumerate(可遍历对象, start=0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;list1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;b&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;d&amp;#39;&lt;/span&gt;]
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; enumerate(list1):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; index, char &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; enumerate(list1, start&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;下标是{index}时, 对应字符为{char}&amp;#39;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# (0, &amp;#39;a&amp;#39;)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# (1, &amp;#39;b&amp;#39;)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# (2, &amp;#39;c&amp;#39;)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# (3, &amp;#39;d&amp;#39;)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# 下标是1时, 对应字符为a&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# 下标是2时, 对应字符为b&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# 下标是3时, 对应字符为c&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# 下标是4时, 对应字符为d&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;数据类型转换
+&lt;ul&gt;
+&lt;li&gt;tuple()&lt;/li&gt;
+&lt;li&gt;list()&lt;/li&gt;
+&lt;li&gt;set()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;推导式&#34;&gt;推导式&lt;/h4&gt;
+&lt;p&gt;用于简化代码&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;写法&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 列表推导式&lt;/span&gt;
+[xx &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; xx &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range()]
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 字典推导式&lt;/span&gt;
+{xx1: xx2 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;}
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 集合推导式&lt;/span&gt;
+{xx &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; xx &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       
     </item>
@@ -2198,74 +2474,6 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;li&gt;&lt;a href=&#34;https://tech.meituan.com/&#34;&gt;美团技术团队&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;由美团技术团队主办，每期沙龙邀请美团及其他互联网公司的技术专家分享来自一线的实践经验，覆盖前端、后台、系统、算法、测试、运维等技术领域。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Maximum Value of the Queue</title>
-      <link>https://nick17t.github.io/post/maximum-value-of-the-queue/</link>
-      <pubDate>Sat, 07 Mar 2020 20:23:12 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/maximum-value-of-the-queue/</guid>
-      
-        <description>&lt;h4 id=&#34;面试题59---ii-队列的最大值httpsleetcode-cncomproblemsdui-lie-de-zui-da-zhi-lcof&#34;&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/&#34;&gt;面试题59 - II. 队列的最大值&lt;/a&gt;&lt;/h4&gt;
-&lt;h3 id=&#34;题目卡片&#34;&gt;题目卡片&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;时间： 2020-03-07&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Tag：   Sliding Window&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;题目描述：&lt;/p&gt;
-&lt;p&gt;​		请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的时间复杂度都是O(1)。若队列为空，pop_front 和 max_value 需要返回 -1&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;用ArrayList来模拟队列，一个存储队列数据，一个存储最大值&lt;/li&gt;
-&lt;li&gt;入队：如果当前值大于队尾元素，就移除原来较小的元素；否则就将当前值添加到队尾，保证当最大值滑出窗口后，队列依然有最大值&lt;/li&gt;
-&lt;li&gt;出队：弹出队列头，但是还需要判断弹出的是不是最大值，是的话，就给最大值给移除&lt;/li&gt;
-&lt;li&gt;队列的最大值就是 最大值队列的队头&lt;/li&gt;
-&lt;li&gt;因为队头和尾都会删除元素，所以我们需要一个双端开口的队列deque来存放队列数据。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MaxQueue&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    Queue&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; que&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-    Deque&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; deq&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MaxQueue&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        que &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; LinkedList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;();&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//队列：插入和删除
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        deq &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; LinkedList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;();&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//双端队列：获取最大值
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;max_value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;gt;&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;peek&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;():-&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//双端队列的队首为que的最大值
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;push_back&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        que&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;offer&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//value入队
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;gt;&lt;/span&gt;0 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;peekLast&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;lt;&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
-            deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;pollLast&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//将deq队尾小于value的元素删掉
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-        deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;offerLast&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//将value放在deq队尾
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pop_front&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; tmp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; que&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;gt;&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;que&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;poll&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;():-&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//获得队首元素
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&amp;gt;&lt;/span&gt;0 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; tmp&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;peek&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()){&lt;/span&gt;
-            deq&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;poll&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//如果出队的元素是当前最大值，将deq的队首出队
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; tmp&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       
     </item>
     

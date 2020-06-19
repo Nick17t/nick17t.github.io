@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 12 Jul 2020 08:05:10 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2020 09:08:42 +0800</lastBuildDate>
     
 	<atom:link href="https://nick17t.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kick Start</title>
+      <link>https://nick17t.github.io/tags/kick-start/</link>
+      <pubDate>Mon, 13 Jul 2020 09:08:42 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/tags/kick-start/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>python basis</title>
@@ -179,15 +188,6 @@
       <pubDate>Wed, 15 Jan 2020 10:23:14 +0800</pubDate>
       
       <guid>https://nick17t.github.io/tags/learning-method/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips and tricks</title>
-      <link>https://nick17t.github.io/tags/tips-and-tricks/</link>
-      <pubDate>Wed, 08 Jan 2020 13:51:14 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/tags/tips-and-tricks/</guid>
       <description></description>
     </item>
     
