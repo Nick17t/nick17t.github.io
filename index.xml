@@ -6,7 +6,7 @@
     <description>Recent content on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 21 Mar 2020 21:38:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 01:37:53 +0800</lastBuildDate>
     
         <atom:link href="https://nick17t.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -41,6 +41,123 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>keep an open mind</title>
+      <link>https://nick17t.github.io/post/keep-an-open-mind/</link>
+      <pubDate>Mon, 29 Jun 2020 01:37:53 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/keep-an-open-mind/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;永远保持开放心态  永远不给自己设限  永远保持谦虚&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;首先给自己做个测试：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;和别人讨论时是否总觉得自己是对的&lt;/li&gt;
+&lt;li&gt;与人交流时是否喜欢打断别人&lt;/li&gt;
+&lt;li&gt;是否提过也许你是对的，但我有别的想法&lt;/li&gt;
+&lt;li&gt;是否总习惯在自己的舒适圈里&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;拥有开放心态的特征：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;一直在求知&lt;/li&gt;
+&lt;li&gt;承认自己有认知盲点&lt;/li&gt;
+&lt;li&gt;关注正确的答案本身，而不是找到答案的人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;总结方法：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;永远告诉自己，错的人就是我&lt;/li&gt;
+&lt;li&gt;计算SB速率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;学会链接比自己优秀的人&#34;&gt;学会链接比自己优秀的人&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;寻找比自己优秀的人&lt;/li&gt;
+&lt;li&gt;找他们聊天&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;非暴力沟通&#34;&gt;非暴力沟通&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;一起做个测试：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;被领导批评后是否陷入消极情绪&lt;/li&gt;
+&lt;li&gt;和同事合作不愉快是否会对同事进行负面评论&lt;/li&gt;
+&lt;li&gt;工作不开心时是否会选择逃避&lt;/li&gt;
+&lt;li&gt;和伴侣吵架时是否容易胡思乱想&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;正确的方法:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;观察事实&lt;/li&gt;
+&lt;li&gt;表达感受而不是观点&lt;/li&gt;
+&lt;li&gt;挖掘感受的来源&lt;/li&gt;
+&lt;li&gt;清晰表达自己的诉求&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://nick17t.github.io/post/ubuntu/</link>
+      <pubDate>Mon, 15 Jun 2020 09:15:28 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/ubuntu/</guid>
+      
+        <description>&lt;h2 id=&#34;使用win10下的ubuntu子系统&#34;&gt;使用Win10下的Ubuntu子系统&lt;/h2&gt;
+&lt;p&gt;​	在window2004更新中，最重要的就是WSL2和Terminal的更新了。Windows Subsystem for Linux（WSL）是一个可以直接执行Linux二进制可执行文件（ELF）的兼容层。&lt;/p&gt;
+&lt;p&gt;​	详细安装步骤请看：&lt;a href=&#34;https://docs.microsoft.com/zh-tw/windows/wsl/install-win10&#34;&gt;Windows 10 上使用于Linux 的 Windows 子系統安裝指南&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;wsl2-的优势&#34;&gt;WSL2 的优势&lt;/h3&gt;
+&lt;p&gt;​	WSL2 是一个跑在虚拟机中的完整 Linux，相比WSL，功能方面更加强大。能做到如下这些 WSL 做不到的事情：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;网卡管理、网络抓包、查看网络连接状态、防火墙等较底层的网络相关功能。&lt;/li&gt;
+&lt;li&gt;挂载文件（如 ext4 文件、squashfs 文件）和网络资源（如 nfs、ssh ）到本地。&lt;/li&gt;
+&lt;li&gt;tmpfs （在 /run/shm 或者 /dev/shm，/tmp 不是）。&lt;/li&gt;
+&lt;li&gt;完整的 cgroups，因此可以运行 Docker 等容器。&lt;/li&gt;
+&lt;li&gt;完整的 IPC （ WSL 缺失一部分，比如运行不了 fakeroot ）。&lt;/li&gt;
+&lt;li&gt;可修改内核参数、添加内核模块，以及替换内核。因此可以支持很多更底层的应用。&lt;/li&gt;
+&lt;li&gt;因为之上的这些原因，WSL2 可以更好地享受完整 Linux 系统带来的方便，不需要因为 WSL 的功能缺失而使用各种迂回方法。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;wsl2-的劣势&#34;&gt;WSL2 的劣势&lt;/h3&gt;
+&lt;p&gt;功能方面的劣势，主要是和本机系统（即 Windows 宿主机）整合相关的。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;进程不再会显示在任务管理器里，也无法在 WSL2 外操作，包括不再支持本机系统的防火墙规则。&lt;/li&gt;
+&lt;li&gt;无法通过 localhost （ 127.0.0.1 ）访问本机系统监听的端口（也许以后会支持。目前用 localhost 是可以从本机系统访问 WSL2 的），只能通过其他 IP。&lt;/li&gt;
+&lt;li&gt;默认无法从其他机器访问到 WSL2 中监听的端口，需要在本机系统设置端口转发（如 netsh interface portproxy add ）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;但微软方后续这些都可能会优化，技术上没有难题。&lt;/p&gt;
+&lt;h3 id=&#34;wsl2-的功能缺失相对于原生的包括虚拟机中的-linux&#34;&gt;WSL2 的功能缺失，相对于原生的（包括虚拟机中的） Linux&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;没有声音、显示系统，和 WSL 一致。但有迂回办法（不包括显卡计算）。&lt;/li&gt;
+&lt;li&gt;不能访问本机系统的 USB 设备（但可以访问已经在本机系统挂载的硬盘、U 盘、光盘等）、串口设备（这个 WSL 已经支持，WSL2 之后也会支持）、PCI 设备等等。&lt;/li&gt;
+&lt;li&gt;网卡管理相关功能不全，比如不能设置静态 IP、不能桥接、不能访问网卡硬件等等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;但 WSL2 的文件系统镜像可以直接使用 Hyper-V 挂载（可以一个镜像两用，不能同时运行），这样功能比 WSL2 要强一些（比如有显示系统、网卡管理、串口设备支持、受限的本机硬盘直通等等），但还是有一些功能缺失。&lt;/p&gt;
+&lt;h2 id=&#34;性能&#34;&gt;性能&lt;/h2&gt;
+&lt;p&gt;性能方面，WSL 和 WSL2 各有优势。如果不和本机系统交互，WSL2 的性能非常不错，但访问本机系统的文件会下降很多。&lt;/p&gt;
+&lt;h3 id=&#34;wsl2-的优势-1&#34;&gt;WSL2 的优势&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;进程启动开销大大减少，需要频繁启动进程的场景性能大幅提升。&lt;/li&gt;
+&lt;li&gt;本地磁盘（不包括挂载的 /mnt/*）读写性能大幅提升。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;wsl2-的劣势-1&#34;&gt;WSL2 的劣势&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;通过 9p 挂载的本机系统文件（/mnt/*）和 WSL 中的 drvfs 相比，读写性能大幅下降，主要体现在读取大量小文件场景（比如文件数上百后，ls -l、file *、head -n1 *、git status/diff/&amp;hellip; 等等命令会有明显卡顿，耗时为 WSL 中的几倍甚至十几倍）。但仅仅列文件名（ ls 要比 ls -l 快几个数量级）或者操作大文件（比如用 dd 读写大文件感觉不到慢）基本没影响。&lt;/li&gt;
+&lt;li&gt;内存占用比 WSL 高很多。基本运行起来后就要占 300M 以上（要看 Vmmem 进程，而不是终端模拟器）。而且读写大量本地系统文件（/mnt/*）后内存会飙升，至少有些情况不会回落，即使其他软件将内存快耗尽了 Vmmem 内存占用也不会下降。&lt;/li&gt;
+&lt;li&gt;首次启动比 WSL 慢，但平时不需要退出（ wsl &amp;ndash;shutdown，可以用它来释放内存），可以认为没影响。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其中 1 也许可以大幅优化，2 之后很可能会优化。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;​	总体说功能上变得更强大了，但和本机系统交互的相关功能有所减弱，用起来没有之前方便了。性能上如果不需要和本机系统交互，提升很显著，但如果需要读写本机系统硬盘的文件，性能下降很明显。&lt;/p&gt;
+&lt;p&gt;、&lt;/p&gt;</description>
       
     </item>
     
@@ -107,10 +224,10 @@
     
     <item>
       <title>Technical Articles Summary</title>
-      <link>https://nick17t.github.io/post/resource-summary/</link>
+      <link>https://nick17t.github.io/post/technical-articles-summary/</link>
       <pubDate>Sat, 23 May 2020 23:49:50 +0800</pubDate>
       
-      <guid>https://nick17t.github.io/post/resource-summary/</guid>
+      <guid>https://nick17t.github.io/post/technical-articles-summary/</guid>
       
         <description>&lt;h2 id=&#34;summary-of-good-technical-articles&#34;&gt;Summary of good technical articles&lt;/h2&gt;
 &lt;table&gt;
@@ -206,7 +323,7 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;22. &lt;a href=&#34;https://www.jianshu.com/p/a33069eed3a9&#34;&gt;软件测试艺术笔记&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1235,7 +1352,11 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie&#34;&gt;labuladong的算法小抄&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;leetcode刷题指导。&lt;/p&gt;</description>
+&lt;p&gt;leetcode刷题指导。&lt;/p&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://tech.meituan.com/&#34;&gt;美团技术团队&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;由美团技术团队主办，每期沙龙邀请美团及其他互联网公司的技术专家分享来自一线的实践经验，覆盖前端、后台、系统、算法、测试、运维等技术领域。&lt;/p&gt;</description>
       
     </item>
     
@@ -1330,7 +1451,7 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;题目挺简单的，按着题目描述来可暴力求解。&lt;/p&gt;
-&lt;p&gt;&amp;quot;对小朋友们进行遍历，每次都发小朋友们应得数量的糖，直到剩下的糖不足以分发应得数量，就直接给最后那位倒霉孩子。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;对小朋友们进行遍历，每次都发小朋友们应得数量的糖，直到剩下的糖不足以分发应得数量，就直接给最后那位倒霉孩子。&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Solution&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;

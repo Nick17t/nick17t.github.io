@@ -10,7 +10,56 @@
   
   <url>
     <loc>https://nick17t.github.io/categories/</loc>
-    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
+    <lastmod>2020-06-29T01:37:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/keep-an-open-mind/</loc>
+    <lastmod>2020-06-29T01:37:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/</loc>
+    <lastmod>2020-06-29T01:37:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/</loc>
+    <lastmod>2020-06-29T01:37:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/categories/reading-notes/</loc>
+    <lastmod>2020-06-29T01:37:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/</loc>
+    <lastmod>2020-06-29T01:37:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/thought/</loc>
+    <lastmod>2020-06-29T01:37:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/ubuntu/</loc>
+    <lastmod>2020-06-15T09:15:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,20 +73,6 @@
   
   <url>
     <loc>https://nick17t.github.io/categories/interview/</loc>
-    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/post/</loc>
-    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/tags/</loc>
     <lastmod>2020-05-28T14:32:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -65,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/post/resource-summary/</loc>
+    <loc>https://nick17t.github.io/post/technical-articles-summary/</loc>
     <lastmod>2020-05-23T23:49:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -142,13 +177,6 @@
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/</loc>
-    <lastmod>2020-05-25T21:41:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://nick17t.github.io/post/tips-of-serach-and-shortcuts/</loc>
     <lastmod>2020-03-19T23:45:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -220,13 +248,6 @@
   
   <url>
     <loc>https://nick17t.github.io/post/structured-thinking/</loc>
-    <lastmod>2020-02-17T15:40:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/tags/thought/</loc>
     <lastmod>2020-02-17T15:40:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
