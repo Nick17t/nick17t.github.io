@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Computer Basics</title>
-      <link>https://nick17t.github.io/tags/computer-basics/</link>
+      <title>HTTPS</title>
+      <link>https://nick17t.github.io/tags/https/</link>
       <pubDate>Sun, 05 Jul 2020 21:24:56 +0800</pubDate>
       
-      <guid>https://nick17t.github.io/tags/computer-basics/</guid>
+      <guid>https://nick17t.github.io/tags/https/</guid>
       <description></description>
     </item>
     
@@ -84,20 +84,29 @@
     </item>
     
     <item>
-      <title>mysql</title>
-      <link>https://nick17t.github.io/tags/mysql/</link>
+      <title>sql statement</title>
+      <link>https://nick17t.github.io/tags/sql-statement/</link>
       <pubDate>Fri, 17 Apr 2020 20:43:57 +0800</pubDate>
       
-      <guid>https://nick17t.github.io/tags/mysql/</guid>
+      <guid>https://nick17t.github.io/tags/sql-statement/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tips-and-tricks</title>
+      <title>tips and tricks</title>
       <link>https://nick17t.github.io/tags/tips-and-tricks/</link>
       <pubDate>Thu, 19 Mar 2020 23:45:32 +0800</pubDate>
       
       <guid>https://nick17t.github.io/tags/tips-and-tricks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://nick17t.github.io/tags/blog/</link>
+      <pubDate>Tue, 17 Mar 2020 20:42:19 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/tags/blog/</guid>
       <description></description>
     </item>
     
@@ -116,6 +125,15 @@
       <pubDate>Thu, 05 Mar 2020 23:42:19 +0800</pubDate>
       
       <guid>https://nick17t.github.io/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Method</title>
+      <link>https://nick17t.github.io/tags/learning-method/</link>
+      <pubDate>Wed, 15 Jan 2020 10:23:14 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/tags/learning-method/</guid>
       <description></description>
     </item>
     

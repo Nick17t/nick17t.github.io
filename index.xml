@@ -1179,13 +1179,13 @@ SQL 的注入，检索 SQL SELECT 语句等
     </item>
     
     <item>
-      <title>Mysql Exercise</title>
+      <title>MySQL Exercise</title>
       <link>https://nick17t.github.io/post/mysql-exercise/</link>
       <pubDate>Fri, 17 Apr 2020 20:43:57 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/mysql-exercise/</guid>
       
-        <description>&lt;h2 id=&#34;mysql&#34;&gt;Mysql&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
 &lt;h3 id=&#34;建表语句&#34;&gt;建表语句&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; course
 (

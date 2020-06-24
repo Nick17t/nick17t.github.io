@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning Method on Nick17t</title>
+    <link>https://nick17t.github.io/tags/learning-method/</link>
+    <description>Recent content in Learning Method on Nick17t</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 15 Jan 2020 10:23:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://nick17t.github.io/tags/learning-method/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用验收标准法和迭代思考法进行高效学习</title>
+      <link>https://nick17t.github.io/post/efficient-learning/</link>
+      <pubDate>Wed, 15 Jan 2020 10:23:14 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/efficient-learning/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
