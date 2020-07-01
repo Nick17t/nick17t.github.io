@@ -58,7 +58,7 @@
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/tags/interview/</loc>
+    <loc>https://nick17t.github.io/tags/exercise-notes/</loc>
     <lastmod>2020-07-04T21:17:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -121,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/tags/linux/</loc>
-    <lastmod>2020-06-15T09:15:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://nick17t.github.io/categories/linux/</loc>
     <lastmod>2020-06-15T09:15:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -142,6 +135,20 @@
   </url>
   
   <url>
+    <loc>https://nick17t.github.io/tags/wsl/</loc>
+    <lastmod>2020-06-15T09:15:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/interview/</loc>
+    <lastmod>2020-05-28T14:32:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://nick17t.github.io/post/my-interview-preparation/</loc>
     <lastmod>2020-05-28T14:32:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -149,7 +156,7 @@
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/tags/resource/</loc>
+    <loc>https://nick17t.github.io/tags/nice-articles/</loc>
     <lastmod>2020-05-23T23:49:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -240,7 +247,7 @@
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/tags/tips-and-tricks/</loc>
+    <loc>https://nick17t.github.io/tags/serach-ability/</loc>
     <lastmod>2020-03-19T23:45:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -249,6 +256,13 @@
   <url>
     <loc>https://nick17t.github.io/post/tips-of-serach-and-shortcuts/</loc>
     <lastmod>2020-03-19T23:45:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/resume/</loc>
+    <lastmod>2020-03-18T10:45:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -310,13 +324,6 @@
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/categories/thought/</loc>
-    <lastmod>2020-02-17T15:40:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://nick17t.github.io/post/what-are-the-qa-interview-questions/</loc>
     <lastmod>2020-02-02T23:46:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -339,6 +346,13 @@
   
   <url>
     <loc>https://nick17t.github.io/post/reading-tips/</loc>
+    <lastmod>2020-01-08T13:51:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/tips-and-tricks/</loc>
     <lastmod>2020-01-08T13:51:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

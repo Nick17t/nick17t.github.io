@@ -21,11 +21,11 @@
     </item>
     
     <item>
-      <title>interview</title>
-      <link>https://nick17t.github.io/tags/interview/</link>
+      <title>Exercise notes</title>
+      <link>https://nick17t.github.io/tags/exercise-notes/</link>
       <pubDate>Sat, 04 Jul 2020 21:17:32 +0800</pubDate>
       
-      <guid>https://nick17t.github.io/tags/interview/</guid>
+      <guid>https://nick17t.github.io/tags/exercise-notes/</guid>
       <description></description>
     </item>
     
@@ -48,20 +48,29 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://nick17t.github.io/tags/linux/</link>
+      <title>wsl</title>
+      <link>https://nick17t.github.io/tags/wsl/</link>
       <pubDate>Mon, 15 Jun 2020 09:15:28 +0800</pubDate>
       
-      <guid>https://nick17t.github.io/tags/linux/</guid>
+      <guid>https://nick17t.github.io/tags/wsl/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>resource</title>
-      <link>https://nick17t.github.io/tags/resource/</link>
+      <title>interview</title>
+      <link>https://nick17t.github.io/tags/interview/</link>
+      <pubDate>Thu, 28 May 2020 14:32:33 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/tags/interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nice Articles</title>
+      <link>https://nick17t.github.io/tags/nice-articles/</link>
       <pubDate>Sat, 23 May 2020 23:49:50 +0800</pubDate>
       
-      <guid>https://nick17t.github.io/tags/resource/</guid>
+      <guid>https://nick17t.github.io/tags/nice-articles/</guid>
       <description></description>
     </item>
     
@@ -93,11 +102,20 @@
     </item>
     
     <item>
-      <title>tips and tricks</title>
-      <link>https://nick17t.github.io/tags/tips-and-tricks/</link>
+      <title>Serach ability</title>
+      <link>https://nick17t.github.io/tags/serach-ability/</link>
       <pubDate>Thu, 19 Mar 2020 23:45:32 +0800</pubDate>
       
-      <guid>https://nick17t.github.io/tags/tips-and-tricks/</guid>
+      <guid>https://nick17t.github.io/tags/serach-ability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resume</title>
+      <link>https://nick17t.github.io/tags/resume/</link>
+      <pubDate>Wed, 18 Mar 2020 10:45:32 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/tags/resume/</guid>
       <description></description>
     </item>
     
@@ -134,6 +152,15 @@
       <pubDate>Wed, 15 Jan 2020 10:23:14 +0800</pubDate>
       
       <guid>https://nick17t.github.io/tags/learning-method/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips and tricks</title>
+      <link>https://nick17t.github.io/tags/tips-and-tricks/</link>
+      <pubDate>Wed, 08 Jan 2020 13:51:14 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/tags/tips-and-tricks/</guid>
       <description></description>
     </item>
     
