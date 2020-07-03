@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Nick17t</title>
+    <link>https://nick17t.github.io/tags/linux/</link>
+    <description>Recent content in linux on Nick17t</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 15 Jun 2020 09:15:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://nick17t.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://nick17t.github.io/post/ubuntu/</link>
+      <pubDate>Mon, 15 Jun 2020 09:15:28 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
