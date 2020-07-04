@@ -90,6 +90,137 @@
     </item>
     
     <item>
+      <title>笔试题错题整理</title>
+      <link>https://nick17t.github.io/post/%E7%AC%94%E8%AF%95%E9%A2%98%E9%94%99%E9%A2%98%E6%95%B4%E7%90%86/</link>
+      <pubDate>Sat, 04 Jul 2020 21:17:32 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/%E7%AC%94%E8%AF%95%E9%A2%98%E9%94%99%E9%A2%98%E6%95%B4%E7%90%86/</guid>
+      
+        <description>&lt;h1 id=&#34;笔试题错题整理&#34;&gt;笔试题错题整理&lt;/h1&gt;
+&lt;h3 id=&#34;测试类&#34;&gt;测试类&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;无效等价类&lt;/strong&gt; 是指对于软件规格说明而言，没有意义的、不合理的输入数据集合。利用无效等价类，可以找出程序异常说明情况，检查程序的功能和性能的实现是否有不符合规格说明要求的地方&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;六种覆盖方法&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语句覆盖&lt;/th&gt;
+&lt;th&gt;主要特点：语句覆盖是最起码的结构覆盖要求，语句覆盖要求设计足够多的测试用例，使得程序中每条语句至少被执行一次。&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;判定覆盖&lt;/td&gt;
+&lt;td&gt;主要特点：判定覆盖又称为分支覆盖，它要求设计足够多的测试用例，使得程序中每个判定至少有一次为真值，有一次为假值，即：程序中的每个分支至少执行一次。每个判断的取真、取假至少执行一次。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;条件覆盖&lt;/td&gt;
+&lt;td&gt;主要特点：条件覆盖要求设计足够多的测试用例，使得判定中的每个条件获得各种可能的结果，即每个条件至少有一次为真值，有一次为假值。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;判定/条件覆盖&lt;/td&gt;
+&lt;td&gt;主要特点：设计足够多的测试用例，使得判定中每个条件的所有可能结果至少出现一次，每个判定本身所有可能结果也至少出现一次。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;组合覆盖&lt;/td&gt;
+&lt;td&gt;主要特点：要求设计足够多的测试用例，使得每个判定中条件结果的所有可能组合至少出现一次。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;路径覆盖&lt;/td&gt;
+&lt;td&gt;主要特点：设计足够的测试用例，覆盖程序中所有可能的路径。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;判定覆盖只关心判定表达式的值（真/假），而条件覆盖涉及到判定表达式的每个条件的值（真/假）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;非增量测试模型&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;非增量&amp;ndash;每个模块测试完了再连接；&lt;/p&gt;
+&lt;p&gt;增量：测一个模块，就连接一个模块。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;alpha、beta测试&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;模块测试是单元测试，alpha测试是验收测试，模块测试应该在alpha测试之前，alpha测试是公司内部用户模拟受控环境参加的测试，beta测试是用户参与的测试，没有开发者参与&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;排序&#34;&gt;排序&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;直接选择排序：前面逐渐有序，每次从后面的无序数列中找最大或最小继续添加到前面有序数列中，两两交换需要一个辅助空间&lt;/li&gt;
+&lt;li&gt;直接插入排序：类似打斗地主，每次抓一张牌，从后往前比较，把新抓的牌放到合适大小的位置，两两交换需要一个辅助空间&lt;/li&gt;
+&lt;li&gt;冒泡排序：每次把当前无序数列中最大或最小的数交换到此无序数量的最后，两两交换需要一个辅助空间&lt;/li&gt;
+&lt;li&gt;归并排序：分治法把当前待排数组分成多个子序列，先使每个子序列有序，再使子序列段间有序，需要 O(n) 的辅助空间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;命令参数&lt;/p&gt;
+&lt;p&gt;history:显示历史记录和执行过的指令&lt;/p&gt;
+&lt;p&gt;|:管道，上一条命令的输出作为下一条命令的参数&lt;/p&gt;
+&lt;p&gt;grep:搜索&lt;/p&gt;
+&lt;p&gt;grep -w p:只匹配p&lt;/p&gt;
+&lt;p&gt;grep -v p:反向查找，不包含p的行&lt;/p&gt;
+&lt;p&gt;wc -w:统计字数&lt;/p&gt;
+&lt;p&gt;wc -I:统计行数&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
+&lt;h5 id=&#34;1list&#34;&gt;1、list&lt;/h5&gt;
+&lt;p&gt;（1）构造list，使用[ ]把list的所有元素都括起来就是一个列表，用变量L表示。其中的元素不要求是同一种数据类型。&lt;/p&gt;
+&lt;p&gt;（2）&lt;strong&gt;列表中元素是有序的&lt;/strong&gt;。可以通过索引来访问。&lt;/p&gt;
+&lt;p&gt;（3）访问list的元素，L[0]：表示列表中的第一个元素，L[-1]：表示列表中的最后一个元素。&lt;/p&gt;
+&lt;p&gt;​     L[起始索引:终止索引]：表示访问列表中的多个元素，包含头，不包含尾。&lt;/p&gt;
+&lt;p&gt;（4）&lt;strong&gt;列表是可以被修改的&lt;/strong&gt;，包括添加元素，删除元素，替换元素。&lt;/p&gt;
+&lt;p&gt;​			1）添加元素：L.append(元素)、L.insert(元素插入到列表中的位置，元素)&lt;/p&gt;
+&lt;p&gt;​			2）删除元素：L.pop()&amp;lt;==&amp;gt;L.pop(-1)，L.pop(要删除元素在列表中的位置)、L.remove(要删除元素)，删除列表中第一次匹			配到的元素&lt;/p&gt;
+&lt;p&gt;​			3）替换元素：L[要替换元素在列表中的位置]=新的元素值&lt;/p&gt;
+&lt;p&gt;（5）计算列表的长度：len(L)&lt;/p&gt;
+&lt;p&gt;（6）计算列表中某一个元素在列表中出现的次数：L.count(要统计的元素)&lt;/p&gt;
+&lt;p&gt;（7）列表拼接，用+，L1=[1,2],L2=[3,4],L1+L2=[1,2,3,4]&lt;/p&gt;
+&lt;p&gt;（8）列表中元素复制，用*，L= [2,3],L*3 = [2,3,2,3,2,3]&lt;/p&gt;
+&lt;h5 id=&#34;2tuple&#34;&gt;2、tuple&lt;/h5&gt;
+&lt;p&gt;（1）构造tuple，使用（）把tuple的所有元素都括起来就是一个元组，用变量T表示。python规定只有单个元素的元组应表示成（元素，），避&lt;/p&gt;
+&lt;p&gt;免歧义。其中的元素不要求是同一种数据类型。&lt;/p&gt;
+&lt;p&gt;（2）&lt;strong&gt;元组中元素是有序的&lt;/strong&gt;。可以通过索引访问。&lt;/p&gt;
+&lt;p&gt;（3）访问tuple的元素，T[0]：表示元组中的第一个元素，T[-1]：表示元组中的最后一个元素。&lt;/p&gt;
+&lt;p&gt;（4）&lt;strong&gt;元组是不可以被修改的&lt;/strong&gt;，因此它没有append（）、insert（）、pop（）等方法。&lt;/p&gt;
+&lt;p&gt;​			注意：元组中可以包含列表，如T= （1，2，[4，5]），&lt;/p&gt;
+&lt;p&gt;​						T[2] = [ ],错误&lt;/p&gt;
+&lt;p&gt;​						T[2][0] =5,正确&lt;/p&gt;
+&lt;h5 id=&#34;3dict&#34;&gt;3、dict&lt;/h5&gt;
+&lt;p&gt;（1）构造dict，使用{ }把dict所有元素都括起来就是一个字典，用D表示。D中元素的形式是key：value的形式。其中的key或者value都不要求是&lt;/p&gt;
+&lt;p&gt;同一种数据类型。&lt;/p&gt;
+&lt;p&gt;（2）&lt;strong&gt;字典中元素是无序的&lt;/strong&gt;。不可以通过索引访问。&lt;/p&gt;
+&lt;p&gt;（3）访问dict的元素，使用D[key]来查找对应的value。如果key不存在，则会报错。为避免报错：&lt;/p&gt;
+&lt;p&gt;​			1）访问前先判断&lt;/p&gt;
+&lt;p&gt;​					if key in D：&lt;/p&gt;
+&lt;p&gt;​						print（D[key]）&lt;/p&gt;
+&lt;p&gt;​			2）使用get()方法&lt;/p&gt;
+&lt;p&gt;​					print(D.get[key])，key不存在会输出None&lt;/p&gt;
+&lt;p&gt;（4）&lt;strong&gt;字典是可以被修改的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;D[key] = 新的value，如果key不存在，则会想字典中添加这一键值对。&lt;/p&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;p&gt;字典的一个最明显的特点是查找速度快，无论字典中有多少个数据，查找的速度都是一样的，因为它是按照key来查找的。但是它占用的内存大。典型的以空间换时间的思想。&lt;/p&gt;
+&lt;h5 id=&#34;4set&#34;&gt;4、set&lt;/h5&gt;
+&lt;p&gt;（1）构建set，S = set(传入一个列表)，或者S = {元素1，元素2，&amp;hellip;.}。其中的元素不要求是同一种数据类型。如：&lt;/p&gt;
+&lt;p&gt;S= set（[1,2,3,3,4,5]）&lt;/p&gt;
+&lt;p&gt;print(S) #{1,2,3,4,5}&lt;/p&gt;
+&lt;p&gt;注意：创建空集合只能使用S = set()，而不能使用S = { }，这是用来创建空字典的。&lt;/p&gt;
+&lt;p&gt;（2）&lt;strong&gt;集合中元素是无序的&lt;/strong&gt;。不可以通过索引来访问元素。&lt;/p&gt;
+&lt;p&gt;（3）&lt;strong&gt;集合是可以被修改的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;（4）添加元素和删除元素。&lt;/p&gt;
+&lt;p&gt;​			1）S.add(元素)&lt;/p&gt;
+&lt;p&gt;​			2）S.remove(元素)。删除之前要进行判断：if 元素 in S： S.remove(元素)，否则会报错。&lt;/p&gt;
+&lt;h5 id=&#34;5变与不变&#34;&gt;5、变与不变&lt;/h5&gt;
+&lt;p&gt;​		string int float tuple boolen 不可变&lt;/p&gt;
+&lt;p&gt;​		list dict 和set为可变&lt;/p&gt;
+&lt;p&gt;​	帮助记忆的方法：不可变的看作是个体， 可变是一个容器&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>keep an open mind</title>
       <link>https://nick17t.github.io/post/keep-an-open-mind/</link>
       <pubDate>Mon, 29 Jun 2020 01:37:53 +0800</pubDate>
@@ -2326,72 +2457,6 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;h2 id=&#34;迭代思考法&#34;&gt;迭代思考法&lt;/h2&gt;
 &lt;p&gt;​	简单来说，就是当遇到困难的问题时，思考了一个小时两个小时依然没有解决时，可以停下来放在一边，等明天思考，后天思考，总有灵光一闪的一刻。这就是我认为的迭代思考问题的模式。&lt;/p&gt;
 &lt;p&gt;综上，希望这篇文章有所帮助。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Reading Tips</title>
-      <link>https://nick17t.github.io/post/reading-tips/</link>
-      <pubDate>Wed, 08 Jan 2020 13:51:14 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/reading-tips/</guid>
-      
-        <description>&lt;h2 id=&#34;1-训练大脑&#34;&gt;1. 训练大脑&lt;/h2&gt;
-&lt;p&gt;第一，我们的大脑在阅读的时候起着关键性的作用。建议就是在阅读的时候，时刻关注你大脑的很多偏好，&lt;strong&gt;尽量避免受到无用信息的干扰和刺激&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;第二，我们要&lt;strong&gt;在自己精力充沛的时候阅读&lt;/strong&gt;，而不是在精力不足、状态不佳的时候阅读。&lt;/p&gt;
-&lt;p&gt;第三，&lt;strong&gt;我们要让自己集中注意力，也就是要带着目的和问题去阅读&lt;/strong&gt;。只有这样大脑才会知道，在读书的时候应该注意什么，应该关注什么。可以参考我的另一篇博文&lt;a href=&#34;https://nick17t.github.io/post/efficient-learning/&#34;&gt;Efficient Learning&lt;/a&gt;，学习以验收标准的方式学习。&lt;/p&gt;
-&lt;p&gt;第四，&lt;strong&gt;读书的时候要专注，提升你的专注力&lt;/strong&gt;。如果觉得有难度，可以尝试用番茄钟来帮助自己。（安利app-番茄todo）&lt;/p&gt;
-&lt;p&gt;第五，要增强记忆力，只有一个很笨的办法——&lt;strong&gt;复习&lt;/strong&gt;。这个反复熟悉的过程不是让你死记硬背，而是通过分享、测试、反复练习来提升你的记忆力。可以手写笔记，也可以通过写博客输出，用输出倒逼输入也是靠谱的方式。&lt;/p&gt;
-&lt;p&gt;第六，&lt;strong&gt;读书要从入门级的书开始阅读&lt;/strong&gt;，要让自己进入心流状态，要让自己的能力能应对当前的压力。如果觉得列夫 · 托尔斯泰的《战争与和平》或者马塞尔 · 普鲁斯特的《追忆似水年华》太难，就可以先读读圣埃克苏佩里的《小王子》、赫尔曼 · 黑塞的《悉达多》，让这些入门的小说培养自己的阅读兴趣，之后再去挑战难度大的书。&lt;/p&gt;
-&lt;p&gt;最后，一个建议是要&lt;strong&gt;养成阅读的习惯&lt;/strong&gt;。每天读多久都可以，只要包里有一本书能随时拿出来看，阅读的习惯就可以慢慢养成，毫不费力。&lt;/p&gt;
-&lt;h2 id=&#34;2-碎片阅读&#34;&gt;2. 碎片阅读&lt;/h2&gt;
-&lt;p&gt;碎片阅读不是说什么都学，而是有目的性地学习更多。也就是说，你要带着目的和兴趣从一堆东西里找到想要的。&lt;/p&gt;
-&lt;p&gt;碎片学习的本质是&lt;strong&gt;概念学习&lt;/strong&gt;，学会收集和积累概念。&lt;/p&gt;
-&lt;p&gt;利用印象笔记等工具&lt;strong&gt;对碎片化知识进行零存整取&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;通过提炼、链接、融化去&lt;strong&gt;构建知识体系&lt;/strong&gt;，把别人的东西变成自己的。&lt;/p&gt;
-&lt;p&gt;实际上你发现无论你收集了多少碎片化的内容，无论你懂得多少盖房子的道理，你都要适时地去&lt;strong&gt;分享&lt;/strong&gt;，因为在分享的时候，也是验证我们是否真的搞清楚了概念，同时也可以在教会别人的同时验证并巩固自己的方法。&lt;/p&gt;
-&lt;p&gt;要明确你每天都有哪些碎片时间可以利用；要知道在这些短暂的时间里，你都要做成哪些事情，然后充分做好自己的安排和计划。&lt;/p&gt;
-&lt;h2 id=&#34;3-快速阅读&#34;&gt;3. 快速阅读&lt;/h2&gt;
-&lt;p&gt;快速阅读有五个步骤：提问、预习、扫读、切重点、复习。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;提问&lt;/strong&gt;，在阅读之前要问问自己，我为什么要读这本书？我有没有读过类似的书？&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;预习&lt;/strong&gt;，从目录和序言中，让作者这个导游告诉我们这本书是怎么写的，我们应该怎么读。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;扫读&lt;/strong&gt;，快速翻阅，标记重点关键片段。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;切重点&lt;/strong&gt;，重点去找书中和自己的问题有关联的部分。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;复习&lt;/strong&gt;，通过一些工具去收集和复习知识。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-卡片笔记法&#34;&gt;4. 卡片笔记法&lt;/h2&gt;
-&lt;p&gt;读书笔记的本质，就是从三大能力——学会独立思考、拥有好奇心、拥有检索能力——延伸出来的，即在获得大量信息的过程中，提取其中的精华，并且理解这些内容，之后，这些内容能够被我们更方便地应用。读书笔记是一个非常有用的工具，它的本质就是我们这一章的关键，我们会教大家如何获取、如何理解、如何应用读书笔记，把它变成我们重要的输出工具和帮手。&lt;/p&gt;
-&lt;p&gt;先做标记，用力所能及的方式去做各种标记；之后我们要去收集，要打开自己的思路，看看碎片化的收集和整体化的收集到底都有哪些渠道；然后我们要进行整理，建立私人图书馆；下一步是做输出和转化；最后是尝试去做应用和各种实践。最后，从书上的卡片变成我们输出自己的卡片。&lt;/p&gt;
-&lt;h2 id=&#34;5-主题阅读&#34;&gt;5. 主题阅读&lt;/h2&gt;
-&lt;p&gt;主题阅读有三种方式：“碎弹”、“爆破弹”、“核弹”。“碎弹” 是碎片化主题阅读；“爆破弹” 就是书籍式主题阅读；“核弹” 是长时间研究的主题阅读。&lt;/p&gt;
-&lt;p&gt;第一种是 “碎弹”——碎片化主题阅读，主要是用两种工具——即刻和云笔记来完成碎片化主题阅读。&lt;/p&gt;
-&lt;p&gt;第二种是 “爆破弹”，更多的是对书进行主题阅读，从最开始书单创建之前建立一个简单的认知，到建立书单、快速阅读、扫读、建立框架，到最后基于框架去寻找答案，一整套完整的流程。&lt;/p&gt;
-&lt;p&gt;第三种是 “核弹”，是我们基于一个主题做长期的计划，进行长期的研究。也就是用你能接触到的所有方法慢慢地一点一点往前推进。可能时机不成熟，也可能需要很长的时间，但是只要你一直在关注它，你就一直在学习它。&lt;/p&gt;
-&lt;h2 id=&#34;6-深度阅读&#34;&gt;6. 深度阅读&lt;/h2&gt;
-&lt;p&gt;阅读的幸福不是读了很多书，也不是读书速度有多快，而是把原来不懂的东西搞懂，原本纠结和迷惑的问题豁然开朗。这就是阅读的幸福。要获得这种幸福，就必须去理解所读的内容。某个知识点被我们不断地应用，不断地掌握，不断地去做分享，这种反复的过程就会让我们对这个知识理解得越来越透彻，掌握得越来越牢固。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;深度阅读的步骤：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1. 寻找联系&lt;/strong&gt;，寻找练习的意思是当看到某句话或者某个概念的时候，要下意识地尝试分析该内容是否能够通过其他的现象解释。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2. 探索 &amp;ldquo;冰山&amp;rdquo;&lt;/strong&gt;，一个概念往往后面可能会有理论、原理等。概念是可以看到的，不能轻易看到的往往是背后的体系知识，而这些知识通常庞大且系统化。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3. 多场景应用&lt;/strong&gt;，知道概念后如何使用。这时需要进行多场景的应用，尝试在不同的场景下自如地运行该理论。&lt;/p&gt;
-&lt;p&gt;深度阅读不是把一本书从头读到尾，也不是要记住所有的东西，更不是所有的经典书都适合深度阅读——深度阅读的内核在于理解。&lt;/p&gt;
-&lt;h2 id=&#34;7-总结&#34;&gt;7. 总结&lt;/h2&gt;
-&lt;p&gt;这本书介绍了各种读书方法从碎片阅读、快速阅读、主题阅读、深度阅读和读书笔记方面进行了介绍，这些方法也是我平时在实践的。&lt;/p&gt;
-&lt;p&gt;比如拿到一本书我要先去快速的了解，然后带着问题去读，过程中去标记觉得书中重要的内容，读完后整理读书笔记，和输出一些内容。&lt;/p&gt;
-&lt;p&gt;还有比较重要的就是要使用好一个知识管理工具，可以是各种云笔记，在线文档，博客等都可以，要记录整理，并纳入自己的知识体系中。&lt;/p&gt;
-&lt;p&gt;一本书可能是作者的一生的思想结晶，因此读书可能是世界上最划算的事情，所以一起读书吧。&lt;/p&gt;
-&lt;p&gt;​																												by《洋葱阅读法》，作者彭小六。&lt;/p&gt;
-&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;</description>
       
     </item>
     
