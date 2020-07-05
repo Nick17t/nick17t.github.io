@@ -6,7 +6,7 @@
     <description>Recent content on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 29 Jun 2020 01:37:53 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2020 21:24:56 +0800</lastBuildDate>
     
         <atom:link href="https://nick17t.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -41,6 +41,51 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>Http &amp; Https</title>
+      <link>https://nick17t.github.io/post/httphttps/</link>
+      <pubDate>Sun, 05 Jul 2020 21:24:56 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/httphttps/</guid>
+      
+        <description>&lt;p&gt;​	首先两者的共同点是：Http 和 Https 都是位于 OSI（计算机或通信系统间互联标准体系）的第七层，即5应用层，同时位于该层的还有 SMTP 和 FTP 协议。&lt;/p&gt;
+&lt;p&gt;​	其不同点在于 Http 协议运行在 TCP 之上。其所有传输的内容都是明文，客户端和服务器端都无法验证对方的身份； 而 Https 是运行在 SSL/TLS （安全套接字层/传输层安全）之上，而 SSL/TLS 运行在 TCP 之上。所有传输的内容都经过加密，采用的是对称加密方式，但对称加密的密钥用服务器方的证书使用的是非对称加密方式。此外客户端可以验证服务器端的身份，如果配置了客户端验证，服务器方也可以验证客户端的身份。&lt;/p&gt;
+&lt;p&gt;​	总结：	HTTPS 是 HTTP 的安全增强版，Http + 加密 + 认证 + 完整性保护 = Https&lt;/p&gt;
+&lt;p&gt;​	由于 Http 连接存在安全隐患， 而Https 可以进行加密传输，相比 http 安全很多，因此是现在网站的大趋势。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;HTTP&lt;/th&gt;
+&lt;th&gt;HTTPS&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;中文名&lt;/td&gt;
+&lt;td&gt;超文本传输协议&lt;/td&gt;
+&lt;td&gt;安全套接字层超文本传输协议&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;传输信息&lt;/td&gt;
+&lt;td&gt;明文&lt;/td&gt;
+&lt;td&gt;密文（非对称加密和对称加密）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;端口号&lt;/td&gt;
+&lt;td&gt;80&lt;/td&gt;
+&lt;td&gt;443&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;安全性&lt;/td&gt;
+&lt;td&gt;不安全&lt;/td&gt;
+&lt;td&gt;较为安全&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
       
     </item>
     

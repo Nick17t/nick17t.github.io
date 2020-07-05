@@ -9,6 +9,27 @@
   </url>
   
   <url>
+    <loc>https://nick17t.github.io/post/httphttps/</loc>
+    <lastmod>2020-07-05T21:24:56+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/</loc>
+    <lastmod>2020-07-05T21:24:56+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/</loc>
+    <lastmod>2020-07-05T21:24:56+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://nick17t.github.io/categories/</loc>
     <lastmod>2020-06-29T01:37:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,20 +38,6 @@
   
   <url>
     <loc>https://nick17t.github.io/post/keep-an-open-mind/</loc>
-    <lastmod>2020-06-29T01:37:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/</loc>
-    <lastmod>2020-06-29T01:37:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/post/</loc>
     <lastmod>2020-06-29T01:37:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
