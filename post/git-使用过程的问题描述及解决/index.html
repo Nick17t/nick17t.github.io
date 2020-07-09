@@ -68,7 +68,7 @@
 <meta itemprop="description" content="">
 <meta itemprop="datePublished" content="2020-06-23T22:31:51&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-23T22:31:51&#43;08:00" />
-<meta itemprop="wordCount" content="245">
+<meta itemprop="wordCount" content="358">
 
 
 
@@ -324,6 +324,7 @@
     <li>
       <ul>
         <li><a href="#1could-not-resolve-hostname">1、Could not resolve hostname</a></li>
+        <li><a href="#2taskcanceledexception-encountered">2、TaskCanceledException encountered</a></li>
       </ul>
     </li>
   </ul>
@@ -357,6 +358,15 @@ ping github.com
 得到 ip 地址后，将 ip 地址以
 192.168.71.233 github.com
 的方式，添加到 hosts 文件中
+</code></pre><h3 id="2taskcanceledexception-encountered">2、TaskCanceledException encountered</h3>
+<h5 id="问题描述-1">问题描述:</h5>
+<p>​		Windows 更新版本后，出现了如下报错。</p>
+<pre><code>$ git push origin master
+Fatal: TaskCanceledException encountered.
+</code></pre><h5 id="问题解决-1">问题解决:</h5>
+<h6 id="solution1-1">Solution1：</h6>
+<p>​		这是因为在全局和系统级别存在 git.config 设置冲突。可以使用以下语句解决。</p>
+<pre><code>$ git config -–global credential.helper manager
 </code></pre>
     </div>
 
