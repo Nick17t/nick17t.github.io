@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Jul 2020 21:24:56 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 12:42:19 +0800</lastBuildDate>
     
 	<atom:link href="https://nick17t.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Collections</title>
+      <link>https://nick17t.github.io/post/collection/</link>
+      <pubDate>Sat, 11 Jul 2020 12:42:19 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/collection/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Http &amp; Https</title>
@@ -179,15 +188,6 @@
       <pubDate>Sun, 02 Feb 2020 23:46:29 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/what-are-the-qa-interview-questions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>用验收标准法和迭代思考法进行高效学习</title>
-      <link>https://nick17t.github.io/post/efficient-learning/</link>
-      <pubDate>Wed, 15 Jan 2020 10:23:14 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/efficient-learning/</guid>
       <description></description>
     </item>
     

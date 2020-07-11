@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collection on Nick17t</title>
+    <link>https://nick17t.github.io/tags/collection/</link>
+    <description>Recent content in Collection on Nick17t</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Jul 2020 12:42:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://nick17t.github.io/tags/collection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Collections</title>
+      <link>https://nick17t.github.io/post/collection/</link>
+      <pubDate>Sat, 11 Jul 2020 12:42:19 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/collection/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
