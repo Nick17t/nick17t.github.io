@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Jul 2020 12:42:19 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 22:31:51 +0800</lastBuildDate>
     
 	<atom:link href="https://nick17t.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tips-and-tricks</title>
+      <link>https://nick17t.github.io/categories/tips-and-tricks/</link>
+      <pubDate>Sat, 11 Jul 2020 22:31:51 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/categories/tips-and-tricks/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Java</title>
@@ -44,15 +53,6 @@
       <pubDate>Mon, 29 Jun 2020 01:37:53 +0800</pubDate>
       
       <guid>https://nick17t.github.io/categories/reading-notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips-and-tricks</title>
-      <link>https://nick17t.github.io/categories/tips-and-tricks/</link>
-      <pubDate>Tue, 23 Jun 2020 22:31:51 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/categories/tips-and-tricks/</guid>
       <description></description>
     </item>
     

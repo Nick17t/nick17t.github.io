@@ -6,7 +6,7 @@
     <description>Recent content on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Jul 2020 12:42:19 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 22:31:51 +0800</lastBuildDate>
     
         <atom:link href="https://nick17t.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,6 +45,66 @@
     </item>
     
     <item>
+      <title>Git 使用过程的问题与解决</title>
+      <link>https://nick17t.github.io/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Sat, 11 Jul 2020 22:31:51 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/</guid>
+      
+        <description>&lt;h3 id=&#34;1could-not-resolve-hostname&#34;&gt;1、Could not resolve hostname&lt;/h3&gt;
+&lt;h5 id=&#34;问题描述&#34;&gt;问题描述:&lt;/h5&gt;
+&lt;p&gt;​		在正常使用 Git 的情况下，出现了如下报错。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone git@github.com:xx/xxx.git
+Cloning into &#39;xxx&#39;...
+ssh: Could not resolve hostname github.com: Name or service not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+正在克隆到
+SSH：无法解析主机名github.com：名称或服务未知
+fatal：无法从远程存储库读取。请确保您具有正确的访问权限，并且存储库存在。
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;问题解决&#34;&gt;问题解决:&lt;/h5&gt;
+&lt;h6 id=&#34;solution1&#34;&gt;Solution1：&lt;/h6&gt;
+&lt;p&gt;​		使用 HTTPS 方式连接，这里我是成功了的。&lt;/p&gt;
+&lt;h6 id=&#34;solution2&#34;&gt;Solution2：&lt;/h6&gt;
+&lt;p&gt;​		使用通过添加ip地址到Hosts文件的方式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;首先通过cmd
+ping github.com
+得到 ip 地址后，将 ip 地址以
+192.168.71.233 github.com
+的方式，添加到 hosts 文件中
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;2taskcanceledexception-encountered&#34;&gt;2、TaskCanceledException encountered&lt;/h3&gt;
+&lt;h5 id=&#34;问题描述-1&#34;&gt;问题描述:&lt;/h5&gt;
+&lt;p&gt;​		Windows 更新版本后，出现了如下报错。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git push origin master
+Fatal: TaskCanceledException encountered.
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;问题解决-1&#34;&gt;问题解决:&lt;/h5&gt;
+&lt;h6 id=&#34;solution1-1&#34;&gt;Solution1：&lt;/h6&gt;
+&lt;p&gt;​		这是因为在全局和系统级别存在 git.config 设置冲突。可以使用以下语句解决。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git config -–global credential.helper manager
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3git-reset-asks-more&#34;&gt;3、git reset asks &amp;lsquo;more?&amp;rsquo;&lt;/h3&gt;
+&lt;h5 id=&#34;问题描述-2&#34;&gt;问题描述:&lt;/h5&gt;
+&lt;p&gt;​		撤销 Commit 时,使用了命令&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git reset --soft HEAD^
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;​		接着出现新的一行为:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;More?
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;​		键入值后，出现&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;fatal: ambiguous argument &#39;HEADmore&#39;: unknown revision or path not in the working tree.
+Use &#39;--&#39; to separate paths from revisions, like this:
+&#39;git &amp;lt;command&amp;gt; [&amp;lt;revision&amp;gt;...] -- [&amp;lt;file&amp;gt;...]&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;问题解决-2&#34;&gt;问题解决:&lt;/h5&gt;
+&lt;h6 id=&#34;solution1-2&#34;&gt;Solution1：&lt;/h6&gt;
+&lt;p&gt;​		我尝试使用了&lt;code&gt;git log HEAD^ &lt;/code&gt; ，发现这个命令并没有起作用。查阅资料后，我发现以下两种方式都是可行的。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git reset --soft HEAD^^
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;$ git reset --soft HEAD~1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;因为我是在 CMD 命令行中输入的，所以我猜测这可能和 Windows 命令行中的转义字符有关系。&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Collections</title>
       <link>https://nick17t.github.io/post/collection/</link>
       <pubDate>Sat, 11 Jul 2020 12:42:19 +0800</pubDate>
@@ -52,6 +112,7 @@
       <guid>https://nick17t.github.io/post/collection/</guid>
       
         <description>&lt;h2 id=&#34;list-排序&#34;&gt;List (排序)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/Nick17t/Image-Hosting/raw/master/img/Collection.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;arraylist&#34;&gt;ArrayList&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;数组&lt;/li&gt;
@@ -201,8 +262,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/Nick17t/Image-Hosting/raw/master/img/Collection.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
       
     </item>
     
@@ -491,41 +551,6 @@ Beta测试由软件的最终用户们在一个或多个客房场所进行。与A
 &lt;li&gt;挖掘感受的来源&lt;/li&gt;
 &lt;li&gt;清晰表达自己的诉求&lt;/li&gt;
 &lt;/ul&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Git 使用过程的问题与解决</title>
-      <link>https://nick17t.github.io/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/</link>
-      <pubDate>Tue, 23 Jun 2020 22:31:51 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/</guid>
-      
-        <description>&lt;h3 id=&#34;1could-not-resolve-hostname&#34;&gt;1、Could not resolve hostname&lt;/h3&gt;
-&lt;h5 id=&#34;问题描述&#34;&gt;问题描述:&lt;/h5&gt;
-&lt;p&gt;​		在正常使用 Git 的情况下，出现了如下报错。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ git clone git@github.com:xx/xxx.git
-Cloning into &#39;xxx&#39;...
-ssh: Could not resolve hostname github.com: Name or service not known
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-
-正在克隆到
-SSH：无法解析主机名github.com：名称或服务未知
-fatal：无法从远程存储库读取。请确保您具有正确的访问权限，并且存储库存在。
-&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;问题解决&#34;&gt;问题解决:&lt;/h5&gt;
-&lt;h6 id=&#34;solution1&#34;&gt;Solution1：&lt;/h6&gt;
-&lt;p&gt;​		使用 HTTPS 方式连接，这里我是成功了的。&lt;/p&gt;
-&lt;h6 id=&#34;solution2&#34;&gt;Solution2：&lt;/h6&gt;
-&lt;p&gt;​		使用通过添加ip地址到Hosts文件的方式&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;首先通过cmd
-ping github.com
-得到 ip 地址后，将 ip 地址以
-192.168.71.233 github.com
-的方式，添加到 hosts 文件中
-&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     

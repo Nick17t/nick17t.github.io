@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Jul 2020 12:42:19 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 22:31:51 +0800</lastBuildDate>
     
 	<atom:link href="https://nick17t.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git</title>
+      <link>https://nick17t.github.io/tags/git/</link>
+      <pubDate>Sat, 11 Jul 2020 22:31:51 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/tags/git/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Collection</title>
@@ -44,15 +53,6 @@
       <pubDate>Mon, 29 Jun 2020 01:37:53 +0800</pubDate>
       
       <guid>https://nick17t.github.io/tags/thought/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://nick17t.github.io/tags/git/</link>
-      <pubDate>Tue, 23 Jun 2020 22:31:51 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/tags/git/</guid>
       <description></description>
     </item>
     

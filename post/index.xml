@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Jul 2020 12:42:19 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 22:31:51 +0800</lastBuildDate>
     
 	<atom:link href="https://nick17t.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git 使用过程的问题与解决</title>
+      <link>https://nick17t.github.io/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Sat, 11 Jul 2020 22:31:51 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Collections</title>
@@ -44,15 +53,6 @@
       <pubDate>Mon, 29 Jun 2020 01:37:53 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/keep-an-open-mind/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git 使用过程的问题与解决</title>
-      <link>https://nick17t.github.io/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/</link>
-      <pubDate>Tue, 23 Jun 2020 22:31:51 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/</guid>
       <description></description>
     </item>
     
