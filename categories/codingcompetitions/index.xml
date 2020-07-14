@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>codingcompetitions on Nick17t</title>
+    <link>https://nick17t.github.io/categories/codingcompetitions/</link>
+    <description>Recent content in codingcompetitions on Nick17t</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Jul 2020 23:05:08 +0800</lastBuildDate>
+    
+	<atom:link href="https://nick17t.github.io/categories/codingcompetitions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Newcoder_S1_第二场</title>
+      <link>https://nick17t.github.io/post/newcoder_s1_%E7%AC%AC%E4%BA%8C%E5%9C%BA/</link>
+      <pubDate>Sat, 11 Jul 2020 23:05:08 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/newcoder_s1_%E7%AC%AC%E4%BA%8C%E5%9C%BA/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

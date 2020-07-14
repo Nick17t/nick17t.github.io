@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Jul 2020 22:31:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 08:05:10 +0800</lastBuildDate>
     
 	<atom:link href="https://nick17t.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>python basis</title>
+      <link>https://nick17t.github.io/tags/python-basis/</link>
+      <pubDate>Sun, 12 Jul 2020 08:05:10 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/tags/python-basis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>newcoder</title>
+      <link>https://nick17t.github.io/tags/newcoder/</link>
+      <pubDate>Sat, 11 Jul 2020 23:05:08 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/tags/newcoder/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>git</title>
@@ -147,11 +165,11 @@
     </item>
     
     <item>
-      <title>Leetcode</title>
-      <link>https://nick17t.github.io/tags/leetcode/</link>
+      <title>math</title>
+      <link>https://nick17t.github.io/tags/math/</link>
       <pubDate>Thu, 05 Mar 2020 23:42:19 +0800</pubDate>
       
-      <guid>https://nick17t.github.io/tags/leetcode/</guid>
+      <guid>https://nick17t.github.io/tags/math/</guid>
       <description></description>
     </item>
     
@@ -170,15 +188,6 @@
       <pubDate>Wed, 08 Jan 2020 13:51:14 +0800</pubDate>
       
       <guid>https://nick17t.github.io/tags/tips-and-tricks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python basis</title>
-      <link>https://nick17t.github.io/tags/python-basis/</link>
-      <pubDate>Wed, 01 Jan 2020 08:05:10 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/tags/python-basis/</guid>
       <description></description>
     </item>
     

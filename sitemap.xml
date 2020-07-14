@@ -9,29 +9,71 @@
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/post/newcoder_s1_%E7%AC%AC%E4%BA%8C%E5%9C%BA/</loc>
-    <lastmod>2020-07-11T23:05:08+08:00</lastmod>
+    <loc>https://nick17t.github.io/categories/</loc>
+    <lastmod>2020-07-12T08:05:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://nick17t.github.io/</loc>
-    <lastmod>2020-07-11T23:05:08+08:00</lastmod>
+    <lastmod>2020-07-12T08:05:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://nick17t.github.io/post/</loc>
+    <lastmod>2020-07-12T08:05:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/categories/python/</loc>
+    <lastmod>2020-07-12T08:05:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/python-basis/</loc>
+    <lastmod>2020-07-12T08:05:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/</loc>
+    <lastmod>2020-07-12T08:05:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2020-07-12T08:05:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/categories/codingcompetitions/</loc>
     <lastmod>2020-07-11T23:05:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/categories/</loc>
-    <lastmod>2020-07-11T22:31:51+08:00</lastmod>
+    <loc>https://nick17t.github.io/tags/newcoder/</loc>
+    <lastmod>2020-07-11T23:05:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/newcoder_s1_%E7%AC%AC%E4%BA%8C%E5%9C%BA/</loc>
+    <lastmod>2020-07-11T23:05:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,13 +87,6 @@
   
   <url>
     <loc>https://nick17t.github.io/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/</loc>
-    <lastmod>2020-07-11T22:31:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/tags/</loc>
     <lastmod>2020-07-11T22:31:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -338,7 +373,7 @@
   </url>
   
   <url>
-    <loc>https://nick17t.github.io/tags/leetcode/</loc>
+    <loc>https://nick17t.github.io/tags/math/</loc>
     <lastmod>2020-03-05T23:42:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -382,27 +417,6 @@
   <url>
     <loc>https://nick17t.github.io/tags/tips-and-tricks/</loc>
     <lastmod>2020-01-08T13:51:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/categories/python/</loc>
-    <lastmod>2020-01-01T08:05:10+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/tags/python-basis/</loc>
-    <lastmod>2020-01-01T08:05:10+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2020-01-01T08:05:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

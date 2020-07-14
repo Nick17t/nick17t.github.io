@@ -6,7 +6,7 @@
     <description>Recent content on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Jul 2020 23:05:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 08:05:10 +0800</lastBuildDate>
     
         <atom:link href="https://nick17t.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,6 +45,376 @@
     </item>
     
     <item>
+      <title>我的 Python 学习记录</title>
+      <link>https://nick17t.github.io/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 12 Jul 2020 08:05:10 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+      
+        <description>&lt;h2 id=&#34;一序言&#34;&gt;一、序言&lt;/h2&gt;
+&lt;p&gt;​	说 Python 是一门这两年最流行的语言也不为过，360行，行行学 Python。可能因为 Python 简单易上手，功能强大，免费开源&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;二基础入门&#34;&gt;二、基础入门：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;注释、变量、输入输出、转换数据类型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运算符（其中 // 整除、** 指数）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;混合运算优先级顺序：&lt;code&gt;()&lt;/code&gt;高于 &lt;code&gt;**&lt;/code&gt; 高于 &lt;code&gt;*&lt;/code&gt; &lt;code&gt;/&lt;/code&gt; &lt;code&gt;//&lt;/code&gt; &lt;code&gt;%&lt;/code&gt; 高于 &lt;code&gt;+&lt;/code&gt; &lt;code&gt;-&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;三流程控制&#34;&gt;三、流程控制&lt;/h2&gt;
+&lt;h4 id=&#34;条件语句&#34;&gt;条件语句&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;age &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; int(input(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;请输入您的年龄&amp;#39;&lt;/span&gt;))
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; age &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;您年龄是{age},未成年&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; (age &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; (age &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;):
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;您年龄是{age},合法工龄&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; age &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;您年龄是{age},退休年龄&amp;#39;&lt;/span&gt;)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;循环语句&#34;&gt;循环语句&lt;/h4&gt;
+&lt;h5 id=&#34;while-循环&#34;&gt;while 循环&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 计算1-100累加和&lt;/span&gt;
+i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; 
+result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;:
+	result &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; i
+    i &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(result)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 计算1-100累加偶数和&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#solution1 &lt;/span&gt;
+i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; 
+result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
+		result &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; i
+    i &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(result)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#solution2 &lt;/span&gt;
+i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; 
+result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;:
+ 	result &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; i
+    i &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+    
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(result)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;break--continue&#34;&gt;break &amp;amp; continue&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;break和continue是循环中满足一定条件退出循环的两种不同方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#1、 break 终止此循环&lt;/span&gt;
+i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;吃饱了，不吃了&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;吃第{i}包零食&amp;#39;&lt;/span&gt;)
+    i &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;输出：
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    吃第1包零食
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    吃第2包零食
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    吃第3包零食
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    吃饱了，不吃了
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+
+          
+&lt;span style=&#34;color:#75715e&#34;&gt;#2、 continue 退出当前一次循环继而执行下一次循环代码&lt;/span&gt;
+i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;零食变质，第{i}包不吃了&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#75715e&#34;&gt;# 在continue之前一定要修改计数器，否则会陷入死循环&lt;/span&gt;
+        i &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;continue&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;吃第{i}包零食&amp;#39;&lt;/span&gt;)
+    i &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;输出：
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    吃第1包零食
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    零食变质，第2包不吃了
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    吃第3包零食
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    吃第4包零食
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;应用&#34;&gt;应用&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#九九乘法表&lt;/span&gt;
+j &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;:
+    i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; j:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{i} * {j} = {j * i}&amp;#39;&lt;/span&gt;, end&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+        i &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;()
+    j &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;for-循环&#34;&gt;for 循环&lt;/h5&gt;
+&lt;p&gt;​	和 while 循环一样的思路&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# break&lt;/span&gt;
+str1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NiceToMeetYou&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; str1:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;e&amp;#39;&lt;/span&gt;:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;遇到e不打印&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NiceToMeetYouToo&amp;#39;&lt;/span&gt;)
+    
+&lt;span style=&#34;color:#75715e&#34;&gt;# continue&lt;/span&gt;
+str1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NiceToMeetYou&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; str1:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;e&amp;#39;&lt;/span&gt;:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;遇到e不打印&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;continue&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NiceToMeetYouToo&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;break终止循环不会执行else下方缩进的代码&lt;/li&gt;
+&lt;li&gt;continue退出循环的方式执行else下方缩进的代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;四数据序列&#34;&gt;四、数据序列&lt;/h2&gt;
+&lt;h4 id=&#34;字符串&#34;&gt;字符串&lt;/h4&gt;
+&lt;p&gt;​	字符串有两种形式，单引号和三引号。区别在于三引号可以支持换行。&lt;/p&gt;
+&lt;h5 id=&#34;切片&#34;&gt;切片&lt;/h5&gt;
+&lt;p&gt;​	语法是：序列 [开始位置下标:结束位置下标:步长]&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;我的Python学习记录&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(name[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+&lt;span style=&#34;color:#75715e&#34;&gt;#Python&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(name[::&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+&lt;span style=&#34;color:#75715e&#34;&gt;#录记习学nohtyP的我&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(name[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:])
+&lt;span style=&#34;color:#75715e&#34;&gt;#Python学习记录&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(name[:&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;])
+&lt;span style=&#34;color:#75715e&#34;&gt;#我的Python学习&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;常用操作方法&#34;&gt;常用操作方法&lt;/h5&gt;
+&lt;h6 id=&#34;1查找&#34;&gt;1、查找&lt;/h6&gt;
+&lt;p&gt;​		字符串序列.find(子串, 开始位置下标, 结束位置下标)&lt;/p&gt;
+&lt;p&gt;​		find()：检测某个子串是否包含在这个字符串中，如果在返回这个子串开始的位置下标，否则则返回-1。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;我的Python学习记录&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(name&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;学习&amp;#39;&lt;/span&gt;))
+&lt;span style=&#34;color:#75715e&#34;&gt;#8&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(name&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Python&amp;#39;&lt;/span&gt;))
+&lt;span style=&#34;color:#75715e&#34;&gt;#2&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(name&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;un&amp;#39;&lt;/span&gt;))
+&lt;span style=&#34;color:#75715e&#34;&gt;#-1&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;​		补充：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;rfind()： 和find()功能相同，但查找方向为&lt;strong&gt;右侧&lt;/strong&gt;开始。&lt;/li&gt;
+&lt;li&gt;rindex()：和index()功能相同，但查找方向为&lt;strong&gt;右侧&lt;/strong&gt;开始。&lt;/li&gt;
+&lt;li&gt;count()：返回某个子串在字符串中出现的次数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;2修改&#34;&gt;2、修改&lt;/h6&gt;
+&lt;p&gt;​	&lt;strong&gt;一、字符串序列.replace(旧子串, 新子串, 替换次数)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	字符串类型的数据修改的时候不能改变原有字符串，属于不能直接修改数据的类型即是不可变类型。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;str &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Misery loves company&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(str&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;loves&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hates&amp;#39;&lt;/span&gt;))
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(str)
+&lt;span style=&#34;color:#75715e&#34;&gt;#Misery hates company&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#Misery loves company&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;​	&lt;strong&gt;二、字符串序列.split(分割字符, num)&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：num表示的是分割字符出现的次数，即将来返回数据个数为num+1个。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;str &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Misery loves company&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(str&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(str&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;))
+&lt;span style=&#34;color:#75715e&#34;&gt;#[&amp;#39;Mi&amp;#39;, &amp;#39;ery loves company&amp;#39;]&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#[&amp;#39;Mi&amp;#39;, &amp;#39;ery love&amp;#39;, &amp;#39; company&amp;#39;]&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(str&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split())
+&lt;span style=&#34;color:#75715e&#34;&gt;#[&amp;#39;Misery&amp;#39;, &amp;#39;loves&amp;#39;, &amp;#39;company&amp;#39;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;​	&lt;strong&gt;三、字符或子串.join(多字符串组成的序列)&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;chang&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;sha&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;city&amp;#39;&lt;/span&gt;]
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;_&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(list))
+&lt;span style=&#34;color:#75715e&#34;&gt;# chang_sha_city&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;_&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(list)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;title())
+&lt;span style=&#34;color:#75715e&#34;&gt;# Chang_Sha_City&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# title()：将字符串每个单词首字母转换成大写。&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;lower()： 将字符串中大写转小写。&lt;/li&gt;
+&lt;li&gt;upper()： 将字符串中小写转大写。&lt;/li&gt;
+&lt;li&gt;lstrip()：  删除字符串左侧空白字符。&lt;/li&gt;
+&lt;li&gt;rstrip()：  删除字符串右侧空白字符。&lt;/li&gt;
+&lt;li&gt;strip()：   删除字符串两侧空白字符。&lt;/li&gt;
+&lt;li&gt;ljust()：   返回一个原字符串左对齐,并使用指定字符(默认空格)填充至对应长度 的新字符串。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;3判断&#34;&gt;3、判断&lt;/h6&gt;
+&lt;p&gt;字符串序列.startswith(子串, 开始位置下标, 结束位置下标)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;startswith()：检查字符串是否是以指定子串开头，是则返回 True，否则返回 False。如果设置开始和结束位置下标，则在指定范围内检查。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;endswith()：：检查字符串是否是以指定子串结尾，是则返回 True，否则返回 False。如果设置开始和结束位置下标，则在指定范围内检查。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;str &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello, It&amp;#39;s me.&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(str&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;startswith(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;h&amp;#39;&lt;/span&gt;))
+&lt;span style=&#34;color:#75715e&#34;&gt;#True&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(str&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;endswith(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;。&amp;#39;&lt;/span&gt;))
+&lt;span style=&#34;color:#75715e&#34;&gt;#False&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(str&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;startswith(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;I&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;))
+&lt;span style=&#34;color:#75715e&#34;&gt;#True&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;isspace()：如果字符串中只包含空白，则返回 True，否则返回 False&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;isalnum()：如果字符串至少有一个字符并且所有字符都是字母或数字则返 回 True,否则返回 False&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;isdigit()：如果字符串只包含数字则返回 True 否则返回 False&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;isalpha()：如果字符串至少有一个字符并且所有字符都是字母则返回 True, 否则返回 False&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;列表&#34;&gt;列表&lt;/h4&gt;
+&lt;p&gt;​	列表可以一次性存储多个数据，且可以为不同数据类型。&lt;/p&gt;
+&lt;h5 id=&#34;常用操作方法-1&#34;&gt;常用操作方法&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;index()&lt;/li&gt;
+&lt;li&gt;len()&lt;/li&gt;
+&lt;li&gt;append()&lt;/li&gt;
+&lt;li&gt;pop()&lt;/li&gt;
+&lt;li&gt;remove()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;查找&#34;&gt;查找&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;index()&lt;/td&gt;
+&lt;td&gt;返回指定数据所在位置的下标 。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;count()&lt;/td&gt;
+&lt;td&gt;统计指定数据在当前列表中出现的次数。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;len()&lt;/td&gt;
+&lt;td&gt;访问列表长度，即列表中数据的个数。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;in()&lt;/td&gt;
+&lt;td&gt;判断指定数据在某个列表序列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;not in()&lt;/td&gt;
+&lt;td&gt;判断指定数据不在某个列表序列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h6 id=&#34;增删改查&#34;&gt;增删改查&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;.append()&lt;/td&gt;
+&lt;td&gt;列表结尾追加数据。以序列形式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.extend()&lt;/td&gt;
+&lt;td&gt;列表结尾追加数据。以单个数据形式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.insert()&lt;/td&gt;
+&lt;td&gt;指定位置新增数据，(位置下标, 数据)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;删除&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.pop()&lt;/td&gt;
+&lt;td&gt;删除指定下标的数据(默认为最后一个)，并返回该数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;remove()&lt;/td&gt;
+&lt;td&gt;移除列表中某个数据的第一个匹配项。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;clear()&lt;/td&gt;
+&lt;td&gt;清空列表&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.del()&lt;/td&gt;
+&lt;td&gt;删除列表&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;修改&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;reverse()&lt;/td&gt;
+&lt;td&gt;逆置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sort()&lt;/td&gt;
+&lt;td&gt;排序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;复制&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;copy()&lt;/td&gt;
+&lt;td&gt;复制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;reverse()  修改&lt;/p&gt;
+&lt;p&gt;列表序列.sort( key=None, reverse=False)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;循环遍历&#34;&gt;循环遍历&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;name_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Lily&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Rose&amp;#39;&lt;/span&gt;]
+i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; len(name_list):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(name_list[i])
+    i &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;name_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Lily&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Rose&amp;#39;&lt;/span&gt;]
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; name_list:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Newcoder_S1_第二场</title>
       <link>https://nick17t.github.io/post/newcoder_s1_%E7%AC%AC%E4%BA%8C%E5%9C%BA/</link>
       <pubDate>Sat, 11 Jul 2020 23:05:08 +0800</pubDate>
@@ -52,44 +422,17 @@
       <guid>https://nick17t.github.io/post/newcoder_s1_%E7%AC%AC%E4%BA%8C%E5%9C%BA/</guid>
       
         <description>&lt;h2 id=&#34;a题_牛牛卡牌&#34;&gt;A题_牛牛卡牌&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;题目描述 :&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述-&#34;&gt;&lt;strong&gt;题目描述 :&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;​	牛牛现在有n张扑克牌，每张扑克牌都有点数和花色两部分组成。点数为‘1’-‘9’的正整数，花色为&amp;rsquo;C&amp;rsquo;,&amp;lsquo;D&amp;rsquo;,&amp;lsquo;H&amp;rsquo;,&amp;lsquo;S&#39;&amp;lsquo;其中的一个，分别表示梅花、方块、红桃、黑桃。现在牛牛想按一定的顺序把这n张牌扔掉。扔牌顺序的规则如下：&lt;/p&gt;
 &lt;p&gt;​	1.如果现在还剩素数张牌，则将牌顶的牌扔掉&lt;/p&gt;
 &lt;p&gt;​	2.如果现在还剩非素数张牌，则将牌底的牌扔掉&lt;/p&gt;
 &lt;p&gt;牛牛想知道他的扔牌顺序是什么，请返回扔牌顺序的字符串&lt;/p&gt;
-&lt;h4 id=&#34;示例1&#34;&gt;示例1&lt;/h4&gt;
-&lt;p&gt;输入&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;3C8D6H3D&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;3D3C8D6H&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;说明&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;开始n=4，为非素数，扔掉牌底的牌3D
-n=3，为素数，扔掉牌顶的牌3C
-n=2，为素数，扔掉牌顶的牌8D
-n=1，为非素数，扔掉牌底的牌6H
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;示例2&#34;&gt;示例2&lt;/h4&gt;
-&lt;p&gt;输入&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;8S8S8S8S8S8S8S&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;8S8S8S8S8S8S8S&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;说明&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;因为全是8S，所以扔牌顺序的每一张牌也都是8S
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;备注&#34;&gt;备注:&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;对于100%的数据，1≤n≤10
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;    ``while` `(len &amp;gt; 0) {
-      ``if` `(prime[len] == 1) {
-        ``card += x.substring(start, start + 2);
-        ``start += 2;
-        ``--len;
-      ``} ``else` `{
-        
-        ``card += x.substring(end, end + 2);
-        ``end -= 2;
-        ``--len;
-      ``}
-    ``}
-    ``return` `card;
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;h3 id=&#34;题目思路-&#34;&gt;&lt;strong&gt;题目思路 :&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;​	因为题目给出的数据量不大，所以我没有写判断素数的函数了。可以使用&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int prime(int n)
+{ int q;  for (int i = 2; i &amp;lt;=sqrt(n) ; ++i) { if(n % i == 0) return 0;  } return 1; }
+（如果追求时间复杂度可以用改进式写法）
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;题解代码&#34;&gt;题解代码:&lt;/h3&gt;</description>
       
     </item>
     
@@ -1923,73 +2266,6 @@ SQL 的注入，检索 SQL SELECT 语句等
 
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Distribute candies to people</title>
-      <link>https://nick17t.github.io/post/distribute-candies-to-people/</link>
-      <pubDate>Thu, 05 Mar 2020 23:42:19 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/distribute-candies-to-people/</guid>
-      
-        <description>&lt;h2 id=&#34;分糖果&#34;&gt;分糖果&lt;/h2&gt;
-&lt;h3 id=&#34;题目卡片&#34;&gt;题目卡片&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;时间： 2020-03-05&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;题目链接：&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Tag：math&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;题目挺简单的，按着题目描述来可暴力求解。&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;对小朋友们进行遍历，每次都发小朋友们应得数量的糖，直到剩下的糖不足以分发应得数量，就直接给最后那位倒霉孩子。&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Solution&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;distributeCandies&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; candies&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; num_people&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt;ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;num_people&lt;span style=&#34;color:#f92672&#34;&gt;];&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;/* 1.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;		while(candies!=0){
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;          int n = i+1;
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            if(n&amp;lt;=candies){
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;                ans[i%num_people] += n;
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;                candies -= n; 
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            }
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            else{
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;                ans[i%num_people] += candies;
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;                break; 
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            }
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            i++;
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*/&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;candies&lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;	 
-        	ans&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;i &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; num_people&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; Math&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;candies&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            candies &lt;span style=&#34;color:#f92672&#34;&gt;-=&lt;/span&gt; Math&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;candies&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;n&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-        &lt;span style=&#34;color:#75715e&#34;&gt;/* 
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  取candies（现有糖果数量）和n（按规则应获得的需要糖果数量）中的最小值，
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  给第 i%num_people (轮到的第几位小朋友)，
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  +=  累加每一轮所发的新糖果，
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  min的作用是当糖果不够用时，全送给那个小朋友，
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        *  与此同时，candies数量减去已送出的数量。
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;        */&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;扩展&#34;&gt;扩展&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这个的标签是Math，所以肯定是有相关的数学公式能帮忙省事儿。&lt;/p&gt;
-&lt;p&gt;leetCode中@&lt;a href=&#34;https://leetcode-cn.com/u/quantumdriver/&#34;&gt;QuantumDriver&lt;/a&gt;给出详细解释，不在此赘述。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
       
     </item>
     
