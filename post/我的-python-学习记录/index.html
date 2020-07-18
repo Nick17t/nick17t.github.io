@@ -22,8 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="米奇妙妙张" />
-  <meta name="description" content="" />
+<meta name="author" content="米奇妙妙张" /><meta name="description" content="python复习,看这篇就够了。" />
 
 
 
@@ -59,22 +58,22 @@
 
 
 <meta property="og:title" content="我的 Python 学习记录" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="python复习,看这篇就够了。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nick17t.github.io/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" />
 <meta property="article:published_time" content="2020-07-12T08:05:10+08:00" />
 <meta property="article:modified_time" content="2020-07-12T08:05:10+08:00" />
 <meta itemprop="name" content="我的 Python 学习记录">
-<meta itemprop="description" content="">
+<meta itemprop="description" content="python复习,看这篇就够了。">
 <meta itemprop="datePublished" content="2020-07-12T08:05:10&#43;08:00" />
 <meta itemprop="dateModified" content="2020-07-12T08:05:10&#43;08:00" />
-<meta itemprop="wordCount" content="3211">
+<meta itemprop="wordCount" content="3314">
 
 
 
 <meta itemprop="keywords" content="python basis," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我的 Python 学习记录"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="python复习,看这篇就够了。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -331,6 +330,11 @@
     <li><a href="#四数据序列">四、数据序列</a>
       <ul>
         <li></li>
+      </ul>
+    </li>
+    <li><a href="#五函数">五、函数</a>
+      <ul>
+        <li><a href="#函数使用步骤">函数使用步骤</a></li>
       </ul>
     </li>
   </ul>
@@ -949,7 +953,15 @@ s5 <span style="color:#f92672">=</span> {}
 
 <span style="color:#75715e"># 集合推导式</span>
 {xx <span style="color:#66d9ef">for</span> xx <span style="color:#f92672">in</span> <span style="color:#f92672">...</span>}
-</code></pre></div>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#1. 将两个列表合并为一个字典</span>
+list1 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;name&#39;</span>, <span style="color:#e6db74">&#39;age&#39;</span>, <span style="color:#e6db74">&#39;gender&#39;</span>]
+list2 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Nick&#39;</span>, <span style="color:#ae81ff">20</span>, <span style="color:#e6db74">&#39;man&#39;</span>]
+dict1 <span style="color:#f92672">=</span> {list1[i]: list2[i] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(list1))}
+<span style="color:#66d9ef">print</span>(dict1)
+<span style="color:#75715e">#2. 提取字典中目标数据</span>
+</code></pre></div><h2 id="五函数">五、函数</h2>
+<p>​		函数就是将<strong>一段具有独立功能的代码块</strong> 整合到一个整体并命名，在需要的位置<strong>调用这个名称</strong>即可完成对应的需求。</p>
+<h3 id="函数使用步骤">函数使用步骤</h3>
     </div>
 
     

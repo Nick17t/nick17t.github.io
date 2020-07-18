@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Nick17t</title>
+  <title>二分查找 - Nick17t</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,6 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="米奇妙妙张" />
+  <meta name="description" content="" />
+
 
 
 
@@ -32,8 +34,8 @@
 <meta name="generator" content="Hugo 0.72.0" />
 
 
-<link rel="canonical" href="https://nick17t.github.io/" />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Nick17t" />
+<link rel="canonical" href="https://nick17t.github.io/post/binary/" />
+
 
 
 
@@ -56,14 +58,22 @@
 
 
 
-<meta property="og:title" content="Nick17t" />
+<meta property="og:title" content="二分查找" />
 <meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://nick17t.github.io/" />
-<meta property="og:updated_time" content="2020-07-18T20:05:47+08:00" />
-<meta itemprop="name" content="Nick17t">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Nick17t"/>
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nick17t.github.io/post/binary/" />
+<meta property="article:published_time" content="2020-07-18T20:05:47+08:00" />
+<meta property="article:modified_time" content="2020-07-18T20:05:47+08:00" />
+<meta itemprop="name" content="二分查找">
+<meta itemprop="description" content="">
+<meta itemprop="datePublished" content="2020-07-18T20:05:47&#43;08:00" />
+<meta itemprop="dateModified" content="2020-07-18T20:05:47&#43;08:00" />
+<meta itemprop="wordCount" content="485">
+
+
+
+<meta itemprop="keywords" content="BinarySearch," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="二分查找"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -212,7 +222,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -281,302 +291,173 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="posts" class="posts">
-  
-  
+          <article class="post bg-white">
     
-  
-  
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+    <header class="post-header">
+      <h1 class="post-title">二分查找</h1>
       
-      <a class="post-link" href="/post/binary/">二分查找</a>
-    </h1>
+      <div class="post-meta">
+        <time datetime="2020-07-18" class="post-time">
+          2020-07-18
+        </time>
+        <div class="post-category">
+            <a href="https://nick17t.github.io/categories/leetcode/"> leetcode </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
     
-    <div class="post-meta">
-      <time datetime="2020-07-18" class="post-time">
-        2020-07-18
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/leetcode/"> leetcode </a>
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>​	二分查找是一个看起来很简单，但实际操作极容易出错的算法。</p>
+<p>​	主要注意的地方有：</p>
+<ol>
+<li>判断大小处取不取等号；</li>
+<li>更新边界应不应该加减1；</li>
+<li>初始值的选取。</li>
+</ol>
+<p>这里是 JAVA 通用模板：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">binary_search</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> array<span style="color:#f92672">,</span><span style="color:#66d9ef">int</span> left<span style="color:#f92672">,</span><span style="color:#66d9ef">int</span> right<span style="color:#f92672">,</span><span style="color:#66d9ef">int</span> value<span style="color:#f92672">){</span>
+    <span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>left<span style="color:#f92672">&lt;</span>right<span style="color:#f92672">){</span>
+        <span style="color:#66d9ef">int</span> mid <span style="color:#f92672">=</span> left <span style="color:#f92672">+</span> <span style="color:#f92672">(</span>right <span style="color:#f92672">-</span> left<span style="color:#f92672">)</span> <span style="color:#f92672">/</span> 2<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>array<span style="color:#f92672">[</span>mid<span style="color:#f92672">]&lt;</span>value<span style="color:#f92672">)</span> left <span style="color:#f92672">=</span> mid<span style="color:#f92672">+</span>1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">else</span> right<span style="color:#f92672">=</span>mid<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">return</span> left
+<span style="color:#f92672">}</span>
+</code></pre></div><p><strong>说明:</strong></p>
+<ul>
+<li>
+<p>返回值为 [left, right) 内第一个不小于value的值的位置，注意这是个左闭右开的区间，初始区间的右边界是取不到的。</p>
+</li>
+<li>
+<p>mid = left+ (right- left) / 2 这样写是防止大数溢出。</p>
+</li>
+<li>
+<p>结果返回right也可以，二者是重合的。</p>
+</li>
+<li>
+<p>以上代码即使区间为空、答案不存在、有重复元素、搜索开/闭的上/下界也同样适用，而且加减1的位置调整只出现了一次。</p>
+</li>
+<li>
+<p>如果对于array[mid] &lt; value改成array[mid] &lt;= value 会变成什么？ 结果会收敛到第一个大于value的位置。</p>
+</li>
+</ul>
+<p>这里是 Python 的模板</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">searchInsert</span>(self, nums: List[int], target: int) <span style="color:#f92672">-&gt;</span> int:
+        left,right<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,len(nums)
+        <span style="color:#66d9ef">while</span> left<span style="color:#f92672">&lt;</span>right:
+            mid<span style="color:#f92672">=</span>left<span style="color:#f92672">+</span>(right<span style="color:#f92672">-</span>left)<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>
+            <span style="color:#66d9ef">if</span> nums[mid]<span style="color:#f92672">&lt;</span>target:
+                left <span style="color:#f92672">=</span> mid<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">else</span>:
+                right <span style="color:#f92672">=</span> mid
+        <span style="color:#66d9ef">return</span> left
+
+</code></pre></div><p><strong>说明</strong></p>
+<ul>
+<li>mid = left+ (right - left) // 2 这样写是防止大数溢出。假设全都为 int 型，上限为65535，left=45535，right =20001。则计算 mid = (left+right ) // 2 时会先计算括号里的数得到65536溢出了。而使用 mid = left + (right - left) // 2 可以避免这种情况而达到相同的效果。</li>
+</ul>
+<p>LeetCode 相关题目：</p>
+<ol>
+<li>
+<p><a href="https://leetcode-cn.com/problems/search-insert-position/">35. 搜索插入位置</a></p>
+</li>
+<li>
+<p><a href="https://leetcode-cn.com/problems/sqrtx/">69. x 的平方根</a></p>
+</li>
+</ol>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">米奇妙妙张</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2020-07-18
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://nick17t.github.io/tags/binarysearch/">BinarySearch</a>
           
         </div>
+
       
-      
-      
-    </div>
-  </header>
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/kickstart-round-d/">
+            <span class="next-text nav-default">KickStart Round D</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
   
-  <div class="post-content">
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
     
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/binary/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
 
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/kickstart-round-d/">KickStart Round D</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2020-07-13" class="post-time">
-        2020-07-13
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/codingcompetitions/"> codingcompetitions </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/kickstart-round-d/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">我的 Python 学习记录</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2020-07-12" class="post-time">
-        2020-07-12
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/python/"> Python </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/newcoder_s1_%E7%AC%AC%E4%BA%8C%E5%9C%BA/">Newcoder_S1_第二场</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2020-07-11" class="post-time">
-        2020-07-11
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/codingcompetitions/"> codingcompetitions </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/newcoder_s1_%E7%AC%AC%E4%BA%8C%E5%9C%BA/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/">Git 使用过程的问题与解决</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2020-07-11" class="post-time">
-        2020-07-11
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/tips-and-tricks/"> tips-and-tricks </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/git-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/collection/">Collections</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2020-07-11" class="post-time">
-        2020-07-11
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/java/"> Java </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/collection/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/httphttps/">Http &amp; Https</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2020-07-05" class="post-time">
-        2020-07-05
-      </time>
-      <div class="post-category">
-          <a href="https://nick17t.github.io/categories/computer-basics/"> Computer Basics </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/httphttps/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li  class="active" >
-        <a href="/">1</a>
-      </li>
-      
-      <li >
-        <a href="/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/page/4/">4</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>

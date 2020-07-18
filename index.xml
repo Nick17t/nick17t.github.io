@@ -6,7 +6,7 @@
     <description>Recent content on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Jul 2020 09:08:42 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2020 20:05:47 +0800</lastBuildDate>
     
         <atom:link href="https://nick17t.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -41,6 +41,75 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>二分查找</title>
+      <link>https://nick17t.github.io/post/binary/</link>
+      <pubDate>Sat, 18 Jul 2020 20:05:47 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/binary/</guid>
+      
+        <description>&lt;p&gt;​	二分查找是一个看起来很简单，但实际操作极容易出错的算法。&lt;/p&gt;
+&lt;p&gt;​	主要注意的地方有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;判断大小处取不取等号；&lt;/li&gt;
+&lt;li&gt;更新边界应不应该加减1；&lt;/li&gt;
+&lt;li&gt;初始值的选取。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这里是 JAVA 通用模板：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binary_search&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; array&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; left&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; right&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;left&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;right&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; mid &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; left &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;right &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; left&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 2&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;mid&lt;span style=&#34;color:#f92672&#34;&gt;]&amp;lt;&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; left &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mid&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mid&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; left
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;说明:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;返回值为 [left, right) 内第一个不小于value的值的位置，注意这是个左闭右开的区间，初始区间的右边界是取不到的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mid = left+ (right- left) / 2 这样写是防止大数溢出。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;结果返回right也可以，二者是重合的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以上代码即使区间为空、答案不存在、有重复元素、搜索开/闭的上/下界也同样适用，而且加减1的位置调整只出现了一次。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果对于array[mid] &amp;lt; value改成array[mid] &amp;lt;= value 会变成什么？ 结果会收敛到第一个大于value的位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里是 Python 的模板&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Solution&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;searchInsert&lt;/span&gt;(self, nums: List[int], target: int) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; int:
+        left,right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,len(nums)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; left&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;right:
+            mid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;left&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;(right&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;left)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; nums[mid]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;target:
+                left &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mid&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+                right &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mid
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; left
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mid = left+ (right - left) // 2 这样写是防止大数溢出。假设全都为 int 型，上限为65535，left=45535，right =20001。则计算 mid = (left+right ) // 2 时会先计算括号里的数得到65536溢出了。而使用 mid = left + (right - left) // 2 可以避免这种情况而达到相同的效果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;LeetCode 相关题目：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/search-insert-position/&#34;&gt;35. 搜索插入位置&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/sqrtx/&#34;&gt;69. x 的平方根&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
       
     </item>
     
@@ -686,7 +755,15 @@ s5 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {}
 
 &lt;span style=&#34;color:#75715e&#34;&gt;# 集合推导式&lt;/span&gt;
 {xx &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; xx &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#1. 将两个列表合并为一个字典&lt;/span&gt;
+list1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;age&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;gender&amp;#39;&lt;/span&gt;]
+list2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Nick&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;man&amp;#39;&lt;/span&gt;]
+dict1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {list1[i]: list2[i] &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(len(list1))}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(dict1)
+&lt;span style=&#34;color:#75715e&#34;&gt;#2. 提取字典中目标数据&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;五函数&#34;&gt;五、函数&lt;/h2&gt;
+&lt;p&gt;​		函数就是将&lt;strong&gt;一段具有独立功能的代码块&lt;/strong&gt; 整合到一个整体并命名，在需要的位置&lt;strong&gt;调用这个名称&lt;/strong&gt;即可完成对应的需求。&lt;/p&gt;
+&lt;h3 id=&#34;函数使用步骤&#34;&gt;函数使用步骤&lt;/h3&gt;</description>
       
     </item>
     
@@ -2423,57 +2500,6 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;li&gt;项目经历：&lt;strong&gt;只写明星项目，描述遵循 STAR 法则&lt;/strong&gt;；&lt;/li&gt;
 &lt;li&gt;简历印象：&lt;strong&gt;简历遵循三大原则：清晰，简短，必要&lt;/strong&gt;，&lt;strong&gt;要有的放矢，不要海投&lt;/strong&gt;；&lt;/li&gt;
 &lt;/ol&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Blog Recommendation</title>
-      <link>https://nick17t.github.io/post/blog-recommendation/</link>
-      <pubDate>Tue, 17 Mar 2020 20:42:19 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/blog-recommendation/</guid>
-      
-        <description>&lt;h2 id=&#34;技术博客推荐&#34;&gt;技术博客推荐&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;江南白衣&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.douban.com/doulist/44353472/&#34;&gt;我的Java后端书架 2016(by 江南白衣)&lt;/a&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;https://juejin.im/entry/589944421b69e600599fec8e&#34;&gt;码农翻身&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;“码农翻身”公众号由工作15年的前IBM架构师刘欣创建，分享编程和职场的经验教训，用最浅显易懂的文章讲解技术的那些事。&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;https://coolshell.cn/&#34;&gt;CoolShell&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;陈皓老师的个人博客应该算是国内最有影响力的了。&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.liaoxuefeng.com/&#34;&gt;廖雪峰&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;我的Git和Python都是在这个网站上入门学习的。目前Java教程也出来了。&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.hollischuang.com/&#34;&gt;HollisChuang&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;阿里研发专家，主要分享Java技术文章。&lt;/p&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.720ui.com/&#34;&gt;梁桂钊&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;阿里研发专家，后端技术文章非常丰富。&lt;/p&gt;
-&lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;http://cmsblogs.com/&#34;&gt;chenssy&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Java技术文章，并且有很多基础方面的文章。&lt;/p&gt;
-&lt;ol start=&#34;8&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.javadoop.com/&#34;&gt;Java Doop&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Java开发者的技术博客，讲解源码的文章数量不多，但质量不错。&lt;/p&gt;
-&lt;ol start=&#34;9&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie&#34;&gt;labuladong的算法小抄&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;leetcode刷题指导。&lt;/p&gt;
-&lt;ol start=&#34;10&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;https://tech.meituan.com/&#34;&gt;美团技术团队&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;由美团技术团队主办，每期沙龙邀请美团及其他互联网公司的技术专家分享来自一线的实践经验，覆盖前端、后台、系统、算法、测试、运维等技术领域。&lt;/p&gt;</description>
       
     </item>
     

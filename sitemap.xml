@@ -9,8 +9,50 @@
   </url>
   
   <url>
+    <loc>https://nick17t.github.io/tags/binarysearch/</loc>
+    <lastmod>2020-07-18T20:05:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://nick17t.github.io/categories/</loc>
-    <lastmod>2020-07-13T09:08:42+08:00</lastmod>
+    <lastmod>2020-07-18T20:05:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/categories/leetcode/</loc>
+    <lastmod>2020-07-18T20:05:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/</loc>
+    <lastmod>2020-07-18T20:05:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/</loc>
+    <lastmod>2020-07-18T20:05:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/tags/</loc>
+    <lastmod>2020-07-18T20:05:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://nick17t.github.io/post/binary/</loc>
+    <lastmod>2020-07-18T20:05:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -31,27 +73,6 @@
   
   <url>
     <loc>https://nick17t.github.io/post/kickstart-round-d/</loc>
-    <lastmod>2020-07-13T09:08:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/</loc>
-    <lastmod>2020-07-13T09:08:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/post/</loc>
-    <lastmod>2020-07-13T09:08:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/tags/</loc>
     <lastmod>2020-07-13T09:08:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -255,13 +276,6 @@
   
   <url>
     <loc>https://nick17t.github.io/post/implement-stack-using-queues/</loc>
-    <lastmod>2020-05-22T23:39:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://nick17t.github.io/categories/leetcode/</loc>
     <lastmod>2020-05-22T23:39:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
