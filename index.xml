@@ -6,7 +6,7 @@
     <description>Recent content on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 18 Jul 2020 20:23:09 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2020 08:05:10 +0800</lastBuildDate>
     
         <atom:link href="https://nick17t.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,128 +45,9 @@
     </item>
     
     <item>
-      <title>LeetCode刷题总结</title>
-      <link>https://nick17t.github.io/post/leetcode/</link>
-      <pubDate>Sat, 18 Jul 2020 20:23:09 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/leetcode/</guid>
-      
-        <description>&lt;h3 id=&#34;二分查找&#34;&gt;二分查找&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/search-insert-position/&#34;&gt;35. 搜索插入位置&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/sqrtx/&#34;&gt;69. x 的平方根&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;双指针&#34;&gt;双指针&lt;/h3&gt;
-&lt;h3 id=&#34;二叉树&#34;&gt;二叉树&lt;/h3&gt;
-&lt;h3 id=&#34;拓扑排序&#34;&gt;拓扑排序&lt;/h3&gt;
-&lt;h3 id=&#34;哈希表&#34;&gt;哈希表&lt;/h3&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>二分查找</title>
-      <link>https://nick17t.github.io/post/binary/</link>
-      <pubDate>Sat, 18 Jul 2020 20:05:47 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/binary/</guid>
-      
-        <description>&lt;p&gt;​	&lt;strong&gt;Binary Search&lt;/strong&gt;的核心思想是每次想办法去掉一半元素，且保证target不在这一半元素里。&lt;/p&gt;
-&lt;p&gt;​	二分查找是一个看起来很简单，但实际操作极容易出错的算法。&lt;/p&gt;
-&lt;p&gt;​	主要注意的地方有：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;判断大小处取不取等号；&lt;/li&gt;
-&lt;li&gt;更新边界应不应该加减1；&lt;/li&gt;
-&lt;li&gt;初始值的选取。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;这里是 JAVA 通用模板：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binary_search&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; array&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; left&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; right&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;left&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;right&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; mid &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; left &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;right &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; left&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 2&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;mid&lt;span style=&#34;color:#f92672&#34;&gt;]&amp;lt;&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; left &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mid&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mid&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; left
-&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;说明:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;返回值为 [left, right) 内第一个不小于value的值的位置，注意这是个左闭右开的区间，初始区间的右边界是取不到的。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;mid = left+ (right- left) / 2 这样写是防止大数溢出。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;结果返回right也可以，二者是重合的。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;以上代码即使区间为空、答案不存在、有重复元素、搜索开/闭的上/下界也同样适用，而且加减1的位置调整只出现了一次。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果对于array[mid] &amp;lt; value改成array[mid] &amp;lt;= value 会变成什么？ 结果会收敛到第一个大于value的位置。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这里是 Python 的模板&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Solution&lt;/span&gt;:
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;searchInsert&lt;/span&gt;(self, nums: List[int], target: int) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; int:
-        left,right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,len(nums)
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; left&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;right:
-            mid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;left&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;(right&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;left)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; nums[mid]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;target:
-                left &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mid&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
-                right &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mid
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; left
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mid = left+ (right - left) // 2 这样写是防止大数溢出。假设全都为 int 型，上限为65535，left=45535，right =20001。则计算 mid = (left+right ) // 2 时会先计算括号里的数得到65536溢出了。而使用 mid = left + (right - left) // 2 可以避免这种情况而达到相同的效果。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;LeetCode 相关题目：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/search-insert-position/&#34;&gt;35. 搜索插入位置&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/sqrtx/&#34;&gt;69. x 的平方根&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>KickStart Round D</title>
-      <link>https://nick17t.github.io/post/kickstart-round-d/</link>
-      <pubDate>Mon, 13 Jul 2020 09:08:42 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/kickstart-round-d/</guid>
-      
-        <description>&lt;p&gt;​	因为最近在参加 Google 的暑期夏令营。【2020 Google Next Exceptional X Talent Program】。所以参加了2020 Kick Start 的 Round D 轮比赛。&lt;/p&gt;
-&lt;p&gt;​	大二的时候了解过 Kick Start 。但当时 2018 年的题目要难很多。&lt;/p&gt;
-&lt;p&gt;​	根据查阅的资料，发现 Kick Start &lt;strong&gt;第一题&lt;/strong&gt; 一般较为简单，偶尔会需要一点技巧。根据题意得到一个能看出来的结论，搭配上简单的编程知识就可以AC ； &lt;strong&gt;第二题&lt;/strong&gt; 要复杂一些，一些经典题目的变化题或者是一些需要对常见算法理解比较深的问题，对于这类题目往往需要做题的人深刻理解了常见算法，能将其熟练运用； &lt;strong&gt;第三题&lt;/strong&gt; 最难，往往是一个数据结构进行优化的问题(比如线段树)。对于这一类问题，难点其实并不在于数据结构，因为只要化归到数据结构问题往往这题就已经做的差不多了。第三题的难点通常在于，如果通过分析问题的性质，来得到一个合理的做法，并将需要维护的内容转化为对应的数据结构，这往往已经是一般程度上的算法竞赛问题了，需要做题者有着大量的经验。&lt;/p&gt;
-&lt;p&gt;​	2020 年 Kick Start 降低了一些难度，从三道题增加到了四道题。 Kick Start 的题目有一些特别之处，数据分为是小数据和大数据，再加上罚时，是 acm 和 oi 结合起来的赛制。想要拿高分一定要把小数据部分分全部拿到，取得罚时优势，再拿大数据部分的分。同时题目给出了每个数据集的数据范围，也算一个提示。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;1000左右是N^2的算法复杂度，可以考虑一下二维dp；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;100000左右是O(nlogn)和O(n^1.5)的算法复杂度，可以考虑一下二分和分块；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10^6/10^7是O(N)的复杂度，可能是个贪心题。&lt;/p&gt;
-&lt;p&gt;更多可以看&lt;a href=&#34;https://www.acwing.com/blog/content/32&#34;&gt;由数据范围反推算法复杂度以及算法内容&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>我的 Python 学习记录</title>
       <link>https://nick17t.github.io/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Sun, 12 Jul 2020 08:05:10 +0800</pubDate>
+      <pubDate>Tue, 21 Jul 2020 08:05:10 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/%E6%88%91%E7%9A%84-python-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
       
@@ -1015,6 +896,125 @@ higher&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;print_info()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;__init__()&lt;/code&gt;方法，在创建一个对象时默认被调用，不需要手动调用&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;__init__(self)&lt;/code&gt;中的self参数，不需要开发者传递，python解释器会自动把当前的对象引用传递过去。&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>LeetCode刷题总结</title>
+      <link>https://nick17t.github.io/post/leetcode/</link>
+      <pubDate>Sat, 18 Jul 2020 20:23:09 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/leetcode/</guid>
+      
+        <description>&lt;h3 id=&#34;二分查找&#34;&gt;二分查找&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/search-insert-position/&#34;&gt;35. 搜索插入位置&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/sqrtx/&#34;&gt;69. x 的平方根&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;双指针&#34;&gt;双指针&lt;/h3&gt;
+&lt;h3 id=&#34;二叉树&#34;&gt;二叉树&lt;/h3&gt;
+&lt;h3 id=&#34;拓扑排序&#34;&gt;拓扑排序&lt;/h3&gt;
+&lt;h3 id=&#34;哈希表&#34;&gt;哈希表&lt;/h3&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>二分查找</title>
+      <link>https://nick17t.github.io/post/binary/</link>
+      <pubDate>Sat, 18 Jul 2020 20:05:47 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/binary/</guid>
+      
+        <description>&lt;p&gt;​	&lt;strong&gt;Binary Search&lt;/strong&gt;的核心思想是每次想办法去掉一半元素，且保证target不在这一半元素里。&lt;/p&gt;
+&lt;p&gt;​	二分查找是一个看起来很简单，但实际操作极容易出错的算法。&lt;/p&gt;
+&lt;p&gt;​	主要注意的地方有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;判断大小处取不取等号；&lt;/li&gt;
+&lt;li&gt;更新边界应不应该加减1；&lt;/li&gt;
+&lt;li&gt;初始值的选取。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这里是 JAVA 通用模板：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binary_search&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; array&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; left&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; right&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;left&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;right&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; mid &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; left &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;right &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; left&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 2&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;mid&lt;span style=&#34;color:#f92672&#34;&gt;]&amp;lt;&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; left &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mid&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mid&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; left
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;说明:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;返回值为 [left, right) 内第一个不小于value的值的位置，注意这是个左闭右开的区间，初始区间的右边界是取不到的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mid = left+ (right- left) / 2 这样写是防止大数溢出。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;结果返回right也可以，二者是重合的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以上代码即使区间为空、答案不存在、有重复元素、搜索开/闭的上/下界也同样适用，而且加减1的位置调整只出现了一次。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果对于array[mid] &amp;lt; value改成array[mid] &amp;lt;= value 会变成什么？ 结果会收敛到第一个大于value的位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里是 Python 的模板&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Solution&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;searchInsert&lt;/span&gt;(self, nums: List[int], target: int) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; int:
+        left,right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,len(nums)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; left&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;right:
+            mid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;left&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;(right&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;left)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; nums[mid]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;target:
+                left &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mid&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+                right &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mid
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; left
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mid = left+ (right - left) // 2 这样写是防止大数溢出。假设全都为 int 型，上限为65535，left=45535，right =20001。则计算 mid = (left+right ) // 2 时会先计算括号里的数得到65536溢出了。而使用 mid = left + (right - left) // 2 可以避免这种情况而达到相同的效果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;LeetCode 相关题目：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/search-insert-position/&#34;&gt;35. 搜索插入位置&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/sqrtx/&#34;&gt;69. x 的平方根&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>KickStart Round D</title>
+      <link>https://nick17t.github.io/post/kickstart-round-d/</link>
+      <pubDate>Mon, 13 Jul 2020 09:08:42 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/kickstart-round-d/</guid>
+      
+        <description>&lt;p&gt;​	因为最近在参加 Google 的暑期夏令营。【2020 Google Next Exceptional X Talent Program】。所以参加了2020 Kick Start 的 Round D 轮比赛。&lt;/p&gt;
+&lt;p&gt;​	大二的时候了解过 Kick Start 。但当时 2018 年的题目要难很多。&lt;/p&gt;
+&lt;p&gt;​	根据查阅的资料，发现 Kick Start &lt;strong&gt;第一题&lt;/strong&gt; 一般较为简单，偶尔会需要一点技巧。根据题意得到一个能看出来的结论，搭配上简单的编程知识就可以AC ； &lt;strong&gt;第二题&lt;/strong&gt; 要复杂一些，一些经典题目的变化题或者是一些需要对常见算法理解比较深的问题，对于这类题目往往需要做题的人深刻理解了常见算法，能将其熟练运用； &lt;strong&gt;第三题&lt;/strong&gt; 最难，往往是一个数据结构进行优化的问题(比如线段树)。对于这一类问题，难点其实并不在于数据结构，因为只要化归到数据结构问题往往这题就已经做的差不多了。第三题的难点通常在于，如果通过分析问题的性质，来得到一个合理的做法，并将需要维护的内容转化为对应的数据结构，这往往已经是一般程度上的算法竞赛问题了，需要做题者有着大量的经验。&lt;/p&gt;
+&lt;p&gt;​	2020 年 Kick Start 降低了一些难度，从三道题增加到了四道题。 Kick Start 的题目有一些特别之处，数据分为是小数据和大数据，再加上罚时，是 acm 和 oi 结合起来的赛制。想要拿高分一定要把小数据部分分全部拿到，取得罚时优势，再拿大数据部分的分。同时题目给出了每个数据集的数据范围，也算一个提示。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1000左右是N^2的算法复杂度，可以考虑一下二维dp；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;100000左右是O(nlogn)和O(n^1.5)的算法复杂度，可以考虑一下二分和分块；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10^6/10^7是O(N)的复杂度，可能是个贪心题。&lt;/p&gt;
+&lt;p&gt;更多可以看&lt;a href=&#34;https://www.acwing.com/blog/content/32&#34;&gt;由数据范围反推算法复杂度以及算法内容&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
       
     </item>
