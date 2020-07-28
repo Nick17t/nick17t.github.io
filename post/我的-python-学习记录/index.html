@@ -67,7 +67,7 @@
 <meta itemprop="description" content="python复习,看这篇就够了。">
 <meta itemprop="datePublished" content="2020-07-12T08:05:10&#43;08:00" />
 <meta itemprop="dateModified" content="2020-07-12T08:05:10&#43;08:00" />
-<meta itemprop="wordCount" content="4070">
+<meta itemprop="wordCount" content="4476">
 
 
 
@@ -338,6 +338,13 @@
         <li><a href="#函数作用域">函数作用域</a></li>
         <li><a href="#递归">递归</a></li>
         <li><a href="#lambda-表达式">Lambda 表达式</a></li>
+      </ul>
+    </li>
+    <li><a href="#六面向对象">六、面向对象</a>
+      <ul>
+        <li><a href="#创建类和对象">创建类和对象</a></li>
+        <li><a href="#添加和获取属性">添加和获取属性</a></li>
+        <li><a href="#魔法方法">魔法方法</a></li>
       </ul>
     </li>
   </ul>
@@ -1089,10 +1096,110 @@ user_info(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#
 </li>
 </ul>
 <h3 id="递归">递归</h3>
+<ul>
+<li>函数内部自己调用自己</li>
+<li>必须有出口</li>
+</ul>
 <h3 id="lambda-表达式">Lambda 表达式</h3>
 <p>​	如果一个函数有一个返回值，并且只有一句代码，可以使用 lambda简化。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">lambda</span> <span style="color:#960050;background-color:#1e0010">参数列表</span> <span style="color:#960050;background-color:#1e0010">：</span> <span style="color:#960050;background-color:#1e0010">表达式</span>
-</code></pre></div>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 普通写法</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(a,b):
+    <span style="color:#66d9ef">return</span> a<span style="color:#f92672">+</span>b
+
+result <span style="color:#f92672">=</span> add(<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">21</span>)
+<span style="color:#66d9ef">print</span>(result)
+
+<span style="color:#75715e"># lambda 写法</span>
+add <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> a, b:a <span style="color:#f92672">+</span> b
+<span style="color:#66d9ef">print</span>(add(<span style="color:#ae81ff">21</span>, <span style="color:#ae81ff">13</span>))
+
+<span style="color:#75715e"># 默认参数 defalut parameter</span>
+div <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> a, b : a <span style="color:#f92672">//</span> b
+<span style="color:#66d9ef">print</span>(div(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">20</span>))
+
+<span style="color:#75715e"># 可变参数 variable parameter</span>
+fn <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> <span style="color:#f92672">*</span>args: args
+<span style="color:#66d9ef">print</span>(fn(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">30</span>))
+
+<span style="color:#75715e"># 带判断的lambda</span>
+JudgeAge <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> a, b :a <span style="color:#66d9ef">if</span> a <span style="color:#f92672">&gt;</span> b <span style="color:#66d9ef">else</span> b
+<span style="color:#66d9ef">print</span>(JudgeAge(<span style="color:#ae81ff">17</span>,<span style="color:#ae81ff">21</span>))
+</code></pre></div><p>高阶函数</p>
+<ul>
+<li>作用：把函数作为参数传入，化简代码</li>
+<li>内置高阶函数
+<ul>
+<li>map()</li>
+<li>reduce()</li>
+<li>filter()</li>
+</ul>
+</li>
+</ul>
+<h2 id="六面向对象">六、面向对象</h2>
+<h3 id="创建类和对象">创建类和对象</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Define class</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Washer</span>():
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wash</span>(self):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;I can wash cloth.&#39;</span>)
+        <span style="color:#66d9ef">print</span>(self)
+
+
+<span style="color:#75715e"># create object</span>
+
+higner <span style="color:#f92672">=</span> Washer()
+<span style="color:#66d9ef">print</span>(higner)
+
+<span style="color:#75715e"># Object calls the instance method</span>
+higner<span style="color:#f92672">.</span>wash()
+
+<span style="color:#75715e"># 打印对象和self得到的结果是一致的，都是当前对象的内存中存储地址。</span>
+</code></pre></div><h3 id="添加和获取属性">添加和获取属性</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Define class</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Washer</span>():
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wash</span>(self):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;I can wash cloth.&#39;</span>)
+        <span style="color:#66d9ef">print</span>(self)
+
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_info</span>(self):
+        <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#39;The width is {self.width}&#39;</span>)
+        <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#39;The height is {self.height}&#39;</span>)
+
+<span style="color:#75715e"># create object</span>
+
+higner <span style="color:#f92672">=</span> Washer()
+
+<span style="color:#75715e"># Add instance properties</span>
+higner<span style="color:#f92672">.</span>width <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>
+higner<span style="color:#f92672">.</span>height <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>
+higner<span style="color:#f92672">.</span>print_info()
+
+<span style="color:#66d9ef">print</span>(higner)
+
+<span style="color:#75715e"># 类外面可以</span>
+<span style="color:#66d9ef">print</span>(higner<span style="color:#f92672">.</span>width)
+<span style="color:#75715e"># 类里面需要</span>
+self<span style="color:#f92672">.</span><span style="color:#960050;background-color:#1e0010">属性名</span>
+</code></pre></div><h3 id="魔法方法">魔法方法</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Washer</span>():
+    <span style="color:#75715e"># define the function of the initialization function</span>
+    <span style="color:#66d9ef">def</span> __init__(self):
+        <span style="color:#75715e"># Add instance properties</span>
+        self<span style="color:#f92672">.</span>width <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>
+        self<span style="color:#f92672">.</span>height <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_info</span>(self):
+        <span style="color:#75715e"># Call instance propreties in the class</span>
+        <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#39;the width is {self.width}, the height is {self.height}&#39;</span>)
+
+
+higher <span style="color:#f92672">=</span> Washer()
+higher<span style="color:#f92672">.</span>print_info()
+</code></pre></div><ul>
+<li><code>__init__()</code>方法，在创建一个对象时默认被调用，不需要手动调用</li>
+<li><code>__init__(self)</code>中的self参数，不需要开发者传递，python解释器会自动把当前的对象引用传递过去。</li>
+</ul>
     </div>
 
     

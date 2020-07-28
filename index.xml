@@ -912,10 +912,110 @@ user_info(name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span s
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;递归&#34;&gt;递归&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;函数内部自己调用自己&lt;/li&gt;
+&lt;li&gt;必须有出口&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;lambda-表达式&#34;&gt;Lambda 表达式&lt;/h3&gt;
 &lt;p&gt;​	如果一个函数有一个返回值，并且只有一句代码，可以使用 lambda简化。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;参数列表&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;：&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;表达式&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 普通写法&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(a,b):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;b
+
+result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; add(&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(result)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# lambda 写法&lt;/span&gt;
+add &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; a, b:a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(add(&lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt;))
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 默认参数 defalut parameter&lt;/span&gt;
+div &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; a, b : a &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; b
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(div(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;))
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 可变参数 variable parameter&lt;/span&gt;
+fn &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;args: args
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(fn(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;))
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 带判断的lambda&lt;/span&gt;
+JudgeAge &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; a, b :a &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; b &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; b
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(JudgeAge(&lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;高阶函数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;作用：把函数作为参数传入，化简代码&lt;/li&gt;
+&lt;li&gt;内置高阶函数
+&lt;ul&gt;
+&lt;li&gt;map()&lt;/li&gt;
+&lt;li&gt;reduce()&lt;/li&gt;
+&lt;li&gt;filter()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;六面向对象&#34;&gt;六、面向对象&lt;/h2&gt;
+&lt;h3 id=&#34;创建类和对象&#34;&gt;创建类和对象&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Define class&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Washer&lt;/span&gt;():
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wash&lt;/span&gt;(self):
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;I can wash cloth.&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(self)
+
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# create object&lt;/span&gt;
+
+higner &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Washer()
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(higner)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Object calls the instance method&lt;/span&gt;
+higner&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;wash()
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 打印对象和self得到的结果是一致的，都是当前对象的内存中存储地址。&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;添加和获取属性&#34;&gt;添加和获取属性&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Define class&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Washer&lt;/span&gt;():
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wash&lt;/span&gt;(self):
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;I can wash cloth.&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(self)
+
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;print_info&lt;/span&gt;(self):
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The width is {self.width}&amp;#39;&lt;/span&gt;)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The height is {self.height}&amp;#39;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# create object&lt;/span&gt;
+
+higner &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Washer()
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Add instance properties&lt;/span&gt;
+higner&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;
+higner&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;
+higner&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;print_info()
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(higner)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 类外面可以&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(higner&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;width)
+&lt;span style=&#34;color:#75715e&#34;&gt;# 类里面需要&lt;/span&gt;
+self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;属性名&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;魔法方法&#34;&gt;魔法方法&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Washer&lt;/span&gt;():
+    &lt;span style=&#34;color:#75715e&#34;&gt;# define the function of the initialization function&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; __init__(self):
+        &lt;span style=&#34;color:#75715e&#34;&gt;# Add instance properties&lt;/span&gt;
+        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;
+        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;print_info&lt;/span&gt;(self):
+        &lt;span style=&#34;color:#75715e&#34;&gt;# Call instance propreties in the class&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(f&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;the width is {self.width}, the height is {self.height}&amp;#39;&lt;/span&gt;)
+
+
+higher &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Washer()
+higher&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;print_info()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;__init__()&lt;/code&gt;方法，在创建一个对象时默认被调用，不需要手动调用&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__init__(self)&lt;/code&gt;中的self参数，不需要开发者传递，python解释器会自动把当前的对象引用传递过去。&lt;/li&gt;
+&lt;/ul&gt;</description>
       
     </item>
     
