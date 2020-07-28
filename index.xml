@@ -6,7 +6,7 @@
     <description>Recent content on Nick17t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 18 Jul 2020 20:05:47 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2020 20:23:09 +0800</lastBuildDate>
     
         <atom:link href="https://nick17t.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,13 +45,37 @@
     </item>
     
     <item>
+      <title>LeetCode刷题总结</title>
+      <link>https://nick17t.github.io/post/leetcode/</link>
+      <pubDate>Sat, 18 Jul 2020 20:23:09 +0800</pubDate>
+      
+      <guid>https://nick17t.github.io/post/leetcode/</guid>
+      
+        <description>&lt;h3 id=&#34;二分查找&#34;&gt;二分查找&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/search-insert-position/&#34;&gt;35. 搜索插入位置&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/sqrtx/&#34;&gt;69. x 的平方根&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;双指针&#34;&gt;双指针&lt;/h3&gt;
+&lt;h3 id=&#34;二叉树&#34;&gt;二叉树&lt;/h3&gt;
+&lt;h3 id=&#34;拓扑排序&#34;&gt;拓扑排序&lt;/h3&gt;
+&lt;h3 id=&#34;哈希表&#34;&gt;哈希表&lt;/h3&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>二分查找</title>
       <link>https://nick17t.github.io/post/binary/</link>
       <pubDate>Sat, 18 Jul 2020 20:05:47 +0800</pubDate>
       
       <guid>https://nick17t.github.io/post/binary/</guid>
       
-        <description>&lt;p&gt;​	二分查找是一个看起来很简单，但实际操作极容易出错的算法。&lt;/p&gt;
+        <description>&lt;p&gt;​	&lt;strong&gt;Binary Search&lt;/strong&gt;的核心思想是每次想办法去掉一半元素，且保证target不在这一半元素里。&lt;/p&gt;
+&lt;p&gt;​	二分查找是一个看起来很简单，但实际操作极容易出错的算法。&lt;/p&gt;
 &lt;p&gt;​	主要注意的地方有：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;判断大小处取不取等号；&lt;/li&gt;
@@ -762,8 +786,136 @@ dict1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {list1[i]: list2[
 &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(dict1)
 &lt;span style=&#34;color:#75715e&#34;&gt;#2. 提取字典中目标数据&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;五函数&#34;&gt;五、函数&lt;/h2&gt;
-&lt;p&gt;​		函数就是将&lt;strong&gt;一段具有独立功能的代码块&lt;/strong&gt; 整合到一个整体并命名，在需要的位置&lt;strong&gt;调用这个名称&lt;/strong&gt;即可完成对应的需求。&lt;/p&gt;
-&lt;h3 id=&#34;函数使用步骤&#34;&gt;函数使用步骤&lt;/h3&gt;</description>
+&lt;p&gt;​		函数就是将一段具有独立功能的代码块整合到一个整体并命名，在需要的位置调用这个名称即可完成对应的需求。&lt;/p&gt;
+&lt;p&gt;​	函数的作用：封装代码，高效的代码重用&lt;/p&gt;
+&lt;h3 id=&#34;函数使用步骤&#34;&gt;函数使用步骤&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;定义函数&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;函数名&lt;/span&gt;():
+    &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;代码&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;代码&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用函数&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;函数名&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数的参数：函数调用的时候可以传入真实数据，增大函数的使用的灵活性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;形参：函数定义时书写的参数(非真实数据)&lt;/li&gt;
+&lt;li&gt;实参：函数调用时书写的参数(真实数据)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数的返回值&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;作用：函数调用后，返回需要的计算结果&lt;/li&gt;
+&lt;li&gt;写法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;表达式&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数的说明文档&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;作用：保存函数解释说明的信息&lt;/li&gt;
+&lt;li&gt;写法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;函数名&lt;/span&gt;():
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34; 函数说明文档 &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数嵌套调用：一个函数内部嵌套调用另外一个函数&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;函数作用域&#34;&gt;函数作用域&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;变量作用域
+&lt;ul&gt;
+&lt;li&gt;全局：函数体内外都能生效 global&lt;/li&gt;
+&lt;li&gt;局部：当前函数体内部生效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;函数多返回值写法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;表达式&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;表达式&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;函数的参数
+&lt;ul&gt;
+&lt;li&gt;位置参数
+&lt;ul&gt;
+&lt;li&gt;形参和实参的个数和书写顺序必须一致&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;关键字参数
+&lt;ul&gt;
+&lt;li&gt;写法： &lt;code&gt;key=value&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;特点：形参和实参的书写顺序可以不一致；关键字参数必须书写在位置参数的后面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缺省参数
+&lt;ul&gt;
+&lt;li&gt;缺省参数就是默认参数&lt;/li&gt;
+&lt;li&gt;写法：&lt;code&gt;key=vlaue&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;不定长位置参数
+&lt;ul&gt;
+&lt;li&gt;收集所有位置参数，返回一个元组&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;不定长关键字参数
+&lt;ul&gt;
+&lt;li&gt;收集所有关键字参数，返回一个字典&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;引用：Python中，数据的传递都是通过引用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 不定长关键字参数&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# 包裹位置传递&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;user_info&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;args):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(args)
+
+
+user_info(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;SE&amp;#39;&lt;/span&gt;)
+
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 包裹关键字传递&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;user_info&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;kwargs):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(kwargs)
+
+
+user_info(name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;, age&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt;, major&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;SE&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;这两个参数是什么意思 &lt;em&gt;args &lt;strong&gt;kwargs
+答：
+首先，&lt;em&gt;args和 **kwargs并不是必须这样写，只有前面的&lt;/em&gt;和&lt;/strong&gt;才是必须的，你可以写成&lt;/em&gt;var和**vars。
+其次，*args和 **kwargs主要用于函数定义，你可以将不定量的参数传递给一个函数。
+其中，*args是用来发送一个非键值对的可变数量的参数列表给一个函数；&lt;strong&gt;kwargs则允许将不定长度的键值对，作为参数传递给一个函数，如果你想要在一个函数里处理带名字的参数，你应该使用&lt;/strong&gt;kwargs。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;可变类型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;列表、字典、集合&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不可变类型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;整型、浮点型、字符串、元组&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;递归&#34;&gt;递归&lt;/h3&gt;
+&lt;h3 id=&#34;lambda-表达式&#34;&gt;Lambda 表达式&lt;/h3&gt;
+&lt;p&gt;​	如果一个函数有一个返回值，并且只有一句代码，可以使用 lambda简化。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;参数列表&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;：&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;表达式&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       
     </item>
     
@@ -2419,87 +2571,6 @@ SQL 的注入，检索 SQL SELECT 语句等
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Resume Considerations</title>
-      <link>https://nick17t.github.io/post/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
-      <pubDate>Wed, 18 Mar 2020 10:45:32 +0800</pubDate>
-      
-      <guid>https://nick17t.github.io/post/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
-      
-        <description>&lt;h2 id=&#34;简历注意事项&#34;&gt;简历注意事项&lt;/h2&gt;
-&lt;p&gt;via &lt;a href=&#34;https://juejin.im/post/5ea59d91518825736512f3b8&#34;&gt;别再这样写简历了&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;简历最重要的三个部分:&lt;/p&gt;
-&lt;h3 id=&#34;一-技术能力&#34;&gt;一. 技术能力&lt;/h3&gt;
-&lt;p&gt;通常，「技术能力」这个部分将紧接着您的个人简介之后，放在简历的核心版面。这样设计是有道理的，因为它能够帮助雇主更快的判断您的技能是否与需求相吻合。&lt;/p&gt;
-&lt;p&gt;因此在制作这一部分内容时，您应该考虑以下两点：&lt;/p&gt;
-&lt;h4 id=&#34;1-写什么&#34;&gt;1. 写什么？&lt;/h4&gt;
-&lt;p&gt;应聘者在技术能力的描述上通常会犯两个错误：要么&lt;strong&gt;无用的东西写的太多&lt;/strong&gt;，要么&lt;strong&gt;有用的东西写的太少&lt;/strong&gt;。这里的多和少是相对于「雇主的招聘需求」而言的。&lt;/p&gt;
-&lt;p&gt;我建议每个应聘者在撰写简历的这部分时，都能够精心设计所需展示的技能，&lt;strong&gt;将自己熟练掌握的技能中与雇主需求重合的部分放在醒目的位置&lt;/strong&gt;，如果竟然还有富余，那当然可以骄傲的在其后展示。&lt;/p&gt;
-&lt;p&gt;但无论如何，在此处展示如下内容是不合适宜的：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;自己对该技能只是了解而雇主又不需要的技能&lt;/strong&gt;（这实在毫无意义）；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;一些没有复杂度的，常识性的技能&lt;/strong&gt;，例如面试高级开发职位时，表明自己掌握 Git 的使用方式或某些具体业务库的使用；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;您越是确保自己展示的技能与雇主的需要完全契合，您就越能吸雇主的目光，并给予它继续阅读您简历的信心和勇气。&lt;/p&gt;
-&lt;h4 id=&#34;2-怎么写&#34;&gt;2. 怎么写？&lt;/h4&gt;
-&lt;p&gt;当我们知道该写什么技能之后，我们还需要知道如何恰当的描述这些技能，通常我们会以：「了解，熟悉，熟练掌握，精通」这几个形容词来描述技能的熟练程度，让我从面试官的角度来与您分享一下我认为这几个词背后的含义：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;了解&lt;/strong&gt;：表示您听说过这个概念，甚至了解与此概念有关的基本原理；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;熟悉&lt;/strong&gt;：表示您通过 Demo 的形式实践过某个技术，或做过一两个与该技术有关的项目，但缺乏沉淀；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;熟练掌握&lt;/strong&gt;：表示您在工业级环境下，通过数个项目的实践已经掌握了某种技术的核心原理，并能够灵活的应用在开发中；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;精通&lt;/strong&gt;：表示您通过很多次的项目实践和潜心研究，已经对某种技术的原理和应用掌握到近乎尽善尽美的程度；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;您应该意识到您需要客观，诚实地评判自己的技术水平，既不要蓄意的夸大，也不应该妄自菲薄。在撰写该部分内容时，我建议您按照技能的熟练程度自高向低的排列，同时对于雇主明确表示需要的技能给予更高的优先级。&lt;/p&gt;
-&lt;h3 id=&#34;二-项目经历&#34;&gt;二. 项目经历&lt;/h3&gt;
-&lt;p&gt;讲完了技术能力，接下来将与您分享简历中最重要的部分 &amp;ndash; 「项目经历」。如果一份简历满分是 100 分，项目经历所占的分数应该是 50 分以上。所以务必请您格外留意。&lt;/p&gt;
-&lt;h4 id=&#34;1-为什么您必须使用-star-法则&#34;&gt;1. 为什么您必须使用 STAR 法则？&lt;/h4&gt;
-&lt;p&gt;不知道您是否听说过撰写项目经历的「STAR」原则？之所以这么问，是因为近年来我时常在各大论坛看到有关这一原则的普及文章，可奇怪的是，我很少见到有人在简历中将其付诸行动，考虑到实行这一原则的投入产出比，这实在令人感到奇怪。&lt;/p&gt;
-&lt;p&gt;事实是这样的，如果您坚持不使用 STAR 原则描述您的项目经历，我十有八九无法在您的简历中获得任何值得推敲的信息。&lt;/p&gt;
-&lt;p&gt;让我描述一下我经常看到的一类描述：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我在该项目中完成了 XXX，YYY 需求，运用了 a，b，c 技术。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我至今不明白，这种缺乏意义的描述为什么会如此经久不衰的出现在各式各样的简历中，又为什么有这么多求职者对于这个模版的运用如此的乐此不疲。&lt;/p&gt;
-&lt;p&gt;这种描述方式的弊病在于，它除了告诉我求职者确实有在工作之外，再没有其他有用的信息。&lt;/p&gt;
-&lt;p&gt;让我们看看遵从 STAR 法则的项目经历描述中透露了哪些信息：（顺便一提，&lt;strong&gt;STAR 法则是指在描述中依次出现：Situation（情景），Task（任务），Action（行动）和 Result（结果）信息的描述一件事的原则&lt;/strong&gt;）&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;XXX 项目出现 XXX 问题，我作为 XXX，负责其中的 XXX 部分，我通过 XXX 方式（或技术方案）成功解决了该问题，使 XXX 提高了 XXX，XXX 增长了 XXX。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;当然，这个充满了 XXX 的范例只是抛砖引玉，目的只是为了向您展示遵从 STAR 法则，您能如何充分的向雇主展现您在项目开发中的产出的价值，取得的成就。并通过您的解决方案了解到您多方面的能力。&lt;/p&gt;
-&lt;p&gt;因此，毫无意外的，我建议您立刻将 STAR 法则运于描述您的项目经历。&lt;/p&gt;
-&lt;p&gt;如果您已经这么做了，那么请接受我的敬意。&lt;/p&gt;
-&lt;h4 id=&#34;2-项目重质不重量&#34;&gt;2. 项目重质不重量&lt;/h4&gt;
-&lt;p&gt;除了使用 STAR 法则描述项目经历，还需注意的一点是：&lt;strong&gt;千万不要堆叠您的项目经历！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;好的简历应该是短小精悍的，正如同没人感兴趣您在小学时期是否是三好学生一样，雇主通常也并不感兴趣您五年前做过哪些项目（除非它真的很优秀！）。&lt;/p&gt;
-&lt;p&gt;理想情况下，简历&lt;strong&gt;最好不要超过 1 页，至多不超过 2 页&lt;/strong&gt;是一个很好的尺度。鉴于这个篇幅，您的项目经历最好也只需要包含您近 1 年做过的，您觉得有代表性的项目即可。&lt;/p&gt;
-&lt;p&gt;有人说过，十个平淡无奇的项目抵不上一个精彩动人的项目，事实也正是如此。&lt;/p&gt;
-&lt;h3 id=&#34;三-整体印象&#34;&gt;三. 整体印象&lt;/h3&gt;
-&lt;p&gt;说完了技能和项目经历，最后让我们谈谈撰写简历时需要遵守的一些原则。当一份简历投递雇主手中时，雇主通常会大概看一下这个简历，凭&lt;strong&gt;经验&lt;/strong&gt;和&lt;strong&gt;直觉&lt;/strong&gt;来判断是否继续阅读这份简历，而接下来我想与您分享的，便是我认为一份好简历应该具备的「好味道」。&lt;/p&gt;
-&lt;h4 id=&#34;1-撰写简历三大原则清晰简短必要&#34;&gt;1. 撰写简历三大原则：清晰，简短，必要；&lt;/h4&gt;
-&lt;p&gt;正如标题所呈现的，一份好简历应该满足以下三个特征：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;清晰&lt;/strong&gt;：这表明简历的内容应该是没有歧义，易于理解的，同时简历整体还要富有逻辑；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;简短&lt;/strong&gt;：无论是生活还是工作中，我们都需要拥有一种「抓住重点」的能力，因此优秀的求职者应该尽可能在简历中就展现这一点，而展现的方式就是，尽量写出不超过一页的简历，同时让它充满诱惑；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;必要&lt;/strong&gt;：招聘本身是一个相互匹配的过程，彼此展示必要的信息，能够帮助彼此最大化的节约时间，提升效率。确保简历中出现的内容都是雇主期望了解的很容易就能博得雇主的好感。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;希望您能在理解这三原则后重新审视并优化您的简历，确保万无一失后，我们就可以进入下一个重要的环节：简历投放。没错，这里我也有话要说。&lt;/p&gt;
-&lt;h4 id=&#34;2-为什么您应该停止海投&#34;&gt;2. 为什么您应该停止海投？&lt;/h4&gt;
-&lt;p&gt;我的最后一个建议是：&lt;strong&gt;不要海投，要有的放矢&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;我当然理解面对求职压力，海投所消耗的成本及其低廉，但请注意，相对的，海投带来的收益也近乎微乎其微（更别提海投失败更容易给人带来挫败感，使人陷入一种负面情绪的恶性循环）。&lt;/p&gt;
-&lt;p&gt;其实「海投」和「精准投放」之间的差距并没有特别悬殊，有时候只需要您一点点额外的努力，就能带来巨大的收益。&lt;/p&gt;
-&lt;p&gt;我建议您将自己的所有信息先整合在一个文档内，然后每天选择 10 家您向往的雇主企业，仔细阅读对方的招聘需求，并根据对方的招聘需求在自己的文档中摘出与之匹配的部分组合在一起。&lt;/p&gt;
-&lt;p&gt;之后就可以爽快的投递出去了。猜猜看接下来会发生什么？因为您的技能描述完美契合了雇主的需要，并且项目经历的描述由于运用了 STAR 法则，雇主能够更充分的了解到您各方面的能力。&lt;/p&gt;
-&lt;p&gt;毫无疑问的，您将大大提升您进入面试环节的几率！这可是成功的第一步！&lt;/p&gt;
-&lt;h3 id=&#34;四-总结&#34;&gt;四. 总结&lt;/h3&gt;
-&lt;p&gt;总结一下，我们谈论了简历制作过程中需要注意的以下三个部分，并分别给出了一些建议：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;技术能力：&lt;strong&gt;先写岗位所需能力，再写加分能力，不要写无关能力&lt;/strong&gt;；&lt;/li&gt;
-&lt;li&gt;项目经历：&lt;strong&gt;只写明星项目，描述遵循 STAR 法则&lt;/strong&gt;；&lt;/li&gt;
-&lt;li&gt;简历印象：&lt;strong&gt;简历遵循三大原则：清晰，简短，必要&lt;/strong&gt;，&lt;strong&gt;要有的放矢，不要海投&lt;/strong&gt;；&lt;/li&gt;
-&lt;/ol&gt;</description>
       
     </item>
     

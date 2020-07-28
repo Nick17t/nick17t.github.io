@@ -67,7 +67,7 @@
 <meta itemprop="description" content="python复习,看这篇就够了。">
 <meta itemprop="datePublished" content="2020-07-12T08:05:10&#43;08:00" />
 <meta itemprop="dateModified" content="2020-07-12T08:05:10&#43;08:00" />
-<meta itemprop="wordCount" content="3314">
+<meta itemprop="wordCount" content="4070">
 
 
 
@@ -335,6 +335,9 @@
     <li><a href="#五函数">五、函数</a>
       <ul>
         <li><a href="#函数使用步骤">函数使用步骤</a></li>
+        <li><a href="#函数作用域">函数作用域</a></li>
+        <li><a href="#递归">递归</a></li>
+        <li><a href="#lambda-表达式">Lambda 表达式</a></li>
       </ul>
     </li>
   </ul>
@@ -960,8 +963,136 @@ dict1 <span style="color:#f92672">=</span> {list1[i]: list2[i] <span style="colo
 <span style="color:#66d9ef">print</span>(dict1)
 <span style="color:#75715e">#2. 提取字典中目标数据</span>
 </code></pre></div><h2 id="五函数">五、函数</h2>
-<p>​		函数就是将<strong>一段具有独立功能的代码块</strong> 整合到一个整体并命名，在需要的位置<strong>调用这个名称</strong>即可完成对应的需求。</p>
+<p>​		函数就是将一段具有独立功能的代码块整合到一个整体并命名，在需要的位置调用这个名称即可完成对应的需求。</p>
+<p>​	函数的作用：封装代码，高效的代码重用</p>
 <h3 id="函数使用步骤">函数使用步骤</h3>
+<ul>
+<li>
+<p>定义函数</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#960050;background-color:#1e0010">函数名</span>():
+    <span style="color:#960050;background-color:#1e0010">代码</span><span style="color:#ae81ff">1</span>
+    <span style="color:#960050;background-color:#1e0010">代码</span><span style="color:#ae81ff">2</span>
+    <span style="color:#f92672">...</span>
+</code></pre></div></li>
+<li>
+<p>调用函数</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#960050;background-color:#1e0010">函数名</span>()
+</code></pre></div></li>
+<li>
+<p>函数的参数：函数调用的时候可以传入真实数据，增大函数的使用的灵活性</p>
+<ul>
+<li>形参：函数定义时书写的参数(非真实数据)</li>
+<li>实参：函数调用时书写的参数(真实数据)</li>
+</ul>
+</li>
+<li>
+<p>函数的返回值</p>
+<ul>
+<li>作用：函数调用后，返回需要的计算结果</li>
+<li>写法</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">return</span> <span style="color:#960050;background-color:#1e0010">表达式</span>
+</code></pre></div></li>
+<li>
+<p>函数的说明文档</p>
+<ul>
+<li>作用：保存函数解释说明的信息</li>
+<li>写法</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#960050;background-color:#1e0010">函数名</span>():
+    <span style="color:#e6db74">&#34;&#34;&#34; 函数说明文档 &#34;&#34;&#34;</span>
+</code></pre></div></li>
+<li>
+<p>函数嵌套调用：一个函数内部嵌套调用另外一个函数</p>
+</li>
+</ul>
+<h3 id="函数作用域">函数作用域</h3>
+<ul>
+<li>变量作用域
+<ul>
+<li>全局：函数体内外都能生效 global</li>
+<li>局部：当前函数体内部生效</li>
+</ul>
+</li>
+<li>函数多返回值写法</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">return</span> <span style="color:#960050;background-color:#1e0010">表达式</span><span style="color:#ae81ff">1</span>, <span style="color:#960050;background-color:#1e0010">表达式</span><span style="color:#ae81ff">2.</span><span style="color:#f92672">..</span>
+</code></pre></div><ul>
+<li>函数的参数
+<ul>
+<li>位置参数
+<ul>
+<li>形参和实参的个数和书写顺序必须一致</li>
+</ul>
+</li>
+<li>关键字参数
+<ul>
+<li>写法： <code>key=value</code></li>
+<li>特点：形参和实参的书写顺序可以不一致；关键字参数必须书写在位置参数的后面</li>
+</ul>
+</li>
+<li>缺省参数
+<ul>
+<li>缺省参数就是默认参数</li>
+<li>写法：<code>key=vlaue</code></li>
+</ul>
+</li>
+<li>不定长位置参数
+<ul>
+<li>收集所有位置参数，返回一个元组</li>
+</ul>
+</li>
+<li>不定长关键字参数
+<ul>
+<li>收集所有关键字参数，返回一个字典</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>引用：Python中，数据的传递都是通过引用</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 不定长关键字参数</span>
+<span style="color:#75715e"># 包裹位置传递</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">user_info</span>(<span style="color:#f92672">*</span>args):
+    <span style="color:#66d9ef">print</span>(args)
+
+
+user_info(<span style="color:#e6db74">&#39;Tom&#39;</span>, <span style="color:#ae81ff">18</span>, <span style="color:#e6db74">&#39;SE&#39;</span>)
+
+
+<span style="color:#75715e"># 包裹关键字传递</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">user_info</span>(<span style="color:#f92672">**</span>kwargs):
+    <span style="color:#66d9ef">print</span>(kwargs)
+
+
+user_info(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Tom&#39;</span>, age<span style="color:#f92672">=</span><span style="color:#ae81ff">18</span>, major<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;SE&#39;</span>)
+</code></pre></div><blockquote>
+<p>这两个参数是什么意思 <em>args <strong>kwargs
+答：
+首先，<em>args和 **kwargs并不是必须这样写，只有前面的</em>和</strong>才是必须的，你可以写成</em>var和**vars。
+其次，*args和 **kwargs主要用于函数定义，你可以将不定量的参数传递给一个函数。
+其中，*args是用来发送一个非键值对的可变数量的参数列表给一个函数；<strong>kwargs则允许将不定长度的键值对，作为参数传递给一个函数，如果你想要在一个函数里处理带名字的参数，你应该使用</strong>kwargs。</p>
+</blockquote>
+<ul>
+<li>
+<p>可变类型</p>
+<ul>
+<li>列表、字典、集合</li>
+</ul>
+</li>
+<li>
+<p>不可变类型</p>
+<ul>
+<li>整型、浮点型、字符串、元组</li>
+</ul>
+</li>
+</ul>
+<h3 id="递归">递归</h3>
+<h3 id="lambda-表达式">Lambda 表达式</h3>
+<p>​	如果一个函数有一个返回值，并且只有一句代码，可以使用 lambda简化。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">lambda</span> <span style="color:#960050;background-color:#1e0010">参数列表</span> <span style="color:#960050;background-color:#1e0010">：</span> <span style="color:#960050;background-color:#1e0010">表达式</span>
+</code></pre></div>
     </div>
 
     
